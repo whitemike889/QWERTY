@@ -1,0 +1,53 @@
+<include>
+/ file = "instructions.exp"
+/ file = "trials.exp"
+/ file = "text.exp"
+</include>
+
+<data>
+/ columns = [date time subject trialcode trialnum latency response]
+/ format = tab
+</data>
+
+<defaults>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ screencolor = (220,220,220)
+/ txcolor=(0,0,0)
+/ pretrialpause = 500
+/ posttrialpause = 500
+/ endlock = true
+</defaults>
+
+<instruct>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ lastlabel = "Press enter to continue ..."
+/ nextkey = (28)
+/ nextlabel ="Press enter for next page"
+/ prevkey = (14)
+/ prevlabel = "Press Backspace for Previous page"
+/ wait = 1000
+/ windowsize = (640,400)
+</instruct>
+
+<block typingspeed>
+/trials = [ 1 = handedness1; 2 = handedness2; 3 = write; ]
+</block>
+
+<block ratings>
+/preinstructions = (first)
+/ trials = [1-120 = random(1nobe,1yofe,1nofe,1jobe,1pobe,2mafe,2kabe,2yate,2jabe,2vape,
+3meef,3neeb,3tove,3leel,3yeet,4peka,4melb,4pems,4woem,4alfi,5yane,5jame,5yame,5tutk,5anay,
+6clim,6voke,6dlip,6slin,6flin,7foof,7soog,7voop,7soob,7voom,8dax,8taxe,8waf,8wac,8tez,9veed,
+9zabe,9beeg,9zafe,9tage,10lim,10nop,10hil,10plin,10pluk,11yoop,11lik,11nilo,11lool,11joom,
+12liar,12life,12lust,12more,12lids,13lice,13army,13cell,13hide,13nude,14wife,14arm,14obey,
+14pest,14dawn,15bath,15cute,15wasp,15frog,15baby,16air,16slap,16lake,16cow,16fish,17bowl,
+17girl,17hay,17wish,17name,18win,18snob,18song,18sour,18blue,19cold,19ugly,19sun,19silk,
+19tomb,20zest,20eat,20scar,20sad,20seat,21bees,21star,21fat,21bed,21fear,22pom,22yip,22nip,
+22jip,22lip,23mom,23noon,23pill,23lump,23lion,24jufe,24nuad,24aqil,24kige,24celm)]
+/ postinstructions = (end)
+</block>
+
+<expt>
+/ blocks = [1=typingspeed; 2=ratings;]
+</expt>
+

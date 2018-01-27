@@ -1,0 +1,57 @@
+<include>
+/ file = "instructions.exp"
+/ file = "trials.exp"
+/ file = "text.exp"
+</include>
+
+<data>
+/ columns = [date time subject trialcode trialnum latency response]
+/ format = tab
+</data>
+
+<defaults>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ screencolor = (220,220,220)
+/ txcolor=(0,0,0)
+/ pretrialpause = 500
+/ posttrialpause = 500
+/ endlock = true
+</defaults>
+
+<instruct>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ lastlabel = "Press enter to continue ..."
+/ nextkey = (28)
+/ nextlabel ="Press enter for next page"
+/ prevkey = (14)
+/ prevlabel = "Press Backspace for Previous page"
+/ wait = 1000
+/ windowsize = (640,400)
+</instruct>
+
+<block typingspeed>
+/trials = [ 1 = handedness1; 2 = handedness2; 3 = write; ]
+</block>
+
+<block ratings>
+/preinstructions = (first)
+/ trials = [1= sequence(yane,5yane, army,13army, beeg,9beeg, lion,23lion, taxe,8taxe, pest,14pest, sour,18sour,
+jame,5jame, ugly,19ugly, mom,23mom, lake,16lake, bees,21bees, nip,22nip, nop,10nop, blue,18blue, cold,19cold,
+lice,13lice, dax,8dax, plin,10plin, lump,23lump, win,18win, jabe,2jabe, yofe,1yofe, soob,7soob, slap,16slap, nobe,1nobe,
+frog,15frog, more,12more, hide,13hide, peka,4peka, scar,20scar, cow,16cow, pems,4pems, yeet,3yeet, sad,20sad,
+wish,17wish, lik,11lik, jobe,1jobe, voom,7voom, tage,9tage, yate,2yate, yoop,11yoop, tutk,5tutk, life,12life,
+woem,4woem, silk,19silk, slin,6slin, hay,17hay, tove,3tove, voke,6voke, pill,23pill, nofe,1nofe, jufe,24jufe, girl,17girl,
+neeb,3neeb, foof,7foof, flin,6flin, meef,3meef, lool,11lool, wasp,15wasp, tomb,19tomb, mafe,2mafe, snob,18snob, 
+voop,7voop, pluk,10pluk, obey,14obey, wac,8wac, bath,15bath, leel,3leel, aqil,24aqil, nilo,11nilo, nude,13nude, soog,7soog,
+cute,15cute, eat,20eat, zabe,9zabe, baby,15baby, zafe,9zafe, bowl,17bowl, pom,22pom, joom,11joom, kige,24kige,
+kabe,2kabe, seat,20seat, vape,2vape, dlip,6dlip, fear,21fear, song,18song, lip,22lip, melb,4melb, nuad,24nuad, hil,10hil,
+jip,22jip, anay,5anay, lust,12lust, tez,8tez, yame,5yame, name,17name, dawn,14dawn, sun,19sun, arm,14arm, pobe,1pobe,
+fish,16fish, lids,12lids, zest,20zest, celm,24celm, yip,22yip, noon,23noon, cell,13cell, air,16air, veed,9veed, wife,14wife,
+waf,8waf, lim,10lim, liar,12liar, bed,21bed, star,21star, clim,6clim, alfi,4alfi, fat,21fat)] 
+/ postinstructions = (end)
+</block>
+
+<expt>
+/ blocks = [1=typingspeed; 2=ratings;]
+</expt>
+

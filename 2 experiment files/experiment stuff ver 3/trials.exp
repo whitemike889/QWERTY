@@ -1,0 +1,1465 @@
+<likert 1.3.anay>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =anay, sam;]
+/ trialcode = "1.3.anay"
+</likert>
+
+<likert 2.5.arm>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =arm, sam;]
+/ trialcode = "2.5.arm"
+</likert>
+
+<likert 2.5.art>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =art, sam;]
+/ trialcode = "2.5.art"
+</likert>
+
+<likert 2.5.bar>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =bar, sam;]
+/ trialcode = "2.5.bar"
+</likert>
+
+<likert 1.5.bih>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =bih, sam;]
+/ trialcode = "1.5.bih"
+</likert>
+
+<likert 2.3.blue>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =blue, sam;]
+/ trialcode = "2.3.blue"
+</likert>
+
+<likert 2.4.body>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =body, sam;]
+/ trialcode = "2.4.body"
+</likert>
+
+<likert 2.5.bomb>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =bomb, sam;]
+/ trialcode = "2.5.bomb"
+</likert>
+
+<likert 1.4.boog>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =boog, sam;]
+/ trialcode = "1.4.boog"
+</likert>
+
+<likert 2.5.boy>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =boy, sam;]
+/ trialcode = "2.5.boy"
+</likert>
+
+<likert 1.1.bryg>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =bryg, sam;]
+/ trialcode = "1.1.bryg"
+</likert>
+
+<likert 2.1.bug>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =bug, sam;]
+/ trialcode = "2.1.bug"
+</likert>
+
+<likert 2.5.bus>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =bus, sam;]
+/ trialcode = "2.5.bus"
+</likert>
+
+<likert 2.1.but>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =but, sam;]
+/ trialcode = "2.1.but"
+</likert>
+
+<likert 2.1.buy>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =buy, sam;]
+/ trialcode = "2.1.buy"
+</likert>
+
+<likert 2.2.cake>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =cake, sam;]
+/ trialcode = "2.2.cake"
+</likert>
+
+<likert 2.6.cat>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =cat, sam;]
+/ trialcode = "2.6.cat"
+</likert>
+
+<likert 2.2.cell>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =cell, sam;]
+/ trialcode = "2.2.cell"
+</likert>
+
+<likert 1.6.celm>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =celm, sam;]
+/ trialcode = "1.6.celm"
+</likert>
+
+<likert 2.6.dark>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =dark, sam;]
+/ trialcode = "2.6.dark"
+</likert>
+
+<likert 1.2.dax>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =dax, sam;]
+/ trialcode = "1.2.dax"
+</likert>
+
+<likert 2.2.dead>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =dead, sam;]
+/ trialcode = "2.2.dead"
+</likert>
+
+<likert 1.6.dofe>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =dofe, sam;]
+/ trialcode = "1.6.dofe"
+</likert>
+
+<likert 2.6.dog>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =dog, sam;]
+/ trialcode = "2.6.dog"
+</likert>
+
+<likert 2.4.dump>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =dump, sam;]
+/ trialcode = "2.4.dump"
+</likert>
+
+<likert 2.6.evil>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =evil, sam;]
+/ trialcode = "2.6.evil"
+</likert>
+
+<likert 2.5.fat>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =fat, sam;]
+/ trialcode = "2.5.fat"
+</likert>
+
+<likert 1.5.feg>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =feg, sam;]
+/ trialcode = "1.5.feg"
+</likert>
+
+<likert 2.4.flag>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =flag, sam;]
+/ trialcode = "2.4.flag"
+</likert>
+
+<likert 2.4.foam>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =foam, sam;]
+/ trialcode = "2.4.foam"
+</likert>
+
+<likert 1.4.foob>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =foob, sam;]
+/ trialcode = "1.4.foob"
+</likert>
+
+<likert 2.4.free>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =free, sam;]
+/ trialcode = "2.4.free"
+</likert>
+
+<likert 1.1.fryn>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =fryn, sam;]
+/ trialcode = "1.1.fryn"
+</likert>
+
+<likert 2.1.fun>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =fun, sam;]
+/ trialcode = "2.1.fun"
+</likert>
+
+<likert 2.1.fur>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =fur, sam;]
+/ trialcode = "2.1.fur"
+</likert>
+
+<likert 1.5.fuw>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =fuw, sam;]
+/ trialcode = "1.5.fuw"
+</likert>
+
+<likert 1.1.ghun>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =ghun, sam;]
+/ trialcode = "1.1.ghun"
+</likert>
+
+<likert 2.5.grin>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =grin, sam;]
+/ trialcode = "2.5.grin"
+</likert>
+
+<likert 1.1.gub>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =gub, sam;]
+/ trialcode = "1.1.gub"
+</likert>
+
+<likert 1.1.guf>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =guf, sam;]
+/ trialcode = "1.1.guf"
+</likert>
+
+<likert 2.3.hard>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =hard, sam;]
+/ trialcode = "2.3.hard"
+</likert>
+
+<likert 2.3.hate>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =hate, sam;]
+/ trialcode = "2.3.hate"
+</likert>
+
+<likert 1.3.jafe>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =jafe, sam;]
+/ trialcode = "1.3.jafe"
+</likert>
+
+<likert 1.5.jaj>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =jaj, sam;]
+/ trialcode = "1.5.jaj"
+</likert>
+
+<likert 1.3.jofe>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =jofe, sam;]
+/ trialcode = "1.3.jofe"
+</likert>
+
+<likert 1.6.joi>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =joi, sam;]
+/ trialcode = "1.6.joi"
+</likert>
+
+<likert 1.5.jufe>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =jufe, sam;]
+/ trialcode = "1.5.jufe"
+</likert>
+
+<likert 1.6.kabe>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =kabe, sam;]
+/ trialcode = "1.6.kabe"
+</likert>
+
+<likert 2.6.kin>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =kin, sam;]
+/ trialcode = "2.6.kin"
+</likert>
+
+<likert 2.3.knot>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =knot, sam;]
+/ trialcode = "2.3.knot"
+</likert>
+
+<likert 1.2.lale>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =lale, sam;]
+/ trialcode = "1.2.lale"
+</likert>
+
+<likert 1.2.lalo>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =lalo, sam;]
+/ trialcode = "1.2.lalo"
+</likert>
+
+<likert 2.2.leap>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =leap, sam;]
+/ trialcode = "2.2.leap"
+</likert>
+
+<likert 1.2.leel>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =leel, sam;]
+/ trialcode = "1.2.leel"
+</likert>
+
+<likert 2.2.lids>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =lids, sam;]
+/ trialcode = "2.2.lids"
+</likert>
+
+<likert 1.2.likk>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =likk, sam;]
+/ trialcode = "1.2.likk"
+</likert>
+
+<likert 1.6.lim>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =lim, sam;]
+/ trialcode = "1.6.lim"
+</likert>
+
+<likert 2.2.lop>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =lop, sam;]
+/ trialcode = "2.2.lop"
+</likert>
+
+<likert 2.4.lump>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =lump, sam;]
+/ trialcode = "2.4.lump"
+</likert>
+
+<likert 2.6.mask>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =mask, sam;]
+/ trialcode = "2.6.mask"
+</likert>
+
+<likert 2.6.milk>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =milk, sam;]
+/ trialcode = "2.6.milk"
+</likert>
+
+<likert 1.3.mobe>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =mobe, sam;]
+/ trialcode = "1.3.mobe"
+</likert>
+
+<likert 1.4.moob>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =moob, sam;]
+/ trialcode = "1.4.moob"
+</likert>
+
+<likert 1.4.moof>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =moof, sam;]
+/ trialcode = "1.4.moof"
+</likert>
+
+<likert 2.4.moon>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =moon, sam;]
+/ trialcode = "2.4.moon"
+</likert>
+
+<likert 2.3.more>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =more, sam;]
+/ trialcode = "2.3.more"
+</likert>
+
+<likert 1.1.mur>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =mur, sam;]
+/ trialcode = "1.1.mur"
+</likert>
+
+<likert 2.3.name>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =name, sam;]
+/ trialcode = "2.3.name"
+</likert>
+
+<likert 1.6.nilo>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =nilo, sam;]
+/ trialcode = "1.6.nilo"
+</likert>
+
+<likert 2.5.non>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =non, sam;]
+/ trialcode = "2.5.non"
+</likert>
+
+<likert 1.4.noof>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =noof, sam;]
+/ trialcode = "1.4.noof"
+</likert>
+
+<likert 2.4.nude>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =nude, sam;]
+/ trialcode = "2.4.nude"
+</likert>
+
+<likert 1.1.nuv>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =nuv, sam;]
+/ trialcode = "1.1.nuv"
+</likert>
+
+<likert 2.3.obey>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =obey, sam;]
+/ trialcode = "2.3.obey"
+</likert>
+
+<likert 2.6.pain>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =pain, sam;]
+/ trialcode = "2.6.pain"
+</likert>
+
+<likert 2.4.part>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =part, sam;]
+/ trialcode = "2.4.part"
+</likert>
+
+<likert 2.1.rug>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =rug, sam;]
+/ trialcode = "2.1.rug"
+</likert>
+
+<likert 2.1.guy>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =guy, sam;]
+/ trialcode = "2.1.guy"
+</likert>
+
+<likert 2.1.rut>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =rut, sam;]
+/ trialcode = "2.1.rut"
+</likert>
+
+<likert 1.1.ryng>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =ryng, sam;]
+/ trialcode = "1.1.ryng"
+</likert>
+
+<likert 2.6.scar>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =scar, sam;]
+/ trialcode = "2.6.scar"
+</likert>
+
+<likert 2.2.sex>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =sex, sam;]
+/ trialcode = "2.2.sex"
+</likert>
+
+<likert 2.2.sick>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =sick, sam;]
+/ trialcode = "2.2.sick"
+</likert>
+
+<likert 2.2.slid>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =slid, sam;]
+/ trialcode = "2.2.slid"
+</likert>
+
+<likert 2.6.slit>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =slit, sam;]
+/ trialcode = "2.6.slit"
+</likert>
+
+<likert 2.2.slow>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =slow, sam;]
+/ trialcode = "2.2.slow"
+</likert>
+
+<likert 1.6.soog>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =soog, sam;]
+/ trialcode = "1.6.soog"
+</likert>
+
+<likert 2.3.star>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =star, sam;]
+/ trialcode = "2.3.star"
+</likert>
+
+<likert 1.5.syg>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =syg, sam;]
+/ trialcode = "1.5.syg"
+</likert>
+
+<likert 1.3.tage>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =tage, sam;]
+/ trialcode = "1.3.tage"
+</likert>
+
+<likert 1.4.teef>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =teef, sam;]
+/ trialcode = "1.4.teef"
+</likert>
+
+<likert 2.1.thus>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =thus, sam;]
+/ trialcode = "2.1.thus"
+</likert>
+
+<likert 2.1.thy>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =thy, sam;]
+/ trialcode = "2.1.thy"
+</likert>
+
+<likert 2.4.tidy>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =tidy, sam;]
+/ trialcode = "2.4.tidy"
+</likert>
+
+<likert 2.3.time>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =time, sam;]
+/ trialcode = "2.3.time"
+</likert>
+
+<likert 1.4.toof>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =toof, sam;]
+/ trialcode = "1.4.toof"
+</likert>
+
+<likert 1.3.tove>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =tove, sam;]
+/ trialcode = "1.3.tove"
+</likert>
+
+<likert 1.5.tutk>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =tutk, sam;]
+/ trialcode = "1.5.tutk"
+</likert>
+
+<likert 2.5.unit>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =unit, sam;]
+/ trialcode = "2.5.unit"
+</likert>
+
+<likert 1.3.vabe>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =vabe, sam;]
+/ trialcode = "1.3.vabe"
+</likert>
+
+<likert 1.5.vaf>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =vaf, sam;]
+/ trialcode = "1.5.vaf"
+</likert>
+
+<likert 1.6.vape>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =vape, sam;]
+/ trialcode = "1.6.vape"
+</likert>
+
+<likert 1.6.vook>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =vook, sam;]
+/ trialcode = "1.6.vook"
+</likert>
+
+<likert 1.4.voom>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =voom, sam;]
+/ trialcode = "1.4.voom"
+</likert>
+
+<likert 1.1.vun>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =vun, sam;]
+/ trialcode = "1.1.vun"
+</likert>
+
+<likert 1.1.vuy>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =vuy, sam;]
+/ trialcode = "1.1.vuy"
+</likert>
+
+<likert 1.2.xad>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =xad, sam;]
+/ trialcode = "1.2.xad"
+</likert>
+
+<likert 1.3.yane>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =yane, sam;]
+/ trialcode = "1.3.yane"
+</likert>
+
+<likert 1.3.yave>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =yave, sam;]
+/ trialcode = "1.3.yave"
+</likert>
+
+<likert 1.5.yeb>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =yeb, sam;]
+/ trialcode = "1.5.yeb"
+</likert>
+
+<likert 1.4.yeeb>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =yeeb, sam;]
+/ trialcode = "1.4.yeeb"
+</likert>
+
+<likert 1.3.yome>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =yome, sam;]
+/ trialcode = "1.3.yome"
+</likert>
+
+<likert 1.4.yoof>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =yoof, sam;]
+/ trialcode = "1.4.yoof"
+</likert>
+
+<likert 2.3.yore>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =yore, sam;]
+/ trialcode = "2.3.yore"
+</likert>
+
+<likert 1.2.zake>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =zake, sam;]
+/ trialcode = "1.2.zake"
+</likert>
+
+<likert 1.2.zape>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =zape, sam;]
+/ trialcode = "1.2.zape"
+</likert>
+
+<likert 1.2.zeed>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =zeed, sam;]
+/ trialcode = "1.2.zeed"
+</likert>
+
+<likert 1.2.zoke>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =zoke, sam;]
+/ trialcode = "1.2.zoke"
+</likert>
+
+<likert 1.6.zote>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =zote, sam;]
+/ trialcode = "1.6.zote"
+</likert>
+
+<likert 1.5.zyr>
+/ anchors = [1 = "unpleasant"; 2 = " "; 3 = " "; 4 =" "; 5 = "neutral"; 6=" "; 7=" "; 8=" "; 9="pleasant";]
+/ correctmessage = false 
+/ errormessage = false 
+/ mouse = true
+/ numpoints = 9
+/ position = (50,60)
+/ posttrialpause = 500
+/ stimulusframes = [1 =zyr, sam;]
+/ trialcode = "1.5.zyr"
+</likert>
+
+
+<openended handedness1>
+/ frames = [1=speed;]
+/ buttonlabel =  "CONTROL ENTER"
+/ charlimit = 40
+/ linelength = 40
+/ trialcode = "speed"
+</openended>
+
+<openended handedness2>
+/ frames = [1=error;]
+/ buttonlabel =  "CONTROL ENTER"
+/ charlimit = 40
+/ linelength = 40
+/ trialcode = "error"
+</openended>
+
+<openended write>
+/ frames = [1=handintro;]
+/ buttonlabel =  "CONTROL ENTER"
+/ charlimit = 40
+/ linelength = 40
+/ trialcode = "whichhand"
+</openended>
+

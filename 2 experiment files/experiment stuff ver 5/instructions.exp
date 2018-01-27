@@ -1,0 +1,15 @@
+<page real>
+On the following pages, you should rate how pleasant you find each of the words listed.^
+You should use the pictures to judge your ratings, and then use the keyboard to enter your rating.
+These words will be real words that you normally see when reading or speaking.
+</page>
+
+<page fake>
+On the following pages, you should rate how pleasant you find each of the words listed.^
+You should use the pictures to judge your ratings, and then use the keyboard to enter your rating.
+These words will be fake words that you do not normally see when reading or speaking.
+</page>
+
+<page end>
+Thank you for participating in our experiment.  You will receive credit online today or tomorrow.  You may now leave.
+</page>

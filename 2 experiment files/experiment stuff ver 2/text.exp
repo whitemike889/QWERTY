@@ -1,0 +1,1116 @@
+
+<picture sam>
+/ items = ("sam.jpg")
+/ valign = top
+/ erase = false
+/ position = (50,10)
+/ size = (80%, 30%)
+</picture>
+
+<text handintro>
+/ erase = true(220,220,220)
+/ txbgcolor = (220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("Which hand do you write with the most?")
+/ numitems = 1
+/ position = (50,30)
+</text>
+
+<text speed>
+/ erase = true(220,220,220)
+/ txbgcolor = (220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("What was your typing speed?")
+/ numitems = 1
+/ position = (50,30)
+</text>
+
+<text error>
+/ erase = true(220,220,220)
+/ txbgcolor = (220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("What was your typing error?")
+/ numitems = 1
+/ position = (50,30)
+</text>
+
+<text nobe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("nobe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text yofe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("yofe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text nofe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("nofe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text jobe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("jobe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text pobe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("pobe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text mafe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("mafe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text kabe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("kabe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text yate>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("yate")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text jabe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("jabe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text vape>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("vape")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text meef>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("meef")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text neeb>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("neeb")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text tove>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("tove")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text leel>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("leel")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text yeet>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("yeet")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text peka>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("peka")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text melb>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("melb")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text pems>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("pems")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text woem>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("woem")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text alfi>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("alfi")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text yane>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("yane")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text jame>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("jame")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text yame>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("yame")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text tutk>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("tutk")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text anay>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("anay")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text clim>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("clim")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text voke>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("voke")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text dlip>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("dlip")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text slin>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("slin")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text flin>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("flin")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text foof>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("foof")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text soog>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("soog")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text voop>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("voop")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text soob>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("soob")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text voom>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("voom")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text dax>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("dax")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text taxe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("taxe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text waf>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("waf")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text wac>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("wac")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text tez>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("tez")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text veed>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("veed")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text zabe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("zabe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text beeg>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("beeg")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text zafe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("zafe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text tage>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("tage")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lim>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lim")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text nop>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("nop")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text hil>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("hil")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text plin>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("plin")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text pluk>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("pluk")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text yoop>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("yoop")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lik>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lik")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text nilo>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("nilo")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lool>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lool")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text joom>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("joom")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text liar>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("liar")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text life>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("life")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lust>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lust")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text more>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("more")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lids>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lids")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lice>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lice")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text army>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("army")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text cell>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("cell")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text hide>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("hide")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text nude>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("nude")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text wife>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("wife")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text arm>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("arm")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text obey>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("obey")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text pest>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("pest")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text dawn>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("dawn")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text bath>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("bath")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text cute>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("cute")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text wasp>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("wasp")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text frog>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("frog")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text baby>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("baby")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text air>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("air")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text slap>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("slap")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lake>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lake")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text cow>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("cow")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text fish>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("fish")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text bowl>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("bowl")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text girl>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("girl")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text hay>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("hay")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text wish>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("wish")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text name>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("name")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text win>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("win")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text snob>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("snob")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text song>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("song")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text sour>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("sour")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text blue>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("blue")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text cold>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("cold")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text ugly>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("ugly")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text sun>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("sun")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text silk>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("silk")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text tomb>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("tomb")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text zest>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("zest")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text eat>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("eat")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text scar>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("scar")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text sad>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("sad")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text seat>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("seat")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text bees>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("bees")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text star>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("star")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text fat>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("fat")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text bed>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("bed")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text fear>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("fear")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text pom>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("pom")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text yip>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("yip")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text nip>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("nip")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text jip>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("jip")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lip>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lip")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text mom>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("mom")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text noon>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("noon")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text pill>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("pill")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lump>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lump")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text lion>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("lion")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text jufe>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("jufe")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text nuad>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("nuad")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text aqil>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("aqil")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text kige>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("kige")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+
+<text celm>
+/ erase = true(220,220,220)
+/ font = ("Verdana", -18, 400, 0, 34)
+/ items = ("celm")
+/ numitems = 1
+/ position = (50,50)
+/ txbgcolor = (220,220,220)
+</text>
+

@@ -1,0 +1,53 @@
+<include>
+/ file = "instructions.exp"
+/ file = "trials.exp"
+/ file = "text.exp"
+</include>
+
+<data>
+/ columns = [date time subject trialcode trialnum latency response]
+/ format = tab
+</data>
+
+<defaults>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ screencolor = (220,220,220)
+/ txcolor=(0,0,0)
+/ pretrialpause = 500
+/ posttrialpause = 500
+/ endlock = true
+</defaults>
+
+<instruct>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ lastlabel = "Press enter to continue ..."
+/ nextkey = (28)
+/ nextlabel ="Press enter for next page"
+/ prevkey = (14)
+/ prevlabel = "Press Backspace for Previous page"
+/ wait = 1000
+/ windowsize = (640,400)
+</instruct>
+
+<block typingspeed>
+/trials = [ 1 = handedness1; 2 = handedness2; 3 = write; ]
+</block>
+
+<block ratings>
+/preinstructions = (first)
+/ trials = [1-120 = random(1.3.anay,2.5.arm,2.5.art, 2.5.bar,1.5.bih,2.3.blue,2.4.body,2.5.bomb,1.4.boog,2.5.boy,1.1.bryg,2.1.bug,2.5.bus,
+2.1.but,2.1.buy,2.2.cake,2.6.cat,2.2.cell,1.6.celm,2.6.dark,1.2.dax,2.2.dead,1.6.dofe,2.6.dog,2.4.dump,2.6.evil,
+2.5.fat,1.5.feg,2.4.flag,2.4.foam,1.4.foob,2.4.free,1.1.fryn,2.1.fun,2.1.fur,1.5.fuw,1.1.ghun,2.5.grin,1.1.gub,
+1.1.guf,2.3.hard,2.3.hate,1.3.jafe,1.5.jaj,1.3.jofe,1.6.joi,1.5.jufe,1.6.kabe,2.6.kin,2.3.knot,1.2.lale,1.2.lalo,
+2.2.leap,1.2.leel,2.2.lids,1.2.likk,1.6.lim,2.2.lop,2.4.lump,2.6.mask,2.6.milk,1.3.mobe,1.4.moob,1.4.moof,2.4.moon,
+2.3.more,1.1.mur,2.3.name,1.6.nilo,2.5.non,1.4.noof,2.4.nude,1.1.nuv,2.3.obey,2.6.pain,2.4.part,2.1.rug,2.1.guy,
+2.1.rut,1.1.ryng,2.6.scar,2.2.sex,2.2.sick,2.2.slid,2.6.slit,2.2.slow,1.6.soog,2.3.star,1.5.syg,1.3.tage,1.4.teef,
+2.1.thus,2.1.thy,2.4.tidy,2.3.time,1.4.toof,1.3.tove,1.5.tutk,2.5.unit,1.3.vabe,1.5.vaf,1.6.vape,1.6.vook,1.4.voom,
+1.1.vun,1.1.vuy,1.2.xad,1.3.yane,1.3.yave,1.5.yeb,1.4.yeeb,1.3.yome,1.4.yoof,2.3.yore,1.2.zake,1.2.zape,1.2.zeed,1.2.zoke,1.6.zote,1.5.zyr)]
+/ postinstructions = (end)
+</block>
+
+<expt>
+/ blocks = [1=typingspeed; 2=ratings;]
+</expt>
+

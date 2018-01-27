@@ -1,0 +1,552 @@
+\documentclass[english,man]{apa6}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+    \usepackage{xltxtra,xunicode}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+
+% Table formatting
+\usepackage{longtable, booktabs}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\begin{center}\begin{threeparttable}}
+%   {\end{threeparttable}\end{center}\end{landscape}}
+
+\newenvironment{lltable}
+  {\begin{landscape}\begin{center}\begin{ThreePartTable}}
+  {\end{ThreePartTable}\end{center}\end{landscape}}
+
+  \usepackage{ifthen} % Only add declarations when endfloat package is loaded
+  \ifthenelse{\equal{\string man}{\string man}}{%
+   \DeclareDelayedFloatFlavor{ThreePartTable}{table} % Make endfloat play with longtable
+   % \DeclareDelayedFloatFlavor{ltable}{table} % Make endfloat play with lscape
+   \DeclareDelayedFloatFlavor{lltable}{table} % Make endfloat play with lscape & longtable
+  }{}%
+
+
+
+% The following enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand\getlongtablewidth{%
+ \begingroup
+  \ifcsname LT@\roman{LT@tables}\endcsname
+  \global\longtablewidth=0pt
+  \renewcommand\LT@entry[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}%
+  \@nameuse{LT@\roman{LT@tables}}%
+  \fi
+\endgroup}
+
+
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            pdfauthor={},
+            pdftitle={An Extension of the QWERTY Effect: Not Just the Right Hand, Expertise and Typability Predict Valence Ratings of Words},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=black,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\setlength{\parindent}{0pt}
+%\setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+\ifxetex
+  \usepackage{polyglossia}
+  \setmainlanguage{}
+\else
+  \usepackage[english]{babel}
+\fi
+
+% Manuscript styling
+\captionsetup{font=singlespacing,justification=justified}
+\usepackage{csquotes}
+\usepackage{upgreek}
+
+ % Line numbering
+  \usepackage{lineno}
+  \linenumbers
+
+
+\usepackage{tikz} % Variable definition to generate author note
+
+% fix for \tightlist problem in pandoc 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Essential manuscript parts
+  \title{An Extension of the QWERTY Effect: Not Just the Right Hand, Expertise
+and Typability Predict Valence Ratings of Words}
+
+  \shorttitle{QWERTY EFFECT EXTENSION}
+
+
+  \author{Erin M. Buchanan\textsuperscript{1}~\& Kathrene D. Valentine\textsuperscript{2}}
+
+  \def\affdep{{"", ""}}%
+  \def\affcity{{"", ""}}%
+
+  \affiliation{
+    \vspace{0.5cm}
+          \textsuperscript{1} Missouri State University\\
+          \textsuperscript{2} University of Missouri  }
+
+  \authornote{
+    \newcounter{author}
+    Erin M. Buchanan is an Associate Professor of Quantitative Psychology at
+    Missouri State University. K. D. Valentine is a Ph.D.~candidate at the
+    University of Missouri.
+
+                      Correspondence concerning this article should be addressed to Erin M. Buchanan, 901 S. National Ave, Springfield, MO 65897. E-mail: \href{mailto:erinbuchanan@missouristate.edu}{\nolinkurl{erinbuchanan@missouristate.edu}}
+                          }
+
+
+  \abstract{Typing is a ubiquitous daily action for many individuals; yet, research
+on how these actions have changed our perception of language is limited.
+The QWERTY effect is an increase in valence ratings for words typed more
+with the right hand on a traditional keyboard (Jasmin \& Casasanto,
+2012). Although this finding is intuitively appealing given both right
+handed dominance and the smaller number of letters typed with the right
+hand, extension and replication of the right side advantage is
+warranted. The present paper reexamined the QWERTY effect within the
+embodied cognition framework (Barsalou, 1999) and found that the right
+side advantage is replicable to new valence stimuli, as well as
+experimental manipulation. Further, when examining expertise, right side
+advantage interacted with typing speed and typability (i.e.~alternating
+hand keypresses or finger switches) portraying that both skill and our
+procedural actions play a role in judgment of valence on words.}
+  \keywords{keyboard, valence, QWERTY, word norms \\
+
+    
+  }
+
+
+
+
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{solution}{Solution}
+\begin{document}
+
+\maketitle
+
+\setcounter{secnumdepth}{0}
+
+
+
+From its creation in 1868, to its appearance in our homes today, the
+QWERTY keyboard has held the interest of psychologists. The process of
+typing on a keyboard requires many procedures to function in tandem,
+which creates a wealth of actions to research (Inhoff \& Gordon, 1997).
+Rumelhart and Norman's (1982) computer model of skilled typing is still
+highly influential. They hypothesize that typing results from the
+activation of three levels of cognition: the word level, the keypress
+level, and the response level. They believe that after word perception,
+the word level is activated, causing the keypress level to initiate a
+schema of the letters involved in typing the word. This schema includes
+the optimal position on the keyboard for that specific hand-finger
+combination to move to at the appropriate time for individual
+keystrokes. Concurrently, the response system sends feedback information
+to initiate a keypress motion when the finger is in the appropriate
+space. Their theory proposes that schemata and motion activations occur
+simultaneously, constantly pulling or pushing the hands and fingers in
+the right direction.
+
+While many studies have focused on errors in typing to investigate
+response system feedback (F. A. Logan, 1999), G. D. Logan (2003) argued
+for parallel activation of keypresses. He examined the Simon effect to
+show more than one letter is activated at the same time, and
+consequently, the second keypress motion is begun before the first
+keypress is done. The Simon effect occurs when congruent stimuli create
+faster responses than incongruent stimuli, much like the Stroop task
+(Simon, 1990; Simon \& Small, 1969). For example, if we are asked to
+type the letter f (a left handed letter), we type it faster if the f is
+presented on the left side of the screen. Similarly, Rieger (2004)
+reported finger-congruency effects by altering a Stroop task:
+participants were required to respond to centrally presented letters
+based on color-key combinations. When the letter and color were
+congruent (i.e.~a right-handed letter was presented in the designated
+color for a right response), the skilled typists' responses were faster
+than incongruent combinations. Further, this effect was present when
+participants responded to items with their hands crossed on the
+responding device, suggesting the effect was expertise-based rather than
+experiment-response based. These results imply that automatic actions
+stimulate motor and imagery representations concurrently and may be
+linked together in the brain (Hommel, Müsseler, Aschersleben, \& Prinz,
+2001; G. D. Logan \& Zbrodoff, 1998; Rieger, 2004). This dual activation
+of motor and imagined items is the basis for embodied cognition, a
+rapidly expanding field in psychology (Barsalou, 1999; Salthouse, 1986).
+
+\subsection{Embodied Cognition}\label{embodied-cognition}
+
+While the mind was traditionally considered an abstract symbol processor
+(Newell \& Simon, 1976), newer cognitive psychology theories focus on
+the interaction between the brain's sensorimotor systems and mental
+representations of events and objects (Barsalou, 1999; Zwaan, 1999). The
+interplay between these systems has been found in both neurological
+(Hauk, Johnsrude, \& Pulvermüller, 2004; Lyons et al., 2010; Tettamanti
+et al., 2005) and behavioral research (Cartmill, Goldin-Meadow, \&
+Beilock, 2012; Holt \& Beilock, 2006; Zwaan \& Taylor, 2006). Motor
+representations of tasks are activated even when not specifically asked
+to perform the task, and if the action is well-learned, the task is
+perceived as pleasant (Beilock \& Holt, 2007; Ping, Dhillon, \& Beilock,
+2009; Yang, Gallo, \& Beilock, 2009). For example, Beilock and Holt
+(Beilock \& Holt, 2007) asked novice and expert typists to pick which
+one of two letter dyads they preferred, which were either different hand
+combinations (CJ) or same finger combinations (FV). They found that
+novices have no preference in selection, while expert typists more
+reliably picked the combinations that were easier to type. To show that
+this effect was due to covert motor representation activation, and thus,
+expanding on findings from Van den Bergh, Vrana, and Eelen (1990),
+participants also made preference selections while repeating a keypress
+combination. When expert motor planning was distracted by remembering
+the pattern presented, no preference for letter dyads was found,
+indicating that the simultaneous activation of the motor representation
+was necessary to influence their likability ratings. Similar embodied
+findings have also been portrayed with emotionally charged sentences and
+facial movements (Havas, Glenberg, \& Rinck, 2007), positive-negative
+actions, such as head nodding or arm movements (Glenberg, Webster,
+Mouilso, Havas, \& Lindeman, 2009; Ping et al., 2009), and
+perceptuomotor fluency (Oppenheimer, 2008; Yang et al., 2009).
+
+\subsection{Body Specificity
+Hypothesis}\label{body-specificity-hypothesis}
+
+Using an embodied framework, Casasanto (2009) has proposed that
+handedness dictates preference because our representations of actions
+are grounded in our physical interactions with the environment. In
+several studies, he portrayed that handedness influenced preference for
+spatial presentation (i.e.~left handed individuals associate
+\enquote{good} with left, while right handed individuals associate
+\enquote{good} with right), which in turn influenced judgments of
+happiness and intelligence and our decision making in hiring job
+candidates and shopping. In all these studies, participants reliably
+selected the hand-dominant side more often, which does not match
+cultural or neurolinguistic representations of positive-is-right and
+negative-is-left (Davidson, 1992). These findings imply that our
+handedness is a motor expertise that causes ease of action on the
+dominant side to positively influence our perceptions of items presented
+on that side. Further, Casasanto (2011) compiled a review of body
+specific actions and their representation in the brain using fMRIs.
+Handedness interacted with imagining actions, reading action, and
+perceiving the meanings of action verbs, such that fMRI patterns were
+mirrored for left and right handed participants matching their dominant
+side.
+
+\subsection{The QWERTY Effect}\label{the-qwerty-effect}
+
+These effects inspired Jasmin and Casasanto (2012) to propose the idea
+that typing, an action that often replaces speaking, has the ability to
+create semantic changes in how we perceive words. The asymmetrical
+arrangement of letters on the QWERTY keyboard increases fluency of
+typing letters on the right side because there are fewer keys, and thus,
+less competition for fingers. That arrangement should then cause us to
+perceive the letters on the right side as more positive and letters on
+the left side as more negative. Consequently, words that are composed of
+more letters from the right side (the right side advantage; RSA) should
+be rated as more positive than those with more letters on the left. They
+found this preference for RSA over three languages (English, Spanish,
+and Dutch), and the effect was even stronger on words created after the
+invention of the QWERTY keyboard (i.e.~lol), as well as evident in
+pseudowords such as plook. However, in contrast to the body specificity
+hypothesis, left and right handed participants showed the same trend in
+effects for positive-is-right words.
+
+\section{Current Study}\label{current-study}
+
+The current study examined the right side advantage's interaction with
+traditional embodied cognition definitions (expertise, fluency). We
+analyzed the different implications of the body specificity hypothesis
+and a more general embodied hypothesis by testing the following: 1) To
+examine embodied cognition, we coded each word for number of hand
+alternations (akin to Beilock and Holt's (2007) different hand
+preferences). Given that typing involves the procedural action system,
+we would also expect to find that increased hand switches are positively
+related to ratings of valence because words that are typed on
+alternating hands are easier to type. 2) The interaction between RSA and
+switches was examined to determine if these hypotheses can be combined
+(i.e.~we only like right handed words because we have to switch back and
+forth to type the more commonly used letters, such as \emph{e} or
+\emph{a}).
+
+\section{Experiment 1}\label{experiment-1}
+
+\section{Method}\label{method}
+
+\subsection{Participants}\label{participants}
+
+Participants (\emph{N} = 546) were recruited from the university
+undergraduate human subject pool and received course credit for their
+time. 65233 rows of data were present for these participants, where 504
+participants included complete data (i.e.~120 rows, see below), 39 were
+missing one data point, and 3 were missing many data points. All data
+points were included, and missing data points were usually computer
+error (i.e.~freezing during the experiment) or participant error
+(i.e.~missed key press).
+
+Rating data were screened for multivariate outliers, and one
+participant's ratings were found to have extreme Mahalanobis distance
+scores (Tabachnick \& Fidell, 2012) but were kept in the data set. 11.5
+percent of the sample was left-handed, 0.2 marked ambigdextrious, and
+0.4 was missing handedness information. The average typing speed was
+48.20 (\emph{SD} = 13.45, and the average percent accuracy rate for the
+typing test was 92.59 (\emph{SD} = 8.63).
+
+\subsection{Materials}\label{materials}
+
+Both Experiment 1 and Experiment 2 use the English ANEW (Bradley \&
+Lang, 1999) norms to create stimuli for this study, in an effort to
+replicate Jasmin and Casasanto's (2012) experiments, and 240 words were
+selected for this experiment (120 real words, 120 pseudowords).
+Pseudowords were selected from Appendix E of the supplementary materials
+presented from the QWERTY publication. These words were coded as
+described below for RSA, switches, word length, and letter frequency.
+Average word length was 4.85 (\emph{SD} = 1.51; range = 3 - 13).
+
+\subsection{Coding}\label{coding}
+
+Each of the words used in this experiment and Experiment 2 were coded
+for control and experimental variables. Control variables included word
+length and average letter frequency. Average letter frequency was
+created by averaging the English letter frequency (Lewand, 2000) for
+each letter in a word. Words with high average letter frequencies
+contain more commonly used letters (\emph{e, t, a, o}); while words with
+lower frequencies use more of the less common letters (\emph{z, q, x,
+j}). Experimental variables included RSA, number of hand switches, and
+number of finger switches. Typing manuals were consulted, and letters
+were coded as left (\emph{q, w, e, r, t, a, s, d, f, g, z, x, c, v, b})
+or right-handed letters (\emph{y, u, i, o, p, h, j, k, l, n, m}). Left
+handed letters were coded with -1 and right handed letters with +1,
+which created summed scores indicating the overall right side advantage
+for a word. Words were coded for the number of hand switches within a
+word using the left-right coding system described above. Finally, the
+number of finger switches were coded using traditional typing manuals
+for each finger. Finger switches was highly correlated with word length,
+\emph{r} = .89, and therefore, word length was excluded as a control
+variable due the interest in typing skill for experimental hypotheses.
+
+\subsection{Procedure}\label{procedure}
+
+Upon consent to participate in the experiment, participants were given a
+typing test by using a free typing test website (TypingMaster, Inc.,
+2013). Each participant typed Aesop's Fables for one minute before the
+website would reveal their typing speed and accuracy rate, which was
+recorded by the experimenter. After this test, participants indicated
+their dominant writing hand. Participants were then given 120 of the 240
+stimuli to rate for pleasantness (60 real words, 60 pseudowords). This
+smaller number of stimuli was used to control fatigue/boredom on
+participants. These stimuli were counterbalanced across participants,
+and the order of the stimuli was randomized. Participants were told to
+rate each word for how pleasant it seemed using a 9 point Likert type
+scale (1 - \emph{very unpleasant}, 4 - \emph{neutral}, 9 - \emph{very
+pleasant}). The same self-assessment manikin from Jasmin and Casasanto
+(2012) was shown to participants at the top of the computer screen to
+indicate the points on the Likert scale. The words appeared in the
+middle of the screen in 18 point Arial font. Participants then typed the
+number of their rating on the computer keyboard. Once they rated all
+stimuli, participants were debriefed and allowed to leave.
+
+\section{Results}\label{results}
+
+\subsection{Data Analytic Plan}\label{data-analytic-plan}
+
+Because each participant constituted multiple data points within the
+dataset, a multilevel model was used to control for correlated error
+({\textbf{???}}). ({\textbf{???}})'s \emph{nlme} package in \emph{R} was
+used to calculate these analyses. A maximum likelihood multilevel model
+was used to examine hypotheses of interactions between typing speed,
+hand/finger switching, and RSA while controlling for letter frequency
+predicting item pleasantness ratings. Participants were included as a
+random intercept factor. Typing speed, finger/hand switches, and RSA
+were mean centered before analyses to control for multicollinearity.
+
+\subsection{Main Effects}\label{main-effects}
+
+\subsection{Interactions}\label{interactions}
+
+\section{Experiment 2}\label{experiment-2}
+
+\section{Method}\label{method-1}
+
+\subsection{Participants}\label{participants-1}
+
+Similar to Experiment 1, sixty participants were recruited from the
+university undergraduate human subject pool and received course credit
+for their time. Rating data were screened for multivariate outliers.
+Again, one participant's ratings were found to have extreme Mahalanobis
+distance scores (Tabachnick \& Fidell, 2012). However, this individual's
+ratings were left in the data set. Approximately 8 percent of the sample
+was left-handed. The average percent accuracy rate for the typing test
+was 93.58 (\emph{SD} = 5.26).
+
+\subsection{Procedure}\label{procedure-1}
+
+While materials and coding were the same for Experiments 1 and 2,
+procedure for Experiment 2 differed slightly. In this study, when
+participants were shown the word (or pseudoword) on the screen, they
+were first asked to type the word on the keyboard in front of them.
+After they had typed the word, they were then asked to rate the word for
+pleasantness using the scale and self-assessment manikin discussed
+previously.
+
+\section{Results}\label{results-1}
+
+\subsection{Main Effects}\label{main-effects-1}
+
+\subsection{Interactions}\label{interactions-1}
+
+\section{Discussion}\label{discussion}
+
+YADA SCHMADA CHANGE THIS SECTION These results imply that the QWERTY
+keyboard has influenced our perceptions of words, in a more complex way
+than a simple body specificity hypothesis. In the overall normed
+database analyses, the original QWERTY effect was replicable across a
+large body of various types of stimuli (verbs, Twitter, category norms),
+with much the same size of effect as Jasmin and Casasanto (2012)
+published. Word length was often negatively related to valence ratings,
+which indicated that we like shorter words to type. Average letter
+frequency was usually a positive predictor of valence ratings wherein
+ratings are higher for words with more frequent letters; however, these
+effects were inconsistent. Our measure of fluency (switches) varied
+across stimulus sets but it appears, by analyzing multiple sources of
+ratings for words at the same time, that there might have been an
+interaction between RSA and number of switches. This interaction
+portrayed that we find words that switch off of left-handed keypresses
+as more pleasant, while right-handed keypresses are preferable by
+switching hands less often. These effects were examined in more detail
+in Experiment 2, which incorporated Beilock and Holt's (2007) study by
+including typing speed as a measure of expertise. Word ratings turned
+out to be quite complex with a four-way interaction between
+real/pseudowords, switches, RSA, and typing speed. All analyses showed a
+positive effect of right-side words, as well as if they were shorter and
+used more frequent letters. However, for pseudowords, no other effects
+were significant. Both Beilock and Holt (2007) and Van der Bergh et al.
+(1990) showed expert preferences for two and three letter combinations
+that were typed with different fingers. Our results could imply that our
+embodied actions influence preferences for procedures that are more
+likely in our environment. While our pseudowords were legal English
+phoneme combinations, they are extremely unlikely to have been
+previously practiced or encountered in our daily tasks. Therefore,
+switching preference will not extend to pseudowords (unpracticed
+actions) because they are not fluent (Oppenheimer, 2008).
+
+The effect of expertise was shown on real words, where the three-way
+interaction between RSA, switches, and typing speed was examined by
+separating out right, equal, and left-handed words. For right-handed
+words, typing speed (or the interaction) was not a significant predictor
+of valence, and while not significant, number of switches was negatively
+related to valence ratings. For equally right-left and left-handed
+words, pleasantness ratings increase by switching back and forth to the
+right hand. Further, left-handed words showed an interaction between our
+two embodied cognition variables, where the number of switches increases
+valence ratings as the typing speed of the participant decreases.
+Therefore, it appears that as participants gain fluency through
+increased typing speed, the number of switches back and forth for
+left-handed words matters less for pleasantness ratings. Many of the
+most frequent letters on the QWERTY keyboard are on the left side, which
+may frustrate a slow typist because of the need to coordinate finger
+press schemata that involve same finger muscle movements (Rumelhart \&
+Norman, 1982). Consequently, the number of switches becomes increasingly
+important to help decrease interference from the need to continue to use
+the same hand. The ease of action by switching back and forth is then
+translated as positive feelings for those fluent actions (Oppenheimer,
+2008).
+
+These embodied results mirror a clever set of studies by Holt and
+Beilock (2006) wherein they showed participants sentences that matched
+or did not match a set of pictures (i.e.~the umbrella is in the air
+paired with a picture of an open umbrella). Given dual-coding theory
+(Paivio, 1971), it was not surprising that participants were faster to
+indicate picture-sentence matches than non-matches (also see Stanfield
+\& Zwaan, 2001; Zwaan, Stanfield, \& Yaxley, 2002). Further, they showed
+these results extended to an expertise match; hockey and football
+players were much faster for sentence-picture combinations that matched
+within their sport than non-matches, while novices showed no difference
+in speed for matches or non-matches on sports questions. Even more
+compelling are results that these effects extend to fans of a sport and
+are consistent neurologically (i.e.~motor cortex activation in experts;
+Beilock \& Lyons, 2008). These studies clearly reinforce the idea that
+expertise and fluency unconsciously affect our choices, even when it
+comes to perceived pleasantness of words.
+
+This extension of the QWERTY effect illuminates the need to examine how
+skill can influence cognitive processes. Additionally, typing style,
+while not recorded in this experiment, could potentially illuminate
+differences in ratings across left-handed and right-handed words.
+Hunt-and-peck typists are often slower than the strict typing manual
+typists, which may eliminate or change the effects of RSA and switches
+since typists may not follow left or right hand rules and just switch
+hands back and forth regardless of key position. The middle of a QWERTY
+layout also poses interesting problems, as many typists admit to
+\enquote{cheating} the middle letters, such as t, and y or not even
+knowing which finger should actually type the b key. Further work could
+also investigate these effects on other keyboard layouts, such as
+Dvorak, which was designed to predominately type by alternating hands to
+increase speed and efficiency (Noyes, 1988).
+
+\newpage
+
+\section{References}\label{references}
+
+\setlength{\parindent}{-0.5in} \setlength{\leftskip}{0.5in}
+
+\hypertarget{refs}{}
+\hypertarget{ref-Inhoff1997}{}
+Inhoff, A. W., \& Gordon, A. M. (1997). Eye Movements and Eye-Hand
+Coordination During Typing. \emph{Current Directions in Psychological
+Science}, \emph{6}(6), 153--157.
+doi:\href{https://doi.org/10.1111/1467-8721.ep10772929}{10.1111/1467-8721.ep10772929}
+
+
+
+
+
+
+\end{document}

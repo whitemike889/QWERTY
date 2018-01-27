@@ -1,0 +1,61 @@
+<include>
+/ file = "instructions.exp"
+/ file = "trials.exp"
+/ file = "text.exp"
+</include>
+
+<data>
+/ columns = [date time subject trialcode trialnum latency response]
+/ format = tab
+</data>
+
+<defaults>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ screencolor = (220,220,220)
+/ txcolor=(0,0,0)
+/ pretrialpause = 500
+/ posttrialpause = 500
+/ endlock = true
+</defaults>
+
+<instruct>
+/ font = ("Verdana", -13, 400, 0, 34)
+/ lastlabel = "Press enter to continue ..."
+/ nextkey = (28)
+/ nextlabel ="Press enter for next page"
+/ prevkey = (14)
+/ prevlabel = "Press Backspace for Previous page"
+/ wait = 1000
+/ windowsize = (640,400)
+</instruct>
+
+<block typingspeed>
+/trials = [ 1 = handedness1; 2 = handedness2; 3 = write; ]
+</block>
+
+<block ratings>
+/preinstructions = (first)
+/ trials = [1-120 = random(1yote,1jote,1mobe,1yove,
+1yoze,2zote,2zofe,2pabe,2zoge,2yage,3yeem,3zape,
+3tofe,3jeet,3vofe,4slek,4spak,4pame,4peks,4pame,
+5lale,5rocl,5rorp,5mepe,5alak,6fope,6pome,
+6zoke,6zope,6yope,7zood,7toog,7yoob,7noof,
+7doof,8resz,8saf,8zet,8zers,8faw,9zade,9dafe,
+9tafe,9zeeg,9zeef,10hilp,10joi,10hok,10kop,
+10mok,11kiy,11poom,11yoon,11hiol,11yoom,
+12balm,12balk,12pore,12slit,12rain,13kids,
+13scum,13grin,13kiss,13nice,14game,14mad,
+14pet,14heal,14hat,15farm,15dirt,15rude,15idea,
+15part,16lamb,16city,16foam,16cozy,16rock,
+17man,17hand,17burn,17sick,17fur,18lamp,18joke,
+18hit,18boy,18wine,19foul,19shy,19chin,19mind,
+19kind,20save,20car,20cat,20safe,20war,21rat,
+21face,21vest,21debt,21ace,22pin,22hop,22mop,22hip,
+22limp,23joy,23kin,23nun,23milk,23ill,24deho,24olra,24loac,24frol,24edop)]
+/ postinstructions = (end)
+</block>
+
+<expt>
+/ blocks = [1=typingspeed; 2=ratings;]
+</expt>
+

@@ -74,6 +74,7 @@ The current study examined the right side advantage's interaction with tradition
 ## Participants
 
 ```{r datascreen, include=FALSE}
+
 ####import files####
 exp1data = read.csv("exp1_final.csv")
 

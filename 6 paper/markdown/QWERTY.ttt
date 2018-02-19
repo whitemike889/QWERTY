@@ -1,0 +1,62 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:model-table1}Area under curve model statistics}
+\begin{tabular}{lccccccc}
+\toprule
+Word Type & Model & $df$ & AIC & BIC & $\chi^2$ & $\Delta\chi^2$ & $p$\\
+\midrule
+Pseudo & Intercept Only & 2 & 130416.47 & 130433.25 & -65206.24 & NA & NA\\
+Pseudo & Random Intercept & 3 & 122403.95 & 122429.12 & -61198.97 & 8014.52 & < .001\\
+Pseudo & Control Variables & 4 & 122405.44 & 122439.00 & -61198.72 & 0.51 & .476\\
+Pseudo & Main Effects & 8 & 122204.31 & 122271.44 & -61094.16 & 209.13 & < .001\\
+Pseudo & Interactions & 19 & 122197.68 & 122357.09 & -61079.84 & 28.64 & .003\\
+Real & Intercept Only & 2 & 151926.51 & 151943.30 & -75961.26 & NA & NA\\
+Real & Random Intercept & 3 & 150478.20 & 150503.38 & -75236.10 & 1450.32 & < .001\\
+Real & Control Variables & 4 & 150457.14 & 150490.72 & -75224.57 & 23.06 & < .001\\
+Real & Main Effects & 8 & 150354.18 & 150421.34 & -75169.09 & 110.96 & < .001\\
+Real & Interactions & 19 & 150315.00 & 150474.50 & -75138.50 & 61.18 & < .001\\
+\bottomrule
+\addlinespace
+\end{tabular}
+\begin{tablenotes}[para]
+\textit{Note.} AIC: Aikaike Information Criterion, BIC: Bayesian Information Criterion
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table*}
+\efloatseparator
+ 
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:model-table2}Area under curve model statistics}
+\begin{tabular}{lccccccc}
+\toprule
+Word Type & Model & $df$ & AIC & BIC & $\chi^2$ & $\Delta\chi^2$ & $p$\\
+\midrule
+Pseudo & Intercept Only & 2 & 13715.38 & 13727.76 & -6855.69 & NA & NA\\
+Pseudo & Random Intercept & 3 & 12190.54 & 12209.10 & -6092.27 & 1526.85 & < .001\\
+Pseudo & Control Variables & 4 & 12192.17 & 12216.92 & -6092.08 & 0.37 & .543\\
+Pseudo & Main Effects & 8 & 12152.25 & 12201.76 & -6068.13 & 47.91 & < .001\\
+Pseudo & Interactions & 19 & 12127.85 & 12245.44 & -6044.93 & 46.40 & < .001\\
+Real & Intercept Only & 2 & 16133.38 & 16145.76 & -8064.69 & NA & NA\\
+Real & Random Intercept & 3 & 15922.15 & 15940.72 & -7958.08 & 213.23 & < .001\\
+Real & Control Variables & 4 & 15898.69 & 15923.45 & -7945.35 & 25.46 & < .001\\
+Real & Main Effects & 8 & 15812.18 & 15861.69 & -7898.09 & 94.51 & < .001\\
+Real & Interactions & 19 & 15734.48 & 15852.06 & -7848.24 & 99.71 & < .001\\
+\bottomrule
+\addlinespace
+\end{tabular}
+\begin{tablenotes}[para]
+\textit{Note.} AIC: Aikaike Information Criterion, BIC: Bayesian Information Criterion
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table*}
+\efloatseparator
+ 

@@ -35,9 +35,9 @@ lineno            : yes
 
 lang              : "english"
 class             : "man"
-output            : 
-  papaja          ::apa6_pdf:
-    citation_package: biblatex
+output            : papaja::apa6_pdf
+relpace_ampersands: yes
+csl               : apa6.csl
 ---
 
 ```{r load_packages, include = FALSE}

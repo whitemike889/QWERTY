@@ -331,136 +331,138 @@ apa_table.latex(tableprint,
 ```
 
 ```{r interactions1, include = FALSE}
-####break up by speed fake####
-##speed by RSA, speed by fingerswitch, fingerswitch by RSA
-fake$lowspeed = fake$speed + sd(fake$speed)
-fake$highspeed = fake$speed - sd(fake$speed)
+####fake words rsa by speed and rsa by fingerswitch####
+##create simple groups
+fake$lowrha = fake$rha + sd(fake$rha)
+fake$highrha = fake$rha - sd(fake$rha)
 
-model5fl = lme(rating ~ letterfreq + lowspeed*lrswitch*fingerswitch*rha, 
+model5fl = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*lowrha, 
               data = fake, 
               method = "ML", 
               na.action = "na.omit",
               random = ~1|partno)
-summary(model5fl)
 
-model5fh = lme(rating ~ letterfreq + highspeed*lrswitch*fingerswitch*rha, 
-               data = fake, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5fh)
-
-####break up speed REAL###
-####speed:lrswitch:fingerswitch####
-real$lowspeed = real$speed + sd(real$speed)
-real$highspeed = real$speed - sd(real$speed)
-
-model5rl = lme(rating ~ letterfreq + lowspeed*lrswitch*fingerswitch*rha, 
-              data = real, 
+model5fh = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*highrha, 
+              data = fake, 
               method = "ML", 
               na.action = "na.omit",
               random = ~1|partno)
-summary(model5rl)
 
-####double moderation####
-##break down the low and average speed for hand switches
-real$lowlrswitch = real$lrswitch + sd(real$lrswitch)
-real$highlrswitch = real$lrswitch - sd(real$lrswitch)
+summary(model5fl)
+summary(model5f)
+summary(model5fh)
+##speed is 3 fingerswitch is 5
 
-##low speed low hand switch
-model5rll = lme(rating ~ letterfreq + lowspeed*lowlrswitch*fingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5rll)
-
-model5rlh = lme(rating ~ letterfreq + lowspeed*highlrswitch*fingerswitch*rha, 
-                data = real, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-summary(model5rlh)
-
-model5ral = lme(rating ~ letterfreq + speed*lowlrswitch*fingerswitch*rha, 
-                data = real, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-summary(model5ral)
-
-model5rah = lme(rating ~ letterfreq + speed*highlrswitch*fingerswitch*rha, 
-                data = real, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-summary(model5rah)
-
-model5rh = lme(rating ~ letterfreq + highspeed*lrswitch*fingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5rh)
-
-####lrswitch:fingerswitch:rha ####
-##break down by hand switching
-##then by finger switching
+####real words, finger by hand by rsa and finger by hand by speed####
+##break down by finger then hand
 real$lowfingerswitch = real$fingerswitch + sd(real$fingerswitch)
 real$highfingerswitch = real$fingerswitch - sd(real$fingerswitch)
 
-model5rl2 = lme(rating ~ letterfreq + speed*lowlrswitch*fingerswitch*rha, 
+model5rl = lme(rating ~ letterfreq + speed*lrswitch*lowfingerswitch*rha, 
               data = real, 
               method = "ML", 
               na.action = "na.omit",
               random = ~1|partno)
-summary(model5rl2)
+model5rh = lme(rating ~ letterfreq + speed*lrswitch*highfingerswitch*rha, 
+              data = real, 
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
 
-model5rll2 = lme(rating ~ letterfreq + speed*lowlrswitch*lowfingerswitch*rha, 
-                data = real, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-summary(model5rll2)
+summary(model5rl)
+summary(model5r)
+summary(model5rh)
 
-model5rlh2 = lme(rating ~ letterfreq + speed*lowlrswitch*highfingerswitch*rha, 
-                data = real, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-summary(model5rlh2)
+##hand by rsa is 11, hand by speed is 7
+##low hand by rsa is sig, speed by hand is not
+##avg hand by rsa is not, speed by hand is not
+##high hand by rsa is sig, speed by hand is sig
 
-model5rh2 = lme(rating ~ letterfreq + speed*highlrswitch*fingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5rh2)
+##break down by hand for low and high, give average scores as what they are
+real$lowlrswitch = real$lrswitch + sd(real$lrswitch)
+real$highlrswitch = real$lrswitch - sd(real$lrswitch)
 
-model5rhl2 = lme(rating ~ letterfreq + speed*highlrswitch*lowfingerswitch*rha, 
-                data = real, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-summary(model5rhl2)
+##low finger switch
+model5rll = lme(rating ~ letterfreq + speed*lowlrswitch*lowfingerswitch*rha, 
+              data = real, 
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
 
-model5rhh2 = lme(rating ~ letterfreq + speed*highlrswitch*highfingerswitch*rha, 
-                 data = real, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-summary(model5rhh2)
+model5rlh = lme(rating ~ letterfreq + speed*highlrswitch*lowfingerswitch*rha, 
+              data = real, 
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
+
+summary(model5rll)
+summary(model5rl)
+summary(model5rlh)
+
+##high finger switch
+model5rhl = lme(rating ~ letterfreq + speed*lowlrswitch*highfingerswitch*rha, 
+              data = real, 
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
+model5rhh = lme(rating ~ letterfreq + speed*highlrswitch*highfingerswitch*rha, 
+              data = real, 
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
+
+summary(model5rhl)
+summary(model5rh)
+summary(model5rhh)
 ```
+
+```{r int-excel, include = FALSE}
+
+summary(model5fl)$tTable
+summary(model5f)$tTable
+summary(model5fh)$tTable
+summary(model5rl)$tTable
+summary(model5r)$tTable
+summary(model5rh)$tTable
+summary(model5rll)$tTable
+summary(model5rlh)$tTable
+summary(model5rhl)$tTable
+summary(model5rhh)$tTable
+
+excelprint = matrix(NA, nrow = 54, ncol = 8)
+colnames(excelprint) = c("Word Type", "Model", "Predictor", "Estimate", "SE","df", "t", "p")
+
+excelprint[1:17, 1] = c("Psuedo")
+excelprint[1:17, 2] = c("Low RSA")
+excelprint[1:17, 3] = c(rownames(summary(model5fl)$tTable))
+excelprint[1:17, 4:8] = summary(model5fl)$tTable
+
+
+
+write.csv(excelprint, "Interaction Statistics Exp 1.csv", row.names = F)
+
+```
+
 
 Next, the four-way interaction of typing speed, finger switching, hand switching, and RSA was entered into the equation, including all the smaller two- and three-way interactions. We focused on the most complext interaction found, breaking down interaction terms into simple slopes of low (-1SD), average, and high (+1SD) to explore each effect. For example, if the four-way interaction was significant, one variable would be broken into simple slopes, and the next most complex interactions would be examined. This procedure was iterated until the interactions were no longer significant or only main effects were examined. When multiple interactions were present, we choose a common variable to help break down the interactions with the least number of steps. Table \@ref(tab:model-table1) portrays that the addition of the interaction components was significant for both pseudoword, *p* = .003, and real word, *p* < .001, models. 
 
 ### Pseudoword Simple Slopes
-For pseudowords, finger switches X RSA, *b* = `r apa(summary(model5f)$tTable[12,1], 2)`, *t*(`r summary(model5f)$tTable[12,3]`) = `r apa(summary(model5f)$tTable[12,4],2)`, *p* < .001, and typing speed X RSA, *b* = `r apa(summary(model5f)$tTable[10,1], 2)`, *t*(`r summary(model5f)$tTable[10,3]`) = `r apa(summary(model5f)$tTable[10,4],2)`, *p* = `r apa(summary(model5f)$tTable[10,5],3,F)` were the only significant interactions. 
+For pseudowords, finger switches by RSA, *b* = `r apa(summary(model5f)$tTable[12,1], 2)`, *t*(`r summary(model5f)$tTable[12,3]`) = `r apa(summary(model5f)$tTable[12,4],2)`, *p* < .001, and typing speed by RSA, *b* = `r apa(summary(model5f)$tTable[10,1], 2)`, *t*(`r summary(model5f)$tTable[10,3]`) = `r apa(summary(model5f)$tTable[10,4],2)`, *p* = `r apa(summary(model5f)$tTable[10,5],3,F)` were the only significant interactions. 
 
 HERE I THINK WE SHOULD BREAK THIS DOWN BY RSA SINCE IT'S THE SIMILAR ONE BETWEEN THE TWO. 
 
+##increasing RSA leads to:
+##less importance of expertise (speed variable goes from positive to closer to zero)
+##less importance of fingerswitching (goes from negative to closer to zero)
+
+--  so to explain why finger switch is negative we may be able to relate this to captcha ... in thinking about how we type those, we usually type them with one finger so switching is not so big deal 
+-- so as it's more left, we hate that it switches fingers, which leads to the RSA ... as it's more right handed the number of switches doesn't matter
+-- as it's more left, typing speed is important and plays a positive role, as it's more right, speed not so important. 
+
+
 ### Real Word Simple Slopes
-For real words, the three-way interactions of finger switch X hand switch X RSA, *b* = `r apa(summary(model5r)$tTable[16,1], 2)`, *t*(`r summary(model5r)$tTable[16,3]`) = `r apa(summary(model5r)$tTable[16,4],2)`, *p* < .001, and speed X finger switch X hand switch, *b* = `r apa(summary(model5r)$tTable[13,1], 2)`, *t*(`r summary(model5r)$tTable[13,3]`) = `r apa(summary(model5r)$tTable[13,4],2)`, *p* = `r apa(summary(model5r)$tTable[13,5],3,F)`, were the largest significant interaction predictors. 
+For real words, the three-way interactions of finger switch by hand switch by RSA, *b* = `r apa(summary(model5r)$tTable[16,1], 2)`, *t*(`r summary(model5r)$tTable[16,3]`) = `r apa(summary(model5r)$tTable[16,4],2)`, *p* < .001, and speed by finger switch by hand switch, *b* = `r apa(summary(model5r)$tTable[13,1], 2)`, *t*(`r summary(model5r)$tTable[13,3]`) = `r apa(summary(model5r)$tTable[13,4],2)`, *p* = `r apa(summary(model5r)$tTable[13,5],3,F)`, were the largest significant interaction predictors.
+
 
 BREAK THIS DOWN BY FINGER, THEN HAND, SEE WHAT HAPPENS WITH SPEED AND RSA
 

@@ -168,7 +168,7 @@ Upon consent to participate in the experiment, participants were given a typing 
 
 Because each participant constituted multiple data points within the dataset, a multilevel model was used to control for correlated error [@Gelman2006]. @Pinheiro2017's *nlme* package in *R* was used to calculate these analyses. A maximum likelihood multilevel model was used to examine hypotheses of interactions between typing speed, hand/finger switching, and RSA while adjusting for letter frequency when predicting item pleasantness ratings. Pseudowords and real words were examined separately in two multilevel model analyses. Participants were included as a random intercept factor, as comparison to a non-random intercept was significant (see Table \@ref(tab:model-table1)). Typing speed, finger/hand switches, and RSA were mean centered before analyses to control for multicollinearity.  
 
-```{r setupexp1, include=FALSE}
+```{r setupexp1, include = FALSE}
 ####separate real fake####
 real = subset(exp1data,real_fake == "real")
 fake = subset(exp1data,real_fake == "fake")
@@ -1059,6 +1059,93 @@ This extension of the QWERTY effect illuminates the need to examine how skill ca
 \newpage
 
 # References
+
+```{r testing, include = FALSE}
+
+tempexp2 = subset(exp1data, trialcode %in% exp2data$trialcode)
+tempexp2$rha = scale(tempexp2$rha, scale = F)
+tempexp2$fingerswitch = scale(tempexp2$fingerswitch, scale = F)
+tempexp2$lrswitch = scale(tempexp2$lrswitch, scale = F)
+tempexp2$speed = scale(tempexp2$speed, scale = F)
+
+real = subset(tempexp2, real_fake == "real")
+fake = subset(tempexp2, real_fake == "fake")
+
+####intercept only model####
+model1f = gls(rating ~ 1, 
+             data = fake, 
+             method = "ML", 
+             na.action = "na.omit")
+summary(model1f)
+
+model1r = gls(rating ~ 1, 
+             data = real, 
+             method = "ML", 
+             na.action = "na.omit")
+summary(model1r)
+
+####random intercept only model####
+model2f = lme(rating ~ 1, 
+             data = fake, 
+             method = "ML", 
+             na.action = "na.omit",
+             random = ~1|partno)
+summary(model2f)
+
+model2r = lme(rating ~ 1, 
+             data = real, 
+             method = "ML", 
+             na.action = "na.omit",
+             random = ~1|partno)
+summary(model2r)
+
+
+####controls predictor models####
+model3f = lme(rating ~ letterfreq, 
+              data = fake, 
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
+summary(model3f)
+
+model3r = lme(rating ~ letterfreq, 
+             data = real, 
+             method = "ML", 
+             na.action = "na.omit",
+             random = ~1|partno)
+summary(model3r)
+
+####main effects models####
+model4f = lme(rating ~ letterfreq + speed + lrswitch + fingerswitch + rha, 
+             data = fake, 
+             method = "ML", 
+             na.action = "na.omit",
+             random = ~1|partno)
+summary(model4f)
+
+model4r = lme(rating ~ letterfreq + speed + lrswitch + fingerswitch + rha, 
+             data = real, 
+             method = "ML", 
+             na.action = "na.omit",
+             random = ~1|partno)
+summary(model4r)
+
+####interaction models####
+model5f = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*rha, 
+              data = fake, 
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
+summary(model5f)
+
+model5r = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*rha, 
+              data = real,
+              method = "ML", 
+              na.action = "na.omit",
+              random = ~1|partno)
+summary(model5r)
+```
+
 
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}

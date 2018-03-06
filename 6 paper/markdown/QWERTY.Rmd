@@ -145,7 +145,7 @@ hand = table(temp$hand) / length(temp$hand) * 100
 
 ```
 
-Participants (*N* = `r part`) were recruited from the university undergraduate human subject pool and received course credit for their time. `r rows` rows of data were present for these participants, where `r (part - missdatapoints)` participants included complete data (i.e., 120 rows, see below), `r missdatapoints119` were missing one data point, and `r (missdatapoints - missdatapoints119)` were missing many data points. All data points were included, and missing data points were usually computer error (i.e., freezing during the experiment) or participant error (i.e., missed key press). 
+Participants (*N* = `r part`) were recruited from the undergraduate human subject pool at a large Midwest university and received course credit for their time. `r rows` rows of data were present for these participants, where `r (part - missdatapoints)` participants had complete data (i.e., 120 rows, see below), `r missdatapoints119` were missing one data point, and `r (missdatapoints - missdatapoints119)` were missing many data points. All possible data points were considered and missing data points were usually computer error (i.e., freezing during the experiment) or participant error (i.e., missed key press). 
 
 Rating data were screened for multivariate outliers, and two participant's ratings were found to have extreme Mahalanobis distance scores [@Tabachnick2012] but were kept in the data set. `r apa(hand['Left'], 1)` percent of the sample was left-handed, `r apa(hand['right_left'], 1)` marked ambigdextrious, and `r apa(100 - sum(hand), 1)` was missing handedness information. The average typing speed was `r apa(mean(temp$speed), 2)` (*SD* = `r apa(sd(temp$speed), 2)`, and the average percent accuracy rate for the typing test was `r apa(mean(temp$error), 2)` (*SD* = `r apa(sd(temp$error), 2)`).
 
@@ -487,7 +487,7 @@ For significant two-way effects of hand switch by RSA or hand switch by speed, w
 
 At a high number of finger switches, we found both speed and RSA interactions with hand switching. When there were low numbers of hand switches for these words, RSA was a positive significant predictor, *b* = `r apa(summary(model5rhl)$tTable[6,1],3)`, *t*(`r summary(model5rhl)$tTable[6,3]`) = `r apa(summary(model5rhl)$tTable[6,4],2)`, *p* < .001, along with speed, *b* = `r apa(summary(model5rhl)$tTable[3,1],3)`, *t*(`r summary(model5rhl)$tTable[3,3]`) = `r apa(summary(model5rhl)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhl)$tTable[3,5],3,F)`. As hand switches increase, the effects of RSA and speed decrease. For high finger switches and average hand switches, RSA was significant, *b* = `r apa(summary(model5rh)$tTable[6,1],3)`, *t*(`r summary(model5rh)$tTable[6,3]`) = `r apa(summary(model5rh)$tTable[6,4],2)`, *p* < .001, while speed was not *b* = `r apa(summary(model5rh)$tTable[3,1],3)`, *t*(`r summary(model5rh)$tTable[3,3]`) = `r apa(summary(model5rh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rh)$tTable[3,5],3,F)`. With high finger and hand switches, RSA was significant but smaller than low and average, *b* = `r apa(summary(model5rhh)$tTable[6,1],3)`, *t*(`r summary(model5rhh)$tTable[6,3]`) = `r apa(summary(model5rhh)$tTable[6,4],2)`, *p* < .001, and speed was not a significant predictor, *b* = `r apa(summary(model5rhh)$tTable[3,1],3)`, *t*(`r summary(model5rhh)$tTable[3,3]`) = `r apa(summary(model5rhh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhh)$tTable[3,5],3,F)`. Therefore, at an elevated number of finger switches, we found that RSA and speed were positive predictors at low hand switches. As hand switching and finger switching increases, the effects of expertise and RSA decreased. This result implies that the coordination of controlling for finger and hand switching decreased the positive valence effects of RSA and expertise. All interaction statistics are included online in an Excel sheet at our OSF page. 
 
-```{r graphs, echo=FALSE, eval=FALSE, fig.cap = "PUT A FIGURE CAPTION", fig.height=6, fig.width=6}
+```{r graphs, echo=FALSE,  fig.cap = "Simple Slopes for Pseudowords", fig.height=6, fig.width=6}
 
 ##take out eval = false after fixing this
 
@@ -532,6 +532,11 @@ plot_grid( plot1 + theme(legend.position="none"),
            legend1,
            hjust = -1,
            nrow = 1)
+
+
+```
+
+```{r graphs, echo=FALSE,  fig.cap = "Simple Slopes for Real Word Interactions", fig.height=6, fig.width=6}
 
 ##plot these together
 ##make real words low finger switches, RSA X, valence Y, simple slopes are handswitches

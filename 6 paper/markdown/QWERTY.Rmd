@@ -173,15 +173,15 @@ real = subset(exp1data,real_fake == "real")
 fake = subset(exp1data,real_fake == "fake")
 
 ####centering the variables####
-real$speed = scale(real$speed, scale = F)
-real$lrswitch = scale(real$lrswitch, scale = F)
-real$fingerswitch = scale(real$fingerswitch, scale = F)
-real$rha = scale(real$rha, scale = F)
+real$speed = scale(real$speed, scale = FALSE)
+real$lrswitch = scale(real$lrswitch, scale = FALSE)
+real$fingerswitch = scale(real$fingerswitch, scale = FALSE)
+real$rha = scale(real$rha, scale =FALSE)
 
-fake$speed = scale(fake$speed, scale = F)
-fake$lrswitch = scale(fake$lrswitch, scale = F)
-fake$fingerswitch = scale(fake$fingerswitch, scale = F)
-fake$rha = scale(fake$rha, scale = F)
+fake$speed = scale(fake$speed, scale = FALSE)
+fake$lrswitch = scale(fake$lrswitch, scale = FALSE)
+fake$fingerswitch = scale(fake$fingerswitch, scale = FALSE)
+fake$rha = scale(fake$rha, scale = FALSE)
 ```
 
 ## Main Effects
@@ -303,7 +303,7 @@ excelprint[38:54, 2] = c("Interactions")
 excelprint[38:54, 3] = rownames(summary(model5r)$tTable)
 excelprint[38:54, 4:8] = summary(model5r)$tTable
 
-write.csv(excelprint, "Predictor Statistics Exp 1.csv", row.names = F)
+write.csv(excelprint, "Predictor Statistics Exp 1.csv", row.names = FALSE)
 
 ##make the printed table
 faketable = anova(model1f, model2f, model3f, model4f, model5f)
@@ -469,7 +469,7 @@ excelprint[154:170, 2] = c("High Finger Switch, High Hand Switch")
 excelprint[154:170, 3] = c(rownames(summary(model5rhh)$tTable))
 excelprint[154:170, 4:8] = summary(model5rhh)$tTable
 
-write.csv(excelprint, "Interaction Statistics Exp 1.csv", row.names = F)
+write.csv(excelprint, "Interaction Statistics Exp 1.csv", row.names = FALSE)
 
 ```
 
@@ -492,8 +492,22 @@ At a high number of finger switches, we found both speed and RSA interactions wi
 ##take out eval = false after fixing this
 
 ##plot these together
-##make pseudoword plot for speed X, valence Y, simple slopes is RSA
-##make pseudoword plot for finger switching X, valence Y, simple slopes is RSA
+##make pseudoword (fake) plot for speed (speed) X, valence (rating) Y, simple slopes is RSA (rha)
+##make pseudoword  plot for finger switching (fingerswitch) X, valence Y, simple slopes is RSA
+plot1 = ggplot(fake, aes(x = speed, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = .564, slope = .099, linetype = "-1SD Typing Speed")) +
+  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average Typing Speed")) +
+  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD Typing Speed")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD Typing Speed", "Average Typing Speed", "+1SD Typing Speed"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="Speed") 
 
 ##plot these together
 ##make real words low hand switches, RSA X, valence Y, simple slopes are handswitches

@@ -21,7 +21,7 @@ author_note: |
   Erin M. Buchanan is an Associate Professor of Quantitative Psychology at Missouri State University. K. D. Valentine is a Ph.D. candidate at the University of Missouri. 
   
 abstract: |
-  Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. The QWERTY effect is an increase in valence ratings for words typed more with the right hand on a traditional keyboard (Jasmin & Casasanto, 2012). Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework (Barsalou, 1999) and found that the right side advantage is replicable to new valence stimuli, as well as experimental manipulation. Further, when examining expertise, right side advantage interacted with typing speed and typability (i.e., alternating hand keypresses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
+  Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. The QWERTY effect is an increase in valence ratings for words typed more with the right hand on a traditional keyboard [@Jasmin2012]. Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework [@Barsalou1999] and found that the right side advantage is replicable to new valence stimuli, as well as experimental manipulation. Further, when examining expertise, right side advantage interacted with typing speed and typability (i.e., alternating hand keypresses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
   
 keywords          : "keyboard, valence, QWERTY, word norms"
 
@@ -60,6 +60,7 @@ While many studies have focused on errors in typing to investigate response syst
 While the mind was traditionally considered an abstract symbol processor [@Newell1976], newer cognitive psychology theories focus on the interaction between the brain's sensorimotor systems and mental representations of events and objects [@Barsalou1999; @Zwaan1999]. The interplay between these systems has been found in both neurological [@Hauk2004; @Lyons2010; @Tettamanti2005] and behavioral research [@Cartmill2012; Holt2006; @Zwaan2006]. Motor representations of tasks are activated even when not specifically asked to perform the task, and if the action is well-learned, the task is perceived as pleasant [@Beilock2007; @Ping2009; @Yang2009]. For example, @Beilock2007 asked novice and expert typists to pick which one of two letter dyads they preferred, which were either different hand combinations (CJ) or same finger combinations (FV). They found that novices have no preference in selection, while expert typists more reliably picked the combinations that were easier to type. To show that this effect was due to covert motor representation activation, and thus, expanding on findings from @VandenBergh1990, participants also made preference selections while repeating a keypress combination. When expert motor planning was distracted by remembering the pattern presented, no preference for letter dyads was found, indicating that the simultaneous activation of the motor representation was necessary to influence their likability ratings. Similar embodied findings have also been portrayed with emotionally charged sentences and facial movements [@Havas2007], positive-negative actions, such as head nodding or arm movements [@Glenberg2009; @Ping2009], and perceptuomotor fluency [@Oppenheimer2008; @Yang2009].
 
 ## Body Specificity Hypothesis
+
 Using an embodied framework, @Casasanto2009 has proposed that handedness dictates preference because our representations of actions are grounded in our physical interactions with the environment. In several studies, he portrayed that handedness influenced preference for spatial presentation (i.e.,left handed individuals associate “good” with left, while right handed individuals associate “good” with right), which in turn influenced judgments of happiness and intelligence and our decision making in hiring job candidates and shopping. In all these studies, participants reliably selected the hand-dominant side more often, which does not match cultural or neurolinguistic representations of positive-is-right and negative-is-left [@Davidson1992]. These findings imply that our handedness is a motor expertise that causes ease of action on the dominant side to positively influence our perceptions of items presented on that side. Further, @Casasanto2011 compiled a review of body specific actions and their representation in the brain using fMRIs. Handedness interacted with imagining actions, reading action, and perceiving the meanings of action verbs, such that fMRI patterns were mirrored for left and right handed participants matching their dominant side.
 
 ## The QWERTY Effect
@@ -70,8 +71,6 @@ These effects inspired @Jasmin2012 to propose the idea that typing, an action th
 
 The current study examined the right side advantage's interaction with traditional embodied cognition definitions (expertise, fluency). We analyzed the different implications of the body specificity hypothesis and a more general embodied hypothesis by testing the following: 1) To examine embodied cognition, we coded each word for number of hand alternations (akin to @Beilock2007's different hand preferences). Given that typing involves the procedural action system, we would also expect to find that increased hand switches are positively related to ratings of valence because words that are typed on alternating hands are easier to type. 2) The interaction between RSA and switches was examined to determine if these hypotheses can be combined (i.e.,we only like right handed words because we have to switch back and forth to type the more commonly used letters, such as *e* or *a*).
 
-# Experiment 1
-
 # Method
 
 ## Participants
@@ -79,7 +78,7 @@ The current study examined the right side advantage's interaction with tradition
 ```{r datascreen1, include=FALSE}
 
 ####import files####
-exp1data = read.csv("exp1_final.csv")
+exp1data = read.csv("exp12_final.csv")
 
 ####data screening####
 ##accuracy checks
@@ -106,7 +105,7 @@ mahal = mahalanobis(exp1data[ , c(5,7)],
                     cov(exp1data[ , c(5,7)], use = "pairwise.complete.obs"))
 cutoff = qchisq(1-.001, ncol(exp1data[ , c(5,7)]))
 table(mahal < cutoff)
-exp1data$partno[ mahal > cutoff] ##all same participant
+exp1data$partno[ mahal > cutoff] ##two participants
 
 ##assumptions
 correlations = cor(exp1data[, c(5,7, 13, 14, 15, 16, 17)], use="pairwise.complete.obs")
@@ -146,9 +145,9 @@ hand = table(temp$hand) / length(temp$hand) * 100
 
 ```
 
-Participants (*N* = `r part`) were recruited from the university undergraduate human subject pool and received course credit for their time. `r rows` rows of data were present for these participants, where `r (part - missdatapoints)` participants included complete data (i.e.,120 rows, see below), `r missdatapoints119` were missing one data point, and `r (missdatapoints - missdatapoints119)` were missing many data points. All data points were included, and missing data points were usually computer error (i.e., freezing during the experiment) or participant error (i.e., missed key press). 
+Participants (*N* = `r part`) were recruited from the university undergraduate human subject pool and received course credit for their time. `r rows` rows of data were present for these participants, where `r (part - missdatapoints)` participants included complete data (i.e., 120 rows, see below), `r missdatapoints119` were missing one data point, and `r (missdatapoints - missdatapoints119)` were missing many data points. All data points were included, and missing data points were usually computer error (i.e., freezing during the experiment) or participant error (i.e., missed key press). 
 
-Rating data were screened for multivariate outliers, and one participant's ratings were found to have extreme Mahalanobis distance scores [@Tabachnick2012] but were kept in the data set. `r apa(hand['Left'], 1)` percent of the sample was left-handed, `r apa(hand['right_left'], 1)` marked ambigdextrious, and `r apa(100 - sum(hand), 1)` was missing handedness information. The average typing speed was `r apa(mean(temp$speed), 2)` (*SD* = `r apa(sd(temp$speed), 2)`, and the average percent accuracy rate for the typing test was `r apa(mean(temp$error), 2)` (*SD* = `r apa(sd(temp$error), 2)`).
+Rating data were screened for multivariate outliers, and two participant's ratings were found to have extreme Mahalanobis distance scores [@Tabachnick2012] but were kept in the data set. `r apa(hand['Left'], 1)` percent of the sample was left-handed, `r apa(hand['right_left'], 1)` marked ambigdextrious, and `r apa(100 - sum(hand), 1)` was missing handedness information. The average typing speed was `r apa(mean(temp$speed), 2)` (*SD* = `r apa(sd(temp$speed), 2)`, and the average percent accuracy rate for the typing test was `r apa(mean(temp$error), 2)` (*SD* = `r apa(sd(temp$error), 2)`).
 
 ## Materials
 
@@ -248,7 +247,7 @@ model4r = lme(rating ~ letterfreq + speed + lrswitch + fingerswitch + rha,
 summary(model4r)
 ```
 
-After setting  participants as a random intercept factor, letter frequency was used as an adjustor variable. As seen in Table \@ref(tab:model-table1), this variable was not a significant predictor for pseudowords, *b* = `r apa(summary(model3f)$tTable[2,1],2)`, but was a significant predictor for real words, *b* = `r apa(summary(model3r)$tTable[2,1],2)`. All predictor statistics are provided in an Excel sheet on the OSF page for each step of the model. Next, the main effects of typing speed, hand switches, finger switches, and RSA were added to the models for pseudowords and real words. In both models, the addition of these variables overall was significant, *p* < .001. For psuedowords, typing speed was not a significant predictor of valence ratings, *b* = `r apa(summary(model4f)$tTable[3,1], 2)`, *t*(`r summary(model4f)$tTable[3,3]`) = `r apa(summary(model4f)$tTable[3,4],2)`, *p* = `r apa(summary(model4f)$tTable[3,5],3,F)`. Similarly, typing speed was not a significant predictor for valence ratings on real words, *b* = `r apa(summary(model4r)$tTable[3,1], 2)`, *t*(`r summary(model4r)$tTable[3,3]`) = `r apa(summary(model4r)$tTable[3,4],2)`, *p* = `r apa(summary(model4r)$tTable[3,5],3,F)`. In contrast, the measures of typability in hand and finger switching were significant for both pseudowords and real words. For pseudowords, increased hand switching, *b* = `r apa(summary(model4f)$tTable[4,1], 2)`, *t*(`r summary(model4f)$tTable[4,3]`) = `r apa(summary(model4f)$tTable[4,4],2)`, *p* = `r apa(summary(model4f)$tTable[4,5],3,F)`, and increased finger switching, *b* = `r apa(summary(model4f)$tTable[5,1], 2)`, *t*(`r summary(model4f)$tTable[5,3]`) = `r apa(summary(model4f)$tTable[5,4],2)`, *p* < .001, decreased the overall valence ratings. However increased hand switching, *b* = `r apa(summary(model4r)$tTable[4,1], 2)`, *t*(`r summary(model4r)$tTable[4,3]`) = `r apa(summary(model4r)$tTable[4,4],2)`, *p* = `r apa(summary(model4r)$tTable[4,5],3,F)`, increased valence ratings for real words, while increased finger switching, *b* = `r apa(summary(model4r)$tTable[5,1], 2)`, *t*(`r summary(model4r)$tTable[5,3]`) = `r apa(summary(model4r)$tTable[5,4],2)`, *p* < .001, decreased the overall valence ratings. Even adjusting for these typing style variables, the RSA effect replicated for both pseudowords, *b* = `r apa(summary(model4f)$tTable[6,1], 2)`, *t*(`r summary(model4f)$tTable[6,3]`) = `r apa(summary(model4f)$tTable[6,4],2)`, *p* < .001, and real words, *b* = `r apa(summary(model4r)$tTable[6,1], 2)`, *t*(`r summary(model4r)$tTable[6,3]`) = `r apa(summary(model4r)$tTable[6,4],2)`, *p* < .001. In the next section, we explored the interactions of typability and RSA, to present a more nuanced view of typing's effect on valence ratings.
+After setting  participants as a random intercept factor, letter frequency was used as an adjustor variable. As seen in Table \@ref(tab:model-table1), this variable was not a significant predictor for pseudowords, *b* = `r apa(summary(model3f)$tTable[2,1],3)`, but was a significant predictor for real words, *b* = `r apa(summary(model3r)$tTable[2,1],3)`. All predictor statistics are provided in an Excel sheet on the OSF page for each step of the model. Next, the main effects of typing speed, hand switches, finger switches, and RSA were added to the models for pseudowords and real words. In both models, the addition of these variables overall was significant, *p* < .001. For psuedowords, typing speed was not a significant predictor of valence ratings, *b* = `r apa(summary(model4f)$tTable[3,1],3)`, *t*(`r summary(model4f)$tTable[3,3]`) = `r apa(summary(model4f)$tTable[3,4],2)`, *p* = `r apa(summary(model4f)$tTable[3,5],3,F)`. Similarly, typing speed was not a significant predictor for valence ratings on real words, *b* = `r apa(summary(model4r)$tTable[3,1],3)`, *t*(`r summary(model4r)$tTable[3,3]`) = `r apa(summary(model4r)$tTable[3,4],2)`, *p* = `r apa(summary(model4r)$tTable[3,5],3,F)`. In contrast, the measures of typability in hand and finger switching were significant for both pseudowords and real words. For pseudowords, increased hand switching, *b* = `r apa(summary(model4f)$tTable[4,1],3)`, *t*(`r summary(model4f)$tTable[4,3]`) = `r apa(summary(model4f)$tTable[4,4],2)`, *p* = `r apa(summary(model4f)$tTable[4,5],3,F)`, and increased finger switching, *b* = `r apa(summary(model4f)$tTable[5,1],3)`, *t*(`r summary(model4f)$tTable[5,3]`) = `r apa(summary(model4f)$tTable[5,4],2)`, *p* < .001, decreased the overall valence ratings. However increased hand switching, *b* = `r apa(summary(model4r)$tTable[4,1],3)`, *t*(`r summary(model4r)$tTable[4,3]`) = `r apa(summary(model4r)$tTable[4,4],2)`, *p* = `r apa(summary(model4r)$tTable[4,5],3,F)`, increased valence ratings for real words, while increased finger switching, *b* = `r apa(summary(model4r)$tTable[5,1],3)`, *t*(`r summary(model4r)$tTable[5,3]`) = `r apa(summary(model4r)$tTable[5,4],2)`, *p* < .001, decreased the overall valence ratings. Even adjusting for these typing style variables, the RSA effect replicated for both pseudowords, *b* = `r apa(summary(model4f)$tTable[6,1],3)`, *t*(`r summary(model4f)$tTable[6,3]`) = `r apa(summary(model4f)$tTable[6,4],2)`, *p* < .001, and real words, *b* = `r apa(summary(model4r)$tTable[6,1],3)`, *t*(`r summary(model4r)$tTable[6,3]`) = `r apa(summary(model4r)$tTable[6,4],2)`, *p* < .001. In the next section, we explored the interactions of typability and RSA, to present a more nuanced view of typing's effect on valence ratings.
 
 ## Interactions
 
@@ -477,577 +476,61 @@ write.csv(excelprint, "Interaction Statistics Exp 1.csv", row.names = F)
 Next, the four-way interaction of typing speed, finger switching, hand switching, and RSA was entered into the equation, including all the smaller two- and three-way interactions. We focused on the most complext interaction found, breaking down interaction terms into simple slopes of low (-1SD), average, and high (+1SD) to explore each effect. For example, if the four-way interaction was significant, one variable would be broken into simple slopes, and the next most complex interactions would be examined. This procedure was iterated until the interactions were no longer significant or only main effects were examined. When multiple interactions were present, we choose a common variable to help break down the interactions with the least number of steps. Table \@ref(tab:model-table1) portrays that the addition of the interaction components was significant for both pseudoword, *p* = .003, and real word, *p* < .001, models. 
 
 ### Pseudoword Simple Slopes
-For pseudowords, finger switches by RSA, *b* = `r apa(summary(model5f)$tTable[12,1], 2)`, *t*(`r summary(model5f)$tTable[12,3]`) = `r apa(summary(model5f)$tTable[12,4],2)`, *p* < .001, and typing speed by RSA, *b* = `r apa(summary(model5f)$tTable[10,1], 2)`, *t*(`r summary(model5f)$tTable[10,3]`) = `r apa(summary(model5f)$tTable[10,4],2)`, *p* = `r apa(summary(model5f)$tTable[10,5],3,F)` were the only significant interactions. Low and high simpel slopes for RSA were created to examine the effects of typing speed and finger switches at these levels. For low RSA (more left handed words), speed positively predicted valence, *b* = `r apa(summary(model5fl)$tTable[3,1], 2)`, *t*(`r summary(model5fl)$tTable[3,3]`) = `r apa(summary(model5fl)$tTable[3,4],2)`, *p* = `r apa(summary(model5fl)$tTable[3,5],3,F)`, and finger switching negatively predicted valence, *b* = `r apa(summary(model5fl)$tTable[5,1], 2)`, *t*(`r summary(model5fl)$tTable[5,3]`) = `r apa(summary(model5fl)$tTable[5,4],2)`, *p* < .001. For average RSA, speed no longer predicted valence, *b* = `r apa(summary(model5f)$tTable[3,1], 2)`, *t*(`r summary(model5f)$tTable[3,3]`) = `r apa(summary(model5f)$tTable[3,4],2)`, *p* = `r apa(summary(model5f)$tTable[3,5],3,F)`, while finger switches still negatively predicted valence, albeit smaller than at low RSA, *b* = `r apa(summary(model5f)$tTable[5,1], 2)`, *t*(`r summary(model5f)$tTable[5,3]`) = `r apa(summary(model5f)$tTable[5,4],2)`, *p* = `r apa(summary(model5f)$tTable[5,5],3,F)`. Last, at high RSA (more right handed words), speed did not predict valence, *b* = `r apa(summary(model5fh)$tTable[3,1], 2)`, *t*(`r summary(model5fh)$tTable[3,3]`) = `r apa(summary(model5fh)$tTable[3,4],2)`, *p* = `r apa(summary(model5fh)$tTable[3,5],3,F)`, and neither did finger switches, *b* = `r apa(summary(model5fh)$tTable[5,1], 2)`, *t*(`r summary(model5fh)$tTable[5,3]`) = `r apa(summary(model5fh)$tTable[5,4],2)`, *p* = `r apa(summary(model5fh)$tTable[5,5],3,F)`. In sum, this interaction indicates that typing speed was a positive influence for more left handed words, but was not a predictor as words were typed more with the right hand. When words were more left handed, there was a negative influence of finger switching, but as we transition to more right handed words the number of switches did not influence valence ratings. These results seem to indicate that expertise and typability were influential factors for left handed words, but the RSA washed out these effects when rating right handed psuedowords. 
+
+For pseudowords, finger switches by RSA, *b* = `r apa(summary(model5f)$tTable[12,1],3)`, *t*(`r summary(model5f)$tTable[12,3]`) = `r apa(summary(model5f)$tTable[12,4],2)`, *p* < .001, and typing speed by RSA, *b* = `r apa(summary(model5f)$tTable[10,1],3)`, *t*(`r summary(model5f)$tTable[10,3]`) = `r apa(summary(model5f)$tTable[10,4],2)`, *p* = `r apa(summary(model5f)$tTable[10,5],3,F)` were the only significant interactions. Low and high simple slopes for RSA were created to examine the effects of typing speed and finger switches at these levels. For low RSA (more left handed words), speed positively predicted valence, *b* = `r apa(summary(model5fl)$tTable[3,1],3)`, *t*(`r summary(model5fl)$tTable[3,3]`) = `r apa(summary(model5fl)$tTable[3,4],2)`, *p* = `r apa(summary(model5fl)$tTable[3,5],3,F)`, and finger switching negatively predicted valence, *b* = `r apa(summary(model5fl)$tTable[5,1],3)`, *t*(`r summary(model5fl)$tTable[5,3]`) = `r apa(summary(model5fl)$tTable[5,4],2)`, *p* < .001. For average RSA, speed no longer predicted valence, *b* = `r apa(summary(model5f)$tTable[3,1],3)`, *t*(`r summary(model5f)$tTable[3,3]`) = `r apa(summary(model5f)$tTable[3,4],2)`, *p* = `r apa(summary(model5f)$tTable[3,5],3,F)`, while finger switches still negatively predicted valence, albeit smaller than at low RSA, *b* = `r apa(summary(model5f)$tTable[5,1],3)`, *t*(`r summary(model5f)$tTable[5,3]`) = `r apa(summary(model5f)$tTable[5,4],2)`, *p* = `r apa(summary(model5f)$tTable[5,5],3,F)`. Last, at high RSA (more right handed words), speed did not predict valence, *b* = `r apa(summary(model5fh)$tTable[3,1],3)`, *t*(`r summary(model5fh)$tTable[3,3]`) = `r apa(summary(model5fh)$tTable[3,4],2)`, *p* = `r apa(summary(model5fh)$tTable[3,5],3,F)`, and neither did finger switches, *b* = `r apa(summary(model5fh)$tTable[5,1],3)`, *t*(`r summary(model5fh)$tTable[5,3]`) = `r apa(summary(model5fh)$tTable[5,4],2)`, *p* = `r apa(summary(model5fh)$tTable[5,5],3,F)`. In sum, this interaction indicates that typing speed was a positive influence for more left handed words, but was not a predictor as words were typed more with the right hand. When words were more left handed, there was a negative influence of finger switching, but as we transition to more right handed words the number of switches did not influence valence ratings. These results seem to indicate that expertise and typability were influential factors for left handed words, but the RSA washed out these effects when rating right handed psuedowords. 
 
 ### Real Word Simple Slopes
-For real words, the three-way interactions of finger switch by hand switch by RSA, *b* = `r apa(summary(model5r)$tTable[16,1], 2)`, *t*(`r summary(model5r)$tTable[16,3]`) = `r apa(summary(model5r)$tTable[16,4],2)`, *p* < .001, and speed by finger switch by hand switch, *b* = `r apa(summary(model5r)$tTable[13,1], 2)`, *t*(`r summary(model5r)$tTable[13,3]`) = `r apa(summary(model5r)$tTable[13,4],2)`, *p* = `r apa(summary(model5r)$tTable[13,5],3,F)`, were the largest significant interaction predictors. Low and high simple slopes for finger switches were created to explore the three-way interaction. For lower finger switches, the hand switching by RSA interaction was significant, *b* = `r apa(summary(model5rl)$tTable[11,1], 2)`, *t*(`r summary(model5rl)$tTable[11,3]`) = `r apa(summary(model5rl)$tTable[11,4],2)`, *p* = `r apa(summary(model5rl)$tTable[11,5],3,F)`; however, the hand switches by speed interaction was not significant, *b* = `r apa(summary(model5rl)$tTable[7,1], 2)`, *t*(`r summary(model5rl)$tTable[7,3]`) = `r apa(summary(model5rl)$tTable[7,4],2)`, *p* = `r apa(summary(model5rl)$tTable[7,5],3,F)`. At average finger switching, the hand switches by RSA interaction was not significant, *b* = `r apa(summary(model5r)$tTable[11,1], 2)`, *t*(`r summary(model5r)$tTable[11,3]`) = `r apa(summary(model5r)$tTable[11,4],2)`, *p* = `r apa(summary(model5r)$tTable[11,5],3,F)`, and neither was the hand switches by speed interaction, *b* = `r apa(summary(model5r)$tTable[7,1], 2)`, *t*(`r summary(model5r)$tTable[7,3]`) = `r apa(summary(model5r)$tTable[7,4],2)`, *p* = `r apa(summary(model5r)$tTable[7,5],3,F)`. At a higher number of finger switches the hand switches by RSA interaction was significant, *b* = `r apa(summary(model5rh)$tTable[11,1], 2)`, *t*(`r summary(model5rh)$tTable[11,3]`) = `r apa(summary(model5rh)$tTable[11,4],2)`, *p* = `r apa(summary(model5rh)$tTable[11,5],3,F)`, along with the hand switches by speed interaction, *b* = `r apa(summary(model5rh)$tTable[13,1], 2)`, *t*(`r summary(model5rh)$tTable[13,3]`) = `r apa(summary(model5rh)$tTable[13,4],2)`, *p* = `r apa(summary(model5rh)$tTable[13,5],3,F)`.
 
-For significant two-way effects of hand switch by RSA or hand switch by speed, we then calculated the low and high simple slopes for hand switches. Therefore, we explored the low and high finger switch effects that were significant with low and high hand switches for RSA and speed main effects. At low finger switches and low hand switches, RSA was a significant predictor of valence, *b* = `r apa(summary(model5rll)$tTable[6,1], 2)`, *t*(`r summary(model5rll)$tTable[6,3]`) = `r apa(summary(model5rll)$tTable[6,4],2)`, *p* = `r apa(summary(model5rll)$tTable[6,5],3,F)`. Speed was not examined because the two-way interaction was not significant. At low finger switches and average hand switches, RSA was a stronger predictor of valence, *b* = `r apa(summary(model5rl)$tTable[6,1], 2)`, *t*(`r summary(model5rl)$tTable[6,3]`) = `r apa(summary(model5rl)$tTable[6,4],2)`, *p* < .001. Last, at low finger switches and high hand switches, RSA increased in strength, *b* = `r apa(summary(model5rlh)$tTable[6,1], 2)`, *t*(`r summary(model5rlh)$tTable[6,3]`) = `r apa(summary(model5rlh)$tTable[6,4],2)`, *p* = `r apa(summary(model5rlh)$tTable[6,5],3,F)`. Therefore, at low numbers of finger switches, as hand switching increased, the strength of the RSA positivity effect also increased. This result implies that as words were switching hands, the more right handed letters a word has during these switches increased valence. 
+For real words, the three-way interactions of finger switch by hand switch by RSA, *b* = `r apa(summary(model5r)$tTable[16,1],3)`, *t*(`r summary(model5r)$tTable[16,3]`) = `r apa(summary(model5r)$tTable[16,4],2)`, *p* < .001, and speed by finger switch by hand switch, *b* = `r apa(summary(model5r)$tTable[13,1],3)`, *t*(`r summary(model5r)$tTable[13,3]`) = `r apa(summary(model5r)$tTable[13,4],2)`, *p* = `r apa(summary(model5r)$tTable[13,5],3,F)`, were the largest significant interaction predictors. Low and high simple slopes for finger switches were created to explore the three-way interaction. For lower finger switches, the hand switching by RSA interaction was significant, *b* = `r apa(summary(model5rl)$tTable[11,1],3)`, *t*(`r summary(model5rl)$tTable[11,3]`) = `r apa(summary(model5rl)$tTable[11,4],2)`, *p* = `r apa(summary(model5rl)$tTable[11,5],3,F)`; however, the hand switches by speed interaction was not significant, *b* = `r apa(summary(model5rl)$tTable[7,1],3)`, *t*(`r summary(model5rl)$tTable[7,3]`) = `r apa(summary(model5rl)$tTable[7,4],2)`, *p* = `r apa(summary(model5rl)$tTable[7,5],3,F)`. At average finger switching, the hand switches by RSA interaction was not significant, *b* = `r apa(summary(model5r)$tTable[11,1],3)`, *t*(`r summary(model5r)$tTable[11,3]`) = `r apa(summary(model5r)$tTable[11,4],2)`, *p* = `r apa(summary(model5r)$tTable[11,5],3,F)`, and neither was the hand switches by speed interaction, *b* = `r apa(summary(model5r)$tTable[7,1],3)`, *t*(`r summary(model5r)$tTable[7,3]`) = `r apa(summary(model5r)$tTable[7,4],2)`, *p* = `r apa(summary(model5r)$tTable[7,5],3,F)`. At a higher number of finger switches the hand switches by RSA interaction was significant, *b* = `r apa(summary(model5rh)$tTable[11,1],3)`, *t*(`r summary(model5rh)$tTable[11,3]`) = `r apa(summary(model5rh)$tTable[11,4],2)`, *p* = `r apa(summary(model5rh)$tTable[11,5],3,F)`, along with the hand switches by speed interaction, *b* = `r apa(summary(model5rh)$tTable[13,1],3)`, *t*(`r summary(model5rh)$tTable[13,3]`) = `r apa(summary(model5rh)$tTable[13,4],2)`, *p* = `r apa(summary(model5rh)$tTable[13,5],3,F)`.
 
-At a high number of finger switches, we found both speed and RSA interactions with hand switching. When there were low numbers of hand switches for these words, RSA was a positive significant predictor, *b* = `r apa(summary(model5rhl)$tTable[6,1], 2)`, *t*(`r summary(model5rhl)$tTable[6,3]`) = `r apa(summary(model5rhl)$tTable[6,4],2)`, *p* < .001, along with speed, *b* = `r apa(summary(model5rhl)$tTable[3,1], 2)`, *t*(`r summary(model5rhl)$tTable[3,3]`) = `r apa(summary(model5rhl)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhl)$tTable[3,5],3,F)`. As hand switches increase, the effects of RSA and speed decrease. For high finger switches and average hand switches, RSA was significant, *b* = `r apa(summary(model5rh)$tTable[6,1], 2)`, *t*(`r summary(model5rh)$tTable[6,3]`) = `r apa(summary(model5rh)$tTable[6,4],2)`, *p* < .001`, while speed was not *b* = `r apa(summary(model5rh)$tTable[3,1], 2)`, *t*(`r summary(model5rh)$tTable[3,3]`) = `r apa(summary(model5rh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rh)$tTable[3,5],3,F)`. With high finger and hand switches, RSA was significant but smaller than low and average, *b* = `r apa(summary(model5rhh)$tTable[6,1], 2)`, *t*(`r summary(model5rhh)$tTable[6,3]`) = `r apa(summary(model5rhh)$tTable[6,4],2)`, *p* < .001`, and speed was not a significant predictor, *b* = `r apa(summary(model5rhh)$tTable[3,1], 2)`, *t*(`r summary(model5rhh)$tTable[3,3]`) = `r apa(summary(model5rhh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhh)$tTable[3,5],3,F)`. Therefore, at an elevated number of finger switches, we found that RSA and speed were positive predictors at low hand switches. As hand switching and finger switching increases, the effects of expertise and RSA decreased. This result implies that the coordination of controlling for finger and hand switching decreased the positive valence effects of RSA and expertise. All interaction statistics are included online in an Excel sheet at our OSF page. 
+For significant two-way effects of hand switch by RSA or hand switch by speed, we then calculated the low and high simple slopes for hand switches. Therefore, we explored the low and high finger switch effects that were significant with low and high hand switches for RSA and speed main effects. At low finger switches and low hand switches, RSA was a significant predictor of valence, *b* = `r apa(summary(model5rll)$tTable[6,1],3)`, *t*(`r summary(model5rll)$tTable[6,3]`) = `r apa(summary(model5rll)$tTable[6,4],2)`, *p* = `r apa(summary(model5rll)$tTable[6,5],3,F)`. Speed was not examined because the two-way interaction was not significant. At low finger switches and average hand switches, RSA was a stronger predictor of valence, *b* = `r apa(summary(model5rl)$tTable[6,1],3)`, *t*(`r summary(model5rl)$tTable[6,3]`) = `r apa(summary(model5rl)$tTable[6,4],2)`, *p* < .001. Last, at low finger switches and high hand switches, RSA increased in strength, *b* = `r apa(summary(model5rlh)$tTable[6,1],3)`, *t*(`r summary(model5rlh)$tTable[6,3]`) = `r apa(summary(model5rlh)$tTable[6,4],2)`, *p* = `r apa(summary(model5rlh)$tTable[6,5],3,F)`. Therefore, at low numbers of finger switches, as hand switching increased, the strength of the RSA positivity effect also increased. This result implies that as words were switching hands, the more right handed letters a word has during these switches increased valence. 
 
-# Experiment 2
+At a high number of finger switches, we found both speed and RSA interactions with hand switching. When there were low numbers of hand switches for these words, RSA was a positive significant predictor, *b* = `r apa(summary(model5rhl)$tTable[6,1],3)`, *t*(`r summary(model5rhl)$tTable[6,3]`) = `r apa(summary(model5rhl)$tTable[6,4],2)`, *p* < .001, along with speed, *b* = `r apa(summary(model5rhl)$tTable[3,1],3)`, *t*(`r summary(model5rhl)$tTable[3,3]`) = `r apa(summary(model5rhl)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhl)$tTable[3,5],3,F)`. As hand switches increase, the effects of RSA and speed decrease. For high finger switches and average hand switches, RSA was significant, *b* = `r apa(summary(model5rh)$tTable[6,1],3)`, *t*(`r summary(model5rh)$tTable[6,3]`) = `r apa(summary(model5rh)$tTable[6,4],2)`, *p* < .001, while speed was not *b* = `r apa(summary(model5rh)$tTable[3,1],3)`, *t*(`r summary(model5rh)$tTable[3,3]`) = `r apa(summary(model5rh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rh)$tTable[3,5],3,F)`. With high finger and hand switches, RSA was significant but smaller than low and average, *b* = `r apa(summary(model5rhh)$tTable[6,1],3)`, *t*(`r summary(model5rhh)$tTable[6,3]`) = `r apa(summary(model5rhh)$tTable[6,4],2)`, *p* < .001, and speed was not a significant predictor, *b* = `r apa(summary(model5rhh)$tTable[3,1],3)`, *t*(`r summary(model5rhh)$tTable[3,3]`) = `r apa(summary(model5rhh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhh)$tTable[3,5],3,F)`. Therefore, at an elevated number of finger switches, we found that RSA and speed were positive predictors at low hand switches. As hand switching and finger switching increases, the effects of expertise and RSA decreased. This result implies that the coordination of controlling for finger and hand switching decreased the positive valence effects of RSA and expertise. All interaction statistics are included online in an Excel sheet at our OSF page. 
 
-# Method
+```{r graphs, echo=FALSE, eval=FALSE, fig.cap = "PUT A FIGURE CAPTION", fig.height=6, fig.width=6}
 
-## Participants
+##take out eval = false after fixing this
 
-```{r datascreen2, include = FALSE}
+##plot these together
+##make pseudoword plot for speed X, valence Y, simple slopes is RSA
+##make pseudoword plot for finger switching X, valence Y, simple slopes is RSA
 
-exp2data = read.csv("exp2_final.csv")
+##plot these together
+##make real words low hand switches, RSA X, valence Y, simple slopes are handswitches
+##make real words high hand switches, RSA X, valence Y, simple slopes are handswitches
+##make real words high hand switches, speed X, valence Y, simple slopes are handswitches
 
-####data screening####
-##accuracy checks
-summary(exp2data)
-#table(exp2data$partno)
-#table(exp2data$speed)
-#hist(exp2data$speed)
-exp2data$realfake = factor(exp2data$realfake,
-                            levels = c("fake", "real"))
-part2 = length(table(exp2data$partno))
-#get rid of blank row at the end
-exp2data = na.omit(exp2data)
+##MAKE ALL THE PLOTS
+plot3 = ggplot(dat, aes(x = ZCOS_low, y = Judged.Value2)) +
+  labs(x = "ZFSG", y = "Judgments") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = .564, slope = .099, linetype = "-1SD ZLSA")) +
+  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average ZLSA")) +
+  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD ZLSA")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD ZLSA", "Average ZLSA", "+1SD ZLSA"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="High ZCOS") 
 
-##missing data
-##no missing data to replace
-##figure out the couple missing data points
-rows2 = nrow(exp2data)
-
-##outliers
-#with(exp2data, plot(speed, rating))
-mahal = mahalanobis(exp2data[ , c(5,7)],
-                    colMeans(exp2data[ , c(5,7)], na.rm = T),
-                    cov(exp2data[ , c(5,7)], use = "pairwise.complete.obs"))
-cutoff = qchisq(1-.001, ncol(exp2data[ , c(5,7)]))
-table(mahal < cutoff)
-#subset(exp2data, mahal > cutoff)
-
-##assumptions
-correlations = cor(exp1data[, c(5,7, 13, 14, 15, 17)], use="pairwise.complete.obs")
-correlations
-symnum(correlations)
-
-##make the random stuff
-random = rchisq(nrow(exp2data), 7)
-#fake = lm(random~., data=exp1data[ , c(5, 7, 12, 13, 14, 15, 17)])
-fake = lm(random~., data=exp2data[ , c(5, 7)])
-
-##get the linearity plot
-##create the standardized residuals
-standardized = rstudent(fake)
-{qqnorm(standardized)
-abline(0,1)}
-
-##multivariate normality
-hist(standardized, breaks=15)
-
-##homogeneity and homoscedaticity
-fitvalues = scale(fake$fitted.values)
-{plot(fitvalues, standardized) 
-abline(0,0)
-abline(v = 0)}
-
-exp2data$hand[exp2data$hand == "left"] = "Left"
-exp2data$hand[exp2data$hand == "right"] = "Right"
-exp2data$hand = droplevels(exp2data$hand)
-
-temp2 = exp2data[!duplicated(exp2data$partno), ]
-hand2 = table(temp2$hand) / length(temp2$hand) * 100
+# arrange plots together
+legend = get_legend(plot1)
+plot_grid( plot1 + theme(legend.position="none"),
+           plot2 + theme(legend.position="none"),
+           plot3 + theme(legend.position="none"),
+           legend,
+           hjust = -1,
+           nrow = 2)
 
 ```
-
-Similar to Experiment 1, `r part2` participants were recruited from the university undergraduate human subject pool and received course credit for their time. `r rows2` rows of data were present for these participants, and no data was missing. Rating data were screened for multivariate outliers. Again, part of one participant's ratings were found to have extreme Mahalanobis distance scores [@Tabachnick2012]. However, this individual's ratings were left in the data set. Approximately `r apa(hand2['Left'], 1)` percent of the sample was left-handed. The average typing speed was `r apa(mean(temp2$speed), 2)` (*SD* = `r apa(sd(temp2$speed), 2)`), and the average percent accuracy rate for the typing test was `r apa(mean(temp2$error), 2)` (*SD* = `r apa(sd(temp2$error), 2)`).
-
-## Materials
-
-In this experiment, a smaller subset of words (`r length(table(droplevels(exp2data$trialcode)))`) from Experiment 1 were used, which were split evenly between pseudowords and real words. Average word length was `r apa(mean(exp2data$length), 2)` (*SD* = `r apa(sd(exp2data$length), 2)`; range = `r min(exp2data$length)` - `r max(exp2data$length)`).  
-
-## Procedure
-
-In this study, when participants were shown the word (or pseudoword) on the screen, they were first asked to type the word on the keyboard in front of them. After they had typed the word, they were then asked to rate the word for pleasantness using the scale and self-assessment manikin discussed previously.  
-
-# Results
-
-```{r exp2setup, include = FALSE}
-####separate real fake####
-real = subset(exp2data,realfake == "real")
-fake = subset(exp2data,realfake == "fake")
-
-####centering the variables####
-real$speed = scale(real$speed, scale = F)
-real$lrswitch = scale(real$lrswitch, scale = F)
-real$fingerswitch = scale(real$fingerswitch, scale = F)
-real$rha = scale(real$rha, scale = F)
-
-fake$speed = scale(fake$speed, scale = F)
-fake$lrswitch = scale(fake$lrswitch, scale = F)
-fake$fingerswitch = scale(fake$fingerswitch, scale = F)
-fake$rha = scale(fake$rha, scale = F)
-
-```
-
-## Main Effects
-
-```{r meexp2, include = FALSE}
-
-####intercept only model####
-model1f = gls(rating ~ 1, 
-             data = fake, 
-             method = "ML", 
-             na.action = "na.omit")
-#summary(model1f)
-
-model1r = gls(rating ~ 1, 
-             data = real, 
-             method = "ML", 
-             na.action = "na.omit")
-#summary(model1r)
-
-####random intercept only model####
-model2f = lme(rating ~ 1, 
-             data = fake, 
-             method = "ML", 
-             na.action = "na.omit",
-             random = ~1|partno)
-#summary(model2f)
-
-model2r = lme(rating ~ 1, 
-             data = real, 
-             method = "ML", 
-             na.action = "na.omit",
-             random = ~1|partno)
-#summary(model2r)
-
-####controls predictor models####
-model3f = lme(rating ~ letterfreq, 
-              data = fake, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-#summary(model3f)
-
-model3r = lme(rating ~ letterfreq, 
-              data = real, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-#summary(model3r)
-
-####main effects models####
-model4f = lme(rating ~ letterfreq + speed + lrswitch + fingerswitch + rha, 
-              data = fake, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-#summary(model4f)
-
-model4r = lme(rating ~ letterfreq + speed + lrswitch + fingerswitch + rha, 
-              data = real, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-#summary(model4r)
-
-```
-
-```{r model-table2, echo = FALSE, results='asis'}
-
-####interaction models####
-model5f = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*rha, 
-              data = fake, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-#summary(model5f)
-
-model5r = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*rha, 
-              data = real,
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-#summary(model5r)
-
-##make the excel sheet
-excelprint = matrix(NA, nrow = 54, ncol = 8)
-colnames(excelprint) = c("Word Type", "Model", "Predictor", "Estimate", "SE","df", "t", "p")
-
-excelprint[1, 1:3] = c("Psuedo", "Intercept Only",  rownames(summary(model1f)$tTable))
-excelprint[1, 4:8] = c(summary(model1f)$tTable[1:2], 32541, summary(model1f)$tTable[3:4])
-excelprint[2, 1:3] = c("Psuedo", "Random Intercept",  rownames(summary(model2f)$tTable))
-excelprint[2, 4:8] = summary(model2f)$tTable
-excelprint[3, 1:3] = c("Psuedo", "Adjustor Variable",  rownames(summary(model3f)$tTable)[1])
-excelprint[4, 1:3] = c("Psuedo", "Adjustor Variable",  rownames(summary(model3f)$tTable)[2])
-excelprint[3:4, 4:8] = summary(model3f)$tTable
-excelprint[5:10 , 1] = c("Psuedo")
-excelprint[5:10 , 2] = c("Main Effects")
-excelprint[5:10, 3] = rownames(summary(model4f)$tTable)
-excelprint[5:10, 4:8] = summary(model4f)$tTable
-excelprint[11:27, 1] = c("Psuedo")
-excelprint[11:27, 2] = c("Interactions")
-excelprint[11:27, 3] = rownames(summary(model5f)$tTable)
-excelprint[11:27, 4:8] = summary(model5f)$tTable
-
-excelprint[28, 1:3] = c("Real", "Intercept Only",  rownames(summary(model1r)$tTable))
-excelprint[28, 4:8] = c(summary(model1r)$tTable[1:2], 32690, summary(model1r)$tTable[3:4])
-excelprint[29, 1:3] = c("Real", "Random Intercept",  rownames(summary(model2r)$tTable))
-excelprint[29, 4:8] = summary(model2r)$tTable
-excelprint[30, 1:3] = c("Real", "Adjustor Variable",  rownames(summary(model3r)$tTable)[1])
-excelprint[31, 1:3] = c("Real", "Adjustor Variable",  rownames(summary(model3r)$tTable)[2])
-excelprint[30:31, 4:8] = summary(model3r)$tTable
-excelprint[32:37 , 1] = c("Real")
-excelprint[32:37 , 2] = c("Main Effects")
-excelprint[32:37, 3] = rownames(summary(model4r)$tTable)
-excelprint[32:37, 4:8] = summary(model4r)$tTable
-excelprint[38:54, 1] = c("Real")
-excelprint[38:54, 2] = c("Interactions")
-excelprint[38:54, 3] = rownames(summary(model5r)$tTable)
-excelprint[38:54, 4:8] = summary(model5r)$tTable
-
-write.csv(excelprint, "Predictor Statistics Exp 2.csv", row.names = F)
-
-faketable = anova(model1f, model2f, model3f, model4f, model5f)
-realtable = anova(model1r, model2r, model3r, model4r, model5r)
-
-tableprint = matrix(NA, nrow = 10, ncol = 8)
-tableprint[1:5, 1] = "Pseudo"
-tableprint[6:10, 1] = "Real"
-tableprint[, 2] = c("Intercept Only", "Random Intercept", "Adjustor Variable", "Main Effects", "Interactions")
-tableprint[, 3] = c(faketable$df, realtable$df)
-tableprint[, 4] = apa(c(faketable$AIC, realtable$AIC), 2)
-tableprint[, 5] = apa(c(faketable$BIC, realtable$BIC), 2)
-tableprint[, 6] = apa(c(faketable$logLik, realtable$logLik), 2)
-tableprint[, 7] = apa(c(faketable$L.Ratio, realtable$L.Ratio), 2)
-tableprint[, 8] = printnum(c(faketable$p, realtable$p), gt1 = FALSE, zero = FALSE, digits = 3)
-
-apa_table.latex(tableprint, 
-          align = c("l", rep("c", 7)), 
-          caption = "Area under curve model statistics",
-          note = "AIC: Aikaike Information Criterion, BIC: Bayesian Information Criterion", 
-          escape = FALSE,
-          col.names = c("Word Type", "Model", "$df$", "AIC", "BIC", "$\\chi^2$", "$\\Delta\\chi^2$", "$p$"))
-
-```
-
-All predictor statistics are provided in an Excel sheet provided online at OSF. Participants were set as a random factor, and then letter frequency was used as an adjustor variable (see Table \@ref(tab:model-table2)). This variable was not significant for psuedowords, *b* = `r apa(summary(model3f)$tTable[2,1],2)` but was significant for real words, *b* = `r apa(summary(model3r)$tTable[2,1],2)`. For both real and pseudowords, the addition of the main effects of typing speed, hand switches, finger switches, and RSA were significant, *p* < .001. For psuedowords, expertise of typing speed was not significant, *b* = `r apa(summary(model4f)$tTable[3,1], 2)`, *t*(`r summary(model4f)$tTable[3,3]`) = `r apa(summary(model4f)$tTable[3,4],2)`, *p* = `r apa(summary(model4f)$tTable[3,5],3,F)`. Again, the main effect of speed was not significant for real words, *b* = `r apa(summary(model4r)$tTable[3,1], 2)`, *t*(`r summary(model4r)$tTable[3,3]`) = `r apa(summary(model4r)$tTable[3,4],2)`, *p* = `r apa(summary(model4r)$tTable[3,5],3,F)`. 
-
-For psuedowords, hand switches was not significant, *b* = `r apa(summary(model4f)$tTable[4,1], 2)`, *t*(`r summary(model4f)$tTable[4,3]`) = `r apa(summary(model4f)$tTable[4,4],2)`, *p* = `r apa(summary(model4f)$tTable[4,5],3,F)`, but for real words, they were positively related to valence ratings, *b* = `r apa(summary(model4r)$tTable[4,1], 2)`, *t*(`r summary(model4r)$tTable[4,3]`) = `r apa(summary(model4r)$tTable[4,4],2)`, *p* < .001`. Finger switches were negatively related to both pseudowords, *b* = `r apa(summary(model4f)$tTable[5,1], 2)`, *t*(`r summary(model4f)$tTable[5,3]`) = `r apa(summary(model4f)$tTable[5,4],2)`, *p* < .001, and real words, *b* = `r apa(summary(model4r)$tTable[5,1], 2)`, *t*(`r summary(model4r)$tTable[5,3]`) = `r apa(summary(model4r)$tTable[5,4],2)`, *p* = `r apa(summary(model4r)$tTable[5,5],3,F)`. The main effect of RSA was present and positive for both psuedowords, *b* = `r apa(summary(model4f)$tTable[6,1], 2)`, *t*(`r summary(model4f)$tTable[6,3]`) = `r apa(summary(model4f)$tTable[6,4],2)`, *p* < .001 and real words, *b* = `r apa(summary(model4r)$tTable[6,1], 2)`, *t*(`r summary(model4r)$tTable[6,3]`) = `r apa(summary(model4r)$tTable[6,4],2)`, *p* < .001. These results mimics Experiment 1, except that hand switches were not significant for psuedowords in this experiment. 
-
-## Interactions
-
-```{r interactions2, include = FALSE}
-####fake speed:lrswitch:fingerswitch:rha####
-##examine speeds 
-fake$lowspeed = fake$speed + sd(fake$speed)
-fake$highspeed = fake$speed - sd(fake$speed)
-
-model5fl = lme(rating ~ letterfreq + lowspeed*lrswitch*fingerswitch*rha, 
-               data = fake, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-model5fh = lme(rating ~ letterfreq + highspeed*lrswitch*fingerswitch*rha, 
-               data = fake, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-
-#summary(model5fl)
-#summary(model5f)
-#summary(model5fh)
-
-##break down average and high speeds
-##left right switching
-fake$lowlrswitch = fake$lrswitch + sd(fake$lrswitch)
-fake$highlrswitch = fake$lrswitch - sd(fake$lrswitch)
-
-model5fal = lme(rating ~ letterfreq + speed*lowlrswitch*fingerswitch*rha, 
-              data = fake, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-model5fah = lme(rating ~ letterfreq + speed*highlrswitch*fingerswitch*rha, 
-              data = fake, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-
-#summary(model5fal)
-#summary(model5f)
-#summary(model5fah)
-
-model5fhl = lme(rating ~ letterfreq + highspeed*lowlrswitch*fingerswitch*rha, 
-                data = fake, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-model5fhh = lme(rating ~ letterfreq + highspeed*highlrswitch*fingerswitch*rha, 
-                data = fake, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-
-#summary(model5fhl)
-#summary(model5fh)
-#summary(model5fhh)
-
-##average speed, low LR break down by finger switch
-fake$lowfingerswitch = fake$fingerswitch + sd(fake$fingerswitch)
-fake$highfingerswitch  = fake$fingerswitch - sd(fake$fingerswitch)
-
-##avg speed low LR low FS
-model5fall = lme(rating ~ letterfreq + speed*lowlrswitch*lowfingerswitch*rha, 
-                data = fake, 
-                method = "ML", 
-                na.action = "na.omit",
-                random = ~1|partno)
-##avg speed low LR avg FS
-model5fala = lme(rating ~ letterfreq + speed*lowlrswitch*fingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##avg speed low LR high FS
-model5falh = lme(rating ~ letterfreq + speed*lowlrswitch*highfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-#summary(model5fall)
-#summary(model5fala)
-#summary(model5falh)
-
-##avg speed avg LR low FS
-model5faal = lme(rating ~ letterfreq + speed*lrswitch*lowfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##avg speed avg LR high FS
-model5faah = lme(rating ~ letterfreq + speed*lrswitch*highfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-
-#summary(model5faal)
-#summary(model5f)
-#summary(model5faah)
-
-##avg speed high LR low FS
-model5fahl = lme(rating ~ letterfreq + speed*highlrswitch*lowfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##avg speed high LR avg FS
-model5faha = lme(rating ~ letterfreq + speed*highlrswitch*fingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##avg speed high LR high FS
-model5fahh = lme(rating ~ letterfreq + speed*highlrswitch*highfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-
-#summary(model5fahl)
-#summary(model5faha)
-#summary(model5fahh)
-
-##high speed avg LR low FS
-model5fhal = lme(rating ~ letterfreq + highspeed*lrswitch*lowfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##high speed avg LR avg FS
-model5fhaa = lme(rating ~ letterfreq + highspeed*lrswitch*fingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##high speed avg LR high FS
-model5fhah = lme(rating ~ letterfreq + highspeed*lrswitch*highfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-
-#summary(model5fhal)
-#summary(model5fhaa)
-#summary(model5fhah)
-
-##high speed high LR low FS
-model5fhhl = lme(rating ~ letterfreq + highspeed*highlrswitch*lowfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##high speed high LR avg FS
-model5fhha = lme(rating ~ letterfreq + highspeed*highlrswitch*fingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-##high speed high LR high FS
-model5fhhh = lme(rating ~ letterfreq + highspeed*highlrswitch*highfingerswitch*rha, 
-                 data = fake, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-
-#summary(model5fhhl)
-#summary(model5fhha)
-#summary(model5fhhh)
-
-####real: lrswitch:fingerswitch:rha####
-##break down by left right
-real$lowlrswitch = real$lrswitch + sd(real$lrswitch)
-real$highlrswitch = real$lrswitch - sd(real$lrswitch)
-
-##low LR 
-model5rl = lme(rating ~ letterfreq + speed*lowlrswitch*fingerswitch*rha, 
-                 data = real, 
-                 method = "ML", 
-                 na.action = "na.omit",
-                 random = ~1|partno)
-summary(model5rl)
-
-##avg LR
-summary(model5r)
-
-##high LR
-model5rh = lme(rating ~ letterfreq + speed*highlrswitch*fingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5rh)
-
-##break down FS
-real$lowfingerswitch = real$fingerswitch + sd(real$fingerswitch)
-real$highfingerswitch = real$fingerswitch - sd(real$fingerswitch)
-
-##avg LR low FS
-model5al = lme(rating ~ letterfreq + speed*lrswitch*lowfingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5al)
-
-##avg LR avg FS
-summary(model5r)
-
-##avg LR high FS
-model5ah = lme(rating ~ letterfreq + speed*lrswitch*highfingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5ah)
-
-##high LR low FS
-model5hl = lme(rating ~ letterfreq + speed*highlrswitch*lowfingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5hl)
-
-##high LR avg FS
-model5ha = lme(rating ~ letterfreq + speed*highlrswitch*fingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5ha)
-
-##high LR high FS
-model5hh = lme(rating ~ letterfreq + speed*highlrswitch*highfingerswitch*rha, 
-               data = real, 
-               method = "ML", 
-               na.action = "na.omit",
-               random = ~1|partno)
-summary(model5hh)
-
-```
-
-
-FOUR WAY INTERACTION FOR PSUEDO WORDS UGH WHY
-WHAT CAN WE DO HERE WHAT THE FUCK
-
-Break down by speed 
-summary(model5fl) low speed
--lrswitch:fingerswitch:rha 16 is not sig
-
-summary(model5f) average speed
--lrswitch:fingerswitch:rha 16 is sig
-
-summary(model5fh) high speed
--lrswitch:fingerswitch:rha 16 is sig
-
-Break down by hand switches
---so we've done hand switches and speed, so theres only finger switches and RSA left
-
-#summary(model5fal) average speed low hand switch
--fingerswitch:rha 12 is sig
-
-#summary(model5f) average speed average hand switch
--fingerswitch:rha 12 is sig
-
-#summary(model5fah) average speed high hand switch 
--summary(model5fah)
-
-summary(model5fhl) high speed low hand switch
--fingerswitch:rha 12 is NOT
-
-summary(model5fh) high speed average hand switch
--fingerswitch:rha 12 is sig
-
-summary(model5fhh) high speed high hand switch 
--fingerswitch:rha 12 is sig
-
-Break down by finger switch for the significant interactions
-
-summary(model5fall) average speed, low hand, low fingerf
--rsa 6 .08 is sig
-
-summary(model5fala) average speed, low hand, average finger
--rsa 6 .06 is sig
-
-summary(model5falh) average speed, low hand, high finger
--rsa 6 .04 is sig
-
-summary(model5faal) average speed, average hand, low finger
-summary(model5f) average speed, average hand, average finger
-summary(model5faah) average speed, average hand, high finger 
-
-summary(model5fahl) average speed, high hand, low finger
-summary(model5faha) average speed, high hand, average finger
-summary(model5fahh) average speed, high hand, high finger
-
-summary(model5fhal) high speed, average hand, low finger
-summary(model5fhaa) high speed, average hand, average finger
-summary(model5fhah) high speed, average hand, high finger 
-
-summary(model5fhhl) high speed, high hand, low finger
-summary(model5fhha) high speed, high hand, average finger
-summary(model5fhhh) high speed, high hand, high finger 
-
-
-
-
-
-
-lrswitch:fingerswitch:rha FOR REAL WORDS 
-
 
 # Discussion
 
 These results imply that the QWERTY keyboard has influenced our perceptions of words, in a more complex way than a simple body specificity hypothesis. In the overall normed database analyses, the original QWERTY effect was replicable across a large body of various types of stimuli (verbs, Twitter, category norms), with much the same size of effect as @Jasmin2012 published. Word length was often negatively related to valence ratings, which indicated that we like shorter words to type. Average letter frequency was usually a positive predictor of valence ratings wherein ratings are higher for words with more frequent letters; however, these effects were inconsistent. Our measure of fluency (switches) varied across stimulus sets but it appears, by analyzing multiple sources of ratings for words at the same time, that there might have been an interaction between RSA and number of switches. This interaction portrayed that we find words that switch off of left-handed keypresses as more pleasant, while right-handed keypresses are preferable by switching hands less often.
+
 These effects were examined in more detail in Experiment 2, which incorporated @Beilock2007 study by including typing speed as a measure of expertise. Word ratings turned out to be quite complex with a four-way interaction between real/pseudowords, switches, RSA, and typing speed. All analyses showed a positive effect of right-side words, as well as if they were shorter and used more frequent letters. However, for pseudowords, no other effects were significant. Both @Beilock2007 and @VandenBergh1990 showed expert preferences for two and three letter combinations that were typed with different fingers. Our results could imply that our embodied actions influence preferences for procedures that are more likely in our environment. While our pseudowords were legal English phoneme combinations, they are extremely unlikely to have been previously practiced or encountered in our daily tasks. Therefore, switching preference will not extend to pseudowords (unpracticed actions) because they are not fluent [@Oppenheimer2008]. 
 
 The effect of expertise was shown on real words, where the three-way interaction between RSA, switches, and typing speed was examined by separating out right, equal, and left-handed words. For right-handed words, typing speed (or the interaction) was not a significant predictor of valence, and while not significant, number of switches was negatively related to valence ratings. For equally right-left and left-handed words, pleasantness ratings increase by switching back and forth to the right hand. Further, left-handed words showed an interaction between our two embodied cognition variables, where the number of switches increases valence ratings as the typing speed of the participant decreases. Therefore, it appears that as participants gain fluency through increased typing speed, the number of switches back and forth for left-handed words matters less for pleasantness ratings. Many of the most frequent letters on the QWERTY keyboard are on the left side, which may frustrate a slow typist because of the need to coordinate finger press schemata that involve same finger muscle movements [@Rumelhart1982]. Consequently, the number of switches becomes increasingly important to help decrease interference from the need to continue to use the same hand. The ease of action by switching back and forth is then translated as positive feelings for those fluent actions [@Oppenheimer2008].
@@ -1059,92 +542,6 @@ This extension of the QWERTY effect illuminates the need to examine how skill ca
 \newpage
 
 # References
-
-```{r testing, include = FALSE}
-
-tempexp2 = subset(exp1data, trialcode %in% exp2data$trialcode)
-tempexp2$rha = scale(tempexp2$rha, scale = F)
-tempexp2$fingerswitch = scale(tempexp2$fingerswitch, scale = F)
-tempexp2$lrswitch = scale(tempexp2$lrswitch, scale = F)
-tempexp2$speed = scale(tempexp2$speed, scale = F)
-
-real = subset(tempexp2, real_fake == "real")
-fake = subset(tempexp2, real_fake == "fake")
-
-####intercept only model####
-model1f = gls(rating ~ 1, 
-             data = fake, 
-             method = "ML", 
-             na.action = "na.omit")
-summary(model1f)
-
-model1r = gls(rating ~ 1, 
-             data = real, 
-             method = "ML", 
-             na.action = "na.omit")
-summary(model1r)
-
-####random intercept only model####
-model2f = lme(rating ~ 1, 
-             data = fake, 
-             method = "ML", 
-             na.action = "na.omit",
-             random = ~1|partno)
-summary(model2f)
-
-model2r = lme(rating ~ 1, 
-             data = real, 
-             method = "ML", 
-             na.action = "na.omit",
-             random = ~1|partno)
-summary(model2r)
-
-
-####controls predictor models####
-model3f = lme(rating ~ letterfreq, 
-              data = fake, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-summary(model3f)
-
-model3r = lme(rating ~ letterfreq, 
-             data = real, 
-             method = "ML", 
-             na.action = "na.omit",
-             random = ~1|partno)
-summary(model3r)
-
-####main effects models####
-model4f = lme(rating ~ letterfreq + speed + lrswitch + fingerswitch + rha, 
-             data = fake, 
-             method = "ML", 
-             na.action = "na.omit",
-             random = ~1|partno)
-summary(model4f)
-
-model4r = lme(rating ~ letterfreq + speed + lrswitch + fingerswitch + rha, 
-             data = real, 
-             method = "ML", 
-             na.action = "na.omit",
-             random = ~1|partno)
-summary(model4r)
-
-####interaction models####
-model5f = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*rha, 
-              data = fake, 
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-summary(model5f)
-
-model5r = lme(rating ~ letterfreq + speed*lrswitch*fingerswitch*rha, 
-              data = real,
-              method = "ML", 
-              na.action = "na.omit",
-              random = ~1|partno)
-summary(model5r)
-```
 
 
 \setlength{\parindent}{-0.5in}

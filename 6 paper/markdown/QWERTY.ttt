@@ -29,34 +29,3 @@ Real & Interactions & 19 & 150315.00 & 150474.50 & -75138.50 & 61.18 & < .001\\
 \end{table*}
 \efloatseparator
  
-\begin{table*}[hbt]
-\ifnextchar[{\eatarg}{}
-[tbp]
-\begin{center}
-\begin{threeparttable}
-\caption{\label{tab:model-table2}Area under curve model statistics}
-\begin{tabular}{lccccccc}
-\toprule
-Word Type & Model & $df$ & AIC & BIC & $\chi^2$ & $\Delta\chi^2$ & $p$\\
-\midrule
-Pseudo & Intercept Only & 2 & 13715.38 & 13727.76 & -6855.69 & NA & NA\\
-Pseudo & Random Intercept & 3 & 12190.54 & 12209.10 & -6092.27 & 1526.85 & < .001\\
-Pseudo & Adjustor Variable & 4 & 12192.17 & 12216.92 & -6092.08 & 0.37 & .543\\
-Pseudo & Main Effects & 8 & 12152.25 & 12201.76 & -6068.13 & 47.91 & < .001\\
-Pseudo & Interactions & 19 & 12127.85 & 12245.44 & -6044.93 & 46.40 & < .001\\
-Real & Intercept Only & 2 & 16133.38 & 16145.76 & -8064.69 & NA & NA\\
-Real & Random Intercept & 3 & 15922.15 & 15940.72 & -7958.08 & 213.23 & < .001\\
-Real & Adjustor Variable & 4 & 15898.69 & 15923.45 & -7945.35 & 25.46 & < .001\\
-Real & Main Effects & 8 & 15812.18 & 15861.69 & -7898.09 & 94.51 & < .001\\
-Real & Interactions & 19 & 15734.48 & 15852.06 & -7848.24 & 99.71 & < .001\\
-\bottomrule
-\addlinespace
-\end{tabular}
-\begin{tablenotes}[para]
-\textit{Note.} AIC: Aikaike Information Criterion, BIC: Bayesian Information Criterion
-\end{tablenotes}
-\end{threeparttable}
-\end{center}
-\end{table*}
-\efloatseparator
- 

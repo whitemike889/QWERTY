@@ -493,21 +493,23 @@ At a high number of finger switches, we found both speed and RSA interactions wi
 
 ##plot these together
 ##make pseudoword (fake) plot for speed (speed) X, valence (rating) Y, simple slopes is RSA (rha)
-##make pseudoword  plot for finger switching (fingerswitch) X, valence Y, simple slopes is RSA
+
 plot1 = ggplot(fake, aes(x = speed, y = rating)) +
   labs(x = "Typing Speed", y = "Valence") +
   scale_size_continuous(guide = FALSE) +
-  geom_abline(aes(intercept = .564, slope = .099, linetype = "-1SD Typing Speed")) +
-  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average Typing Speed")) +
-  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD Typing Speed")) +
+  geom_abline(aes(intercept = 4.115, slope = 0.005, linetype = "-1SD RSA")) + #done
+  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average RSA")) +
+  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD RSA")) +
   scale_linetype_manual(values = c("dotted", "dashed", "solid"),
-                        breaks = c("-1SD Typing Speed", "Average Typing Speed", "+1SD Typing Speed"),
+                        breaks = c("-1SD RSA", "Average RSA", "+1SD RSA"),
                         name = "Simple Slope") +
   coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
   geom_vline(xintercept = -.30) +
   geom_hline(yintercept = 0) +
   cleanup + 
-  labs(title="Speed") 
+  labs(title="Plot1Fake") 
+#just need numbers now
+##make pseudoword  plot for finger switching (fingerswitch) X, valence Y, simple slopes is RSA
 
 ##plot these together
 ##make real words low hand switches, RSA X, valence Y, simple slopes are handswitches

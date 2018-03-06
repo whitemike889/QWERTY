@@ -498,8 +498,8 @@ plot1 = ggplot(fake, aes(x = speed, y = rating)) +
   labs(x = "Typing Speed", y = "Valence") +
   scale_size_continuous(guide = FALSE) +
   geom_abline(aes(intercept = 4.115, slope = 0.005, linetype = "-1SD RSA")) + #done
-  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average RSA")) +
-  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD RSA")) +
+  geom_abline(aes(intercept = 4.227, slope = 0.003, linetype = "Average RSA")) +
+  geom_abline(aes(intercept = 4.340, slope = 0.001, linetype = "+1SD RSA")) +
   scale_linetype_manual(values = c("dotted", "dashed", "solid"),
                         breaks = c("-1SD RSA", "Average RSA", "+1SD RSA"),
                         name = "Simple Slope") +
@@ -507,37 +507,86 @@ plot1 = ggplot(fake, aes(x = speed, y = rating)) +
   geom_vline(xintercept = -.30) +
   geom_hline(yintercept = 0) +
   cleanup + 
-  labs(title="Plot1Fake") 
-#just need numbers now
+  labs(title="Speed") 
+
 ##make pseudoword  plot for finger switching (fingerswitch) X, valence Y, simple slopes is RSA
-
-##plot these together
-##make real words low hand switches, RSA X, valence Y, simple slopes are handswitches
-##make real words high hand switches, RSA X, valence Y, simple slopes are handswitches
-##make real words high hand switches, speed X, valence Y, simple slopes are handswitches
-
-##MAKE ALL THE PLOTS
-plot3 = ggplot(dat, aes(x = ZCOS_low, y = Judged.Value2)) +
-  labs(x = "ZFSG", y = "Judgments") +
+plot2 = ggplot(fake, aes(x = fingerswitch, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
   scale_size_continuous(guide = FALSE) +
-  geom_abline(aes(intercept = .564, slope = .099, linetype = "-1SD ZLSA")) +
-  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average ZLSA")) +
-  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD ZLSA")) +
+  geom_abline(aes(intercept = 4.115, slope = -0.095, linetype = "-1SD RSA")) + #done
+  geom_abline(aes(intercept = 4.227, slope = -0.062, linetype = "Average RSA")) +
+  geom_abline(aes(intercept = 4.340, slope = -0.029, linetype = "+1SD RSA")) +
   scale_linetype_manual(values = c("dotted", "dashed", "solid"),
-                        breaks = c("-1SD ZLSA", "Average ZLSA", "+1SD ZLSA"),
+                        breaks = c("-1SD RSA", "Average RSA", "+1SD RSA"),
                         name = "Simple Slope") +
   coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
   geom_vline(xintercept = -.30) +
   geom_hline(yintercept = 0) +
   cleanup + 
-  labs(title="High ZCOS") 
+  labs(title="Finger Switch") 
 
 # arrange plots together
-legend = get_legend(plot1)
+legend1 = get_legend(plot1)
 plot_grid( plot1 + theme(legend.position="none"),
            plot2 + theme(legend.position="none"),
-           plot3 + theme(legend.position="none"),
-           legend,
+           legend1,
+           hjust = -1,
+           nrow = 1)
+
+##plot these together
+##make real words low finger switches, RSA X, valence Y, simple slopes are handswitches
+plot3 = ggplot(real, aes(x = rha, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = 4.820, slope = 0.035, linetype = "-1SD Hand Switches")) + #done
+  geom_abline(aes(intercept = 4.863, slope = 0.055, linetype = "Average Hand Switches")) +
+  geom_abline(aes(intercept = 4.906, slope = 0.074, linetype = "+1SD Hand Switches")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD Hand Switches", "Average Hand Switches", "+1SD Hand Switches"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="Hand Switches for Low Finger Switches") 
+
+##make real words high hand switches, RSA X, valence Y, simple slopes are handswitches
+plot4 = ggplot(real, aes(x = rha, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = 4.476, slope = 0.101, linetype = "-1SD Hand Switches")) + #done
+  geom_abline(aes(intercept = 4.553, slope = 0.074, linetype = "Average Hand Switches")) +
+  geom_abline(aes(intercept = 4.629, slope = 0.048, linetype = "+1SD Hand Switches")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD Hand Switches", "Average Hand Switches", "+1SD Hand Switches"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="Hand Switches for High Finger Switches") 
+##make real words high hand switches, speed X, valence Y, simple slopes are handswitches
+plot5 = ggplot(real, aes(x = speed, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = 4.476, slope = 0.010, linetype = "-1SD Hand Switches")) + #done
+  geom_abline(aes(intercept = 4.553, slope = 0.006, linetype = "Average Hand Switches")) +
+  geom_abline(aes(intercept = 4.629, slope = 0.002, linetype = "+1SD Hand Switches")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD Hand Switches", "Average Hand Switches", "+1SD Hand Switches"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="Hand Switches for High Finger Switches") 
+
+# arrange plots together
+legend2 = get_legend(plot3)
+plot_grid( plot3 + theme(legend.position="none"),
+           plot4 + theme(legend.position="none"),
+           plot5 + theme(legend.position="none"),
+           legend2,
            hjust = -1,
            nrow = 2)
 

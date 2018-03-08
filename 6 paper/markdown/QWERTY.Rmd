@@ -21,7 +21,7 @@ author_note: |
   Erin M. Buchanan is an Associate Professor of Quantitative Psychology at Missouri State University. K. D. Valentine is a Ph.D. candidate at the University of Missouri. 
   
 abstract: |
-  Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. The QWERTY effect is an increase in valence ratings for words typed more with the right hand on a traditional keyboard [@Jasmin2012]. Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework [@Barsalou1999] and found that the right side advantage is replicable to new valence stimuli, as well as experimental manipulation. Further, when examining expertise, right side advantage interacted with typing speed and typability (i.e., alternating hand keypresses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
+  Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. One such influence, deemed the QWERTY effect, is an increase in valence ratings for words typed more with the right hand on a traditional keyboard [@Jasmin2012]. Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework [@Barsalou1999] and found that the right side advantage is replicable to new valence stimuli, as well as experimental manipulation. Further, when examining expertise, right side advantage interacted with typing speed and typability (i.e., alternating hand keypresses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
   
 keywords          : "keyboard, valence, QWERTY, word norms"
 
@@ -64,6 +64,7 @@ Using an embodied framework, @Casasanto2009 has proposed that handedness dictate
 
 ## The QWERTY Effect
 
+<<<<<<< HEAD
 These effects inspired @Jasmin2012 to propose the idea that typing, an action that often replaces speaking, has the ability to create semantic changes in how we perceive words. The asymmetrical arrangement of letters on the QWERTY keyboard increases fluency of typing letters on the right side because there are fewer keys, and thus, less competition for fingers. That arrangement should then cause us to perceive the letters on the right side as more positive and letters on the left side as more negative. Consequently, words that are composed of more letters from the right side (the right side advantage; RSA) should be rated as more positive than those with more letters on the left. They found this preference for RSA over three languages (English, Spanish, and Dutch), and the effect was even stronger on words created after the invention of the QWERTY keyboard (i.e., lol), as well as evident in pseudowords such as plook. However, in contrast to the body specificity hypothesis, left and right handed participants showed the same trend in effects for positive-is-right words. 
 
 # Current Study
@@ -72,6 +73,13 @@ The current study examined the right side advantage's interaction with tradition
 
   1) To examine embodied cognition, we coded each word for number of hand alternations (akin to @Beilock2007's different hand preferences). Given that typing involves the procedural action system, we would also expect to find that increased hand switches are positively related to ratings of valence because words that are typed on alternating hands are easier to type. 
   2) The interaction between RSA and switches was examined to determine if these hypotheses can be combined (i.e., we only like right handed words because we have to switch back and forth to type the more commonly used letters, such as *e* or *a*).
+=======
+These effects lead @Jasmin2012 to propose the idea that typing, an action that often replaces speaking, has the ability to create semantic changes in how we perceive words. The asymmetrical arrangement of letters on the QWERTY keyboard increases fluency of typing letters on the right side because there are fewer keys, and thus, less competition for fingers. That arrangement should then cause us to perceive the letters on the right side of the keyboard as more positive and letters on the left side as more negative. Consequently, words that are composed of more letters from the right side of the keyboard (the right side advantage; RSA) should be rated as more positive than those with more letters on the left. They found this preference for RSA over three languages (English, Spanish, and Dutch), and the effect was even stronger on words created after the invention of the QWERTY keyboard (i.e.,lol), as well as on pseudowords such as plook. However, in contrast to the body specificity hypothesis, left and right handed participants showed the same trend in effects for positive-is-right words. 
+
+# Current Study
+
+The current study examined the right side advantage's interaction with traditional embodied cognition definitions (expertise, fluency). We analyzed the different implications of the body specificity hypothesis and a more general embodied hypothesis by testing the following: 1) To examine embodied cognition, we coded each word for number of hand alternations (akin to @Beilock2007's different hand preferences). Given that typing involves the procedural action system, we would also expect to find that increased hand switches are positively related to ratings of valence because words that are typed on alternating hands are easier to type. 2) The interaction between RSA and switches was examined to determine if these hypotheses can be combined (i.e.,we only like right handed words because we have to switch back and forth to type the more commonly used letters, such as *e* or *a*). 3) To determine if expertise interacted with either RSA or typability when creating valence ratings. DOES THIS MAKE SENSE? IF SO, LETS GO BACK AND FORMAT OUR DISCUSSION TO FOLLOW LIKE THIS.
+>>>>>>> 1d294891ed96b1e75e0583c4619c54be05020eec
 
 # Method
 
@@ -147,17 +155,25 @@ hand = table(temp$hand) / length(temp$hand) * 100
 
 ```
 
-Participants (*N* = `r part`) were recruited from the university undergraduate human subject pool and received course credit for their time. `r rows` rows of data were present for these participants, where `r (part - missdatapoints)` participants included complete data (i.e., 120 rows, see below), `r missdatapoints119` were missing one data point, and `r (missdatapoints - missdatapoints119)` were missing many data points. All data points were included, and missing data points were usually computer error (i.e., freezing during the experiment) or participant error (i.e., missed key press). 
+Participants (*N* = `r part`) were recruited from the undergraduate human subject pool at a large Midwest university and received course credit for their time. `r rows` rows of data were present for these participants, where `r (part - missdatapoints)` participants had complete data (i.e., 120 rows, see below), `r missdatapoints119` were missing one data point, and `r (missdatapoints - missdatapoints119)` were missing many data points. All possible data points were considered and missing data points were usually computer error (i.e., freezing during the experiment) or participant error (i.e., missed key press). 
 
+<<<<<<< HEAD
 Rating data were screened for multivariate outliers, and two participant's ratings were found to have extreme Mahalanobis distance scores [@Tabachnick2012] but were kept in the data set. `r apa(hand['Left'], 1)` percent of the sample was left-handed, `r apa(hand['right_left'], 1)` marked ambidextrous, and `r apa(100 - sum(hand), 1)` was missing handedness information. The average typing speed was `r apa(mean(temp$speed), 2)` (*SD* = `r apa(sd(temp$speed), 2)`, and the average percent accuracy rate for the typing test was `r apa(mean(temp$error), 2)` (*SD* = `r apa(sd(temp$error), 2)`).
 
 ## Materials
 
 The English ANEW [@Bradley1999] norms were used to create stimuli for this study, in an effort to replicate @Jasmin2012 experiments, and `r length(table(exp1data$trialcode))` words were selected for this experiment. Pseudowords were selected from Appendix E of the supplementary materials presented from the QWERTY publication. These words were coded as described below for RSA, switches, word length, and letter frequency. Average word length was `r apa(mean(exp1data$length), 2)` (*SD* = `r apa(sd(exp1data$length), 2)`; range = `r min(exp1data$length)` - `r max(exp1data$length)`). All materials, data, and the *R*markdown document that created this manuscript are available at our Open Science Foundation (OSF) page: https://osf.io/zs2qj/. 
+=======
+Rating data were screened for multivariate outliers, and two participant's ratings were found to have extreme Mahalanobis distance scores [@Tabachnick2012] but were kept in the data set. `r apa(hand['Left'], 1)` percent of the sample was left-handed, `r apa(hand['right_left'], 1)` percent marked ambigdextrious, and `r apa(100 - sum(hand), 1)` percent was missing handedness information. The average typing speed was `r apa(mean(temp$speed), 2)` words per minute (*SD* = `r apa(sd(temp$speed), 2)`, and the average percent accuracy rate for the typing test was `r apa(mean(temp$error), 2)` (*SD* = `r apa(sd(temp$error), 2)`).
+
+## Materials
+
+The English ANEW [@Bradley1999] norms were used to create the stimuli for this study, in an effort to replicate @Jasmin2012 experiments, and `r length(table(exp1data$trialcode))` words were selected for this experiment. Pseudowords were selected from Appendix E of the supplementary materials presented from the QWERTY publication. These words were coded as described below for RSA, finger and hand switches, word length, and letter frequency. Average word length was `r apa(mean(exp1data$length), 2)` (*SD* = `r apa(sd(exp1data$length), 2)`; range = `r min(exp1data$length)` - `r max(exp1data$length)`). All materials, data, and the *R*markdown document that created this manuscript are avaliable at our Open Science Foundation (OSF) page: https://osf.io/zs2qj/. 
+>>>>>>> 1d294891ed96b1e75e0583c4619c54be05020eec
 
 ## Coding
 
-Each of the words used in this experiment and Experiment 2 were coded for control and experimental variables. Control variables included word length and average letter frequency. Average letter frequency was created by averaging the English letter frequency  [@Lewand2000] for each letter in a word. Words with high average letter frequencies contain more commonly used letters (*e, t, a, o*); while words with lower frequencies use more of the less common letters (*z, q, x, j*). Experimental variables included RSA, number of hand switches, and number of finger switches. Typing manuals were consulted, and letters were coded as left (*q, w, e, r, t, a, s, d, f, g, z, x, c, v, b*) or right-handed letters (*y, u, i, o, p, h, j, k, l, n, m*). Left handed letters were coded with -1 and right handed letters with +1, which created summed scores indicating the overall right side advantage for a word. Words were coded for the number of hand switches within a word using the left-right coding system described above. Finally, the number of finger switches were coded using traditional typing manuals for each finger. Finger switches was highly correlated with word length, *r* = `r apa(cor(exp1data$length, exp1data$fingerswitch), 2, F)`, and therefore, word length was excluded as a control variable due the interest in typing skill for experimental hypotheses.
+Each of the words used in this study were coded for control and experimental variables. Control variables included word length and average letter frequency. Average letter frequency was created by averaging the English letter frequency  [@Lewand2000] for each letter in a word. Words with high average letter frequencies contain more commonly used letters (*e, t, a, o*); while words with lower frequencies use more of the less common letters (*z, q, x, j*). Experimental variables included RSA, number of hand switches, and number of finger switches. Typing manuals were consulted, and letters were coded as left (*q, w, e, r, t, a, s, d, f, g, z, x, c, v, b*) or right-handed letters (*y, u, i, o, p, h, j, k, l, n, m*). Left handed letters were coded with -1 and right handed letters with +1, which created summed scores indicating the overall right side advantage for a word. Words were coded for the number of hand switches within a word using the left-right coding system described above. Finally, the number of finger switches were coded using traditional typing manuals for each finger. Finger switches was highly correlated with word length, *r* = `r apa(cor(exp1data$length, exp1data$fingerswitch), 2, F)`, and therefore, word length was excluded as a control variable due to focus on typing skill in our hypotheses.
 
 ## Procedure
 
@@ -167,7 +183,7 @@ Upon consent to participate in the experiment, participants were given a typing 
 
 ## Data Analytic Plan
 
-Because each participant constituted multiple data points within the dataset, a multilevel model was used to control for correlated error [@Gelman2006]. @Pinheiro2017's *nlme* package in *R* was used to calculate these analyses. A maximum likelihood multilevel model was used to examine hypotheses of interactions between typing speed, hand/finger switching, and RSA while adjusting for letter frequency when predicting item pleasantness ratings. Pseudowords and real words were examined separately in two multilevel model analyses. Participants were included as a random intercept factor, as comparison to a non-random intercept was significant (see Table \@ref(tab:model-table1)). Typing speed, finger/hand switches, and RSA were mean centered before analyses to control for multicollinearity.  
+Because each participant constituted multiple data points within the dataset, a multilevel model was used to control for correlated error [@Gelman2006]. @Pinheiro2017's *nlme* package in *R* was used to calculate these analyses. A maximum likelihood multilevel model was used to examine hypotheses of interactions between typing speed, hand/finger switching, and RSA while adjusting for letter frequency when predicting item pleasantness ratings. Pseudowords and real words were examined separately in two multilevel model analyses. Participants were included as a random intercept factor, as comparison to a non-random intercept was significant (see Table \@ref(tab:model-table1)). Typing speed, finger/hand switches, and RSA were mean centered before analyses to control for multicollinearity. 
 
 ```{r setupexp1, include = FALSE}
 ####separate real fake####
@@ -475,21 +491,29 @@ write.csv(excelprint, "Interaction Statistics Exp 1.csv", row.names = FALSE)
 
 ```
 
+<<<<<<< HEAD
 Next, the four-way interaction of typing speed, finger switching, hand switching, and RSA was entered into the equation, including all the smaller two- and three-way interactions. We focused on the most complex interaction found, breaking down interaction terms into simple slopes of low (-1SD), average, and high (+1SD) to explore each effect. For example, if the four-way interaction was significant, one variable would be broken into simple slopes, and the next most complex interactions would be examined. This procedure was iterated until the interactions were no longer significant or only main effects were examined. When multiple interactions were present, we choose a common variable to help break down the interactions with the least number of steps. Table \@ref(tab:model-table1) portrays that the addition of the interaction components was significant for both pseudoword, *p* = .003, and real word, *p* < .001, models. 
 
 ### Pseudoword Simple Slopes
 
 For pseudowords, finger switches by RSA, *b* = `r apa(summary(model5f)$tTable[12,1],3)`, *t*(`r summary(model5f)$tTable[12,3]`) = `r apa(summary(model5f)$tTable[12,4],2)`, *p* < .001, and typing speed by RSA, *b* = `r apa(summary(model5f)$tTable[10,1],3)`, *t*(`r summary(model5f)$tTable[10,3]`) = `r apa(summary(model5f)$tTable[10,4],2)`, *p* = `r apa(summary(model5f)$tTable[10,5],3,F)` were the only significant interactions. Low and high simple slopes for RSA were created to examine the effects of typing speed and finger switches at these levels. For low RSA (more left handed words), speed positively predicted valence, *b* = `r apa(summary(model5fl)$tTable[3,1],3)`, *t*(`r summary(model5fl)$tTable[3,3]`) = `r apa(summary(model5fl)$tTable[3,4],2)`, *p* = `r apa(summary(model5fl)$tTable[3,5],3,F)`, and finger switching negatively predicted valence, *b* = `r apa(summary(model5fl)$tTable[5,1],3)`, *t*(`r summary(model5fl)$tTable[5,3]`) = `r apa(summary(model5fl)$tTable[5,4],2)`, *p* < .001. For average RSA, speed no longer predicted valence, *b* = `r apa(summary(model5f)$tTable[3,1],3)`, *t*(`r summary(model5f)$tTable[3,3]`) = `r apa(summary(model5f)$tTable[3,4],2)`, *p* = `r apa(summary(model5f)$tTable[3,5],3,F)`, while finger switches still negatively predicted valence, albeit smaller than at low RSA, *b* = `r apa(summary(model5f)$tTable[5,1],3)`, *t*(`r summary(model5f)$tTable[5,3]`) = `r apa(summary(model5f)$tTable[5,4],2)`, *p* = `r apa(summary(model5f)$tTable[5,5],3,F)`. Last, at high RSA (more right handed words), speed did not predict valence, *b* = `r apa(summary(model5fh)$tTable[3,1],3)`, *t*(`r summary(model5fh)$tTable[3,3]`) = `r apa(summary(model5fh)$tTable[3,4],2)`, *p* = `r apa(summary(model5fh)$tTable[3,5],3,F)`, and neither did finger switches, *b* = `r apa(summary(model5fh)$tTable[5,1],3)`, *t*(`r summary(model5fh)$tTable[5,3]`) = `r apa(summary(model5fh)$tTable[5,4],2)`, *p* = `r apa(summary(model5fh)$tTable[5,5],3,F)`. In sum, this interaction indicates that typing speed was a positive influence for more left handed words, but was not a predictor as words were typed more with the right hand. When words were more left handed, there was a negative influence of finger switching, but as we transition to more right handed words the number of switches did not influence valence ratings. These results seem to indicate that expertise and typability were influential factors for left handed words, but the RSA washed out these effects when rating right handed pseudowords. 
+=======
+Next, the four-way interaction of typing speed, finger switching, hand switching, and RSA was entered into the equation, including all the smaller two- and three-way interactions. We focused on the most complext interaction found, breaking down interaction terms into simple slopes of low (-1SD), average, and high (+1SD) to explore each effect. For example, if the four-way interaction was significant, one variable would be broken into simple slopes, and the next most complex interactions would be examined. This procedure was iterated until the interactions were no longer significant or only main effects were examined. When multiple interactions were present, we chose a common variable to help break down the interactions with the least number of steps. Table \@ref(tab:model-table1) portrays that the addition of the interaction components was significant for both pseudoword, *p* = .003, and real word, *p* < .001, models. 
+
+### Pseudoword Simple Slopes
+
+For pseudowords, finger switches by RSA, *b* = `r apa(summary(model5f)$tTable[12,1],3)`, *t*(`r summary(model5f)$tTable[12,3]`) = `r apa(summary(model5f)$tTable[12,4],2)`, *p* < .001, and typing speed by RSA, *b* = `r apa(summary(model5f)$tTable[10,1],3)`, *t*(`r summary(model5f)$tTable[10,3]`) = `r apa(summary(model5f)$tTable[10,4],2)`, *p* = `r apa(summary(model5f)$tTable[10,5],3,F)` were the only significant interactions. Low and high simple slopes for RSA were created to examine the effects of typing speed and finger switches at these levels. For low RSA (words with more left handed letters), speed positively predicted valence, *b* = `r apa(summary(model5fl)$tTable[3,1],3)`, *t*(`r summary(model5fl)$tTable[3,3]`) = `r apa(summary(model5fl)$tTable[3,4],2)`, *p* = `r apa(summary(model5fl)$tTable[3,5],3,F)`, and finger switching negatively predicted valence, *b* = `r apa(summary(model5fl)$tTable[5,1],3)`, *t*(`r summary(model5fl)$tTable[5,3]`) = `r apa(summary(model5fl)$tTable[5,4],2)`, *p* < .001. For average RSA, speed no longer predicted valence, *b* = `r apa(summary(model5f)$tTable[3,1],3)`, *t*(`r summary(model5f)$tTable[3,3]`) = `r apa(summary(model5f)$tTable[3,4],2)`, *p* = `r apa(summary(model5f)$tTable[3,5],3,F)`, while finger switches still negatively predicted valence, albeit smaller than at low RSA, *b* = `r apa(summary(model5f)$tTable[5,1],3)`, *t*(`r summary(model5f)$tTable[5,3]`) = `r apa(summary(model5f)$tTable[5,4],2)`, *p* = `r apa(summary(model5f)$tTable[5,5],3,F)`. Last, at high RSA (words with more right handed letters), speed did not predict valence, *b* = `r apa(summary(model5fh)$tTable[3,1],3)`, *t*(`r summary(model5fh)$tTable[3,3]`) = `r apa(summary(model5fh)$tTable[3,4],2)`, *p* = `r apa(summary(model5fh)$tTable[3,5],3,F)`, and neither did finger switches, *b* = `r apa(summary(model5fh)$tTable[5,1],3)`, *t*(`r summary(model5fh)$tTable[5,3]`) = `r apa(summary(model5fh)$tTable[5,4],2)`, *p* = `r apa(summary(model5fh)$tTable[5,5],3,F)`. In sum, this interaction indicates that expertise may be seen as positively influencing ratings for more left handed words, but was not a predictor of words that were typed more with the right hand. When words were more left handed, there was a negative influence of finger switching, but as we transition to more right handed words the number of switches did not influence valence ratings. These results seem to indicate that expertise and typability were influential factors for left handed words, but the RSA washed out these effects when rating right handed psuedowords. 
+>>>>>>> 1d294891ed96b1e75e0583c4619c54be05020eec
 
 ### Real Word Simple Slopes
 
 For real words, the three-way interactions of finger switch by hand switch by RSA, *b* = `r apa(summary(model5r)$tTable[16,1],3)`, *t*(`r summary(model5r)$tTable[16,3]`) = `r apa(summary(model5r)$tTable[16,4],2)`, *p* < .001, and speed by finger switch by hand switch, *b* = `r apa(summary(model5r)$tTable[13,1],3)`, *t*(`r summary(model5r)$tTable[13,3]`) = `r apa(summary(model5r)$tTable[13,4],2)`, *p* = `r apa(summary(model5r)$tTable[13,5],3,F)`, were the largest significant interaction predictors. Low and high simple slopes for finger switches were created to explore the three-way interaction. For lower finger switches, the hand switching by RSA interaction was significant, *b* = `r apa(summary(model5rl)$tTable[11,1],3)`, *t*(`r summary(model5rl)$tTable[11,3]`) = `r apa(summary(model5rl)$tTable[11,4],2)`, *p* = `r apa(summary(model5rl)$tTable[11,5],3,F)`; however, the hand switches by speed interaction was not significant, *b* = `r apa(summary(model5rl)$tTable[7,1],3)`, *t*(`r summary(model5rl)$tTable[7,3]`) = `r apa(summary(model5rl)$tTable[7,4],2)`, *p* = `r apa(summary(model5rl)$tTable[7,5],3,F)`. At average finger switching, the hand switches by RSA interaction was not significant, *b* = `r apa(summary(model5r)$tTable[11,1],3)`, *t*(`r summary(model5r)$tTable[11,3]`) = `r apa(summary(model5r)$tTable[11,4],2)`, *p* = `r apa(summary(model5r)$tTable[11,5],3,F)`, and neither was the hand switches by speed interaction, *b* = `r apa(summary(model5r)$tTable[7,1],3)`, *t*(`r summary(model5r)$tTable[7,3]`) = `r apa(summary(model5r)$tTable[7,4],2)`, *p* = `r apa(summary(model5r)$tTable[7,5],3,F)`. At a higher number of finger switches the hand switches by RSA interaction was significant, *b* = `r apa(summary(model5rh)$tTable[11,1],3)`, *t*(`r summary(model5rh)$tTable[11,3]`) = `r apa(summary(model5rh)$tTable[11,4],2)`, *p* = `r apa(summary(model5rh)$tTable[11,5],3,F)`, along with the hand switches by speed interaction, *b* = `r apa(summary(model5rh)$tTable[13,1],3)`, *t*(`r summary(model5rh)$tTable[13,3]`) = `r apa(summary(model5rh)$tTable[13,4],2)`, *p* = `r apa(summary(model5rh)$tTable[13,5],3,F)`.
 
-For significant two-way effects of hand switch by RSA or hand switch by speed, we then calculated the low and high simple slopes for hand switches. Therefore, we explored the low and high finger switch effects that were significant with low and high hand switches for RSA and speed main effects. At low finger switches and low hand switches, RSA was a significant predictor of valence, *b* = `r apa(summary(model5rll)$tTable[6,1],3)`, *t*(`r summary(model5rll)$tTable[6,3]`) = `r apa(summary(model5rll)$tTable[6,4],2)`, *p* = `r apa(summary(model5rll)$tTable[6,5],3,F)`. Speed was not examined because the two-way interaction was not significant. At low finger switches and average hand switches, RSA was a stronger predictor of valence, *b* = `r apa(summary(model5rl)$tTable[6,1],3)`, *t*(`r summary(model5rl)$tTable[6,3]`) = `r apa(summary(model5rl)$tTable[6,4],2)`, *p* < .001. Last, at low finger switches and high hand switches, RSA increased in strength, *b* = `r apa(summary(model5rlh)$tTable[6,1],3)`, *t*(`r summary(model5rlh)$tTable[6,3]`) = `r apa(summary(model5rlh)$tTable[6,4],2)`, *p* = `r apa(summary(model5rlh)$tTable[6,5],3,F)`. Therefore, at low numbers of finger switches, as hand switching increased, the strength of the RSA positivity effect also increased. This result implies that as words were switching hands, the more right handed letters a word has during these switches increased valence. 
+For significant two-way effects of hand switch by RSA and hand switch by speed, we then calculated the low and high simple slopes for hand switches. Therefore, we explored the low and high finger switch effects that were significant with low and high hand switches for RSA and speed main effects. At low finger switches and low hand switches, RSA was a significant predictor of valence, *b* = `r apa(summary(model5rll)$tTable[6,1],3)`, *t*(`r summary(model5rll)$tTable[6,3]`) = `r apa(summary(model5rll)$tTable[6,4],2)`, *p* = `r apa(summary(model5rll)$tTable[6,5],3,F)`. Speed was not examined because the two-way interaction was not significant. At low finger switches and average hand switches, RSA was a stronger predictor of valence, *b* = `r apa(summary(model5rl)$tTable[6,1],3)`, *t*(`r summary(model5rl)$tTable[6,3]`) = `r apa(summary(model5rl)$tTable[6,4],2)`, *p* < .001. Last, at low finger switches and high hand switches, RSA increased in strength, *b* = `r apa(summary(model5rlh)$tTable[6,1],3)`, *t*(`r summary(model5rlh)$tTable[6,3]`) = `r apa(summary(model5rlh)$tTable[6,4],2)`, *p* = `r apa(summary(model5rlh)$tTable[6,5],3,F)`. Therefore, at low numbers of finger switches, as hand switching increased, the strength of the RSA positivity effect also increased. This result implies that as words require switching hands, words with more right handed letters during these switches were more likely to be rated more positive in valence. 
 
-At a high number of finger switches, we found both speed and RSA interactions with hand switching. When there were low numbers of hand switches for these words, RSA was a positive significant predictor, *b* = `r apa(summary(model5rhl)$tTable[6,1],3)`, *t*(`r summary(model5rhl)$tTable[6,3]`) = `r apa(summary(model5rhl)$tTable[6,4],2)`, *p* < .001, along with speed, *b* = `r apa(summary(model5rhl)$tTable[3,1],3)`, *t*(`r summary(model5rhl)$tTable[3,3]`) = `r apa(summary(model5rhl)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhl)$tTable[3,5],3,F)`. As hand switches increase, the effects of RSA and speed decrease. For high finger switches and average hand switches, RSA was significant, *b* = `r apa(summary(model5rh)$tTable[6,1],3)`, *t*(`r summary(model5rh)$tTable[6,3]`) = `r apa(summary(model5rh)$tTable[6,4],2)`, *p* < .001, while speed was not *b* = `r apa(summary(model5rh)$tTable[3,1],3)`, *t*(`r summary(model5rh)$tTable[3,3]`) = `r apa(summary(model5rh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rh)$tTable[3,5],3,F)`. With high finger and hand switches, RSA was significant but smaller than low and average, *b* = `r apa(summary(model5rhh)$tTable[6,1],3)`, *t*(`r summary(model5rhh)$tTable[6,3]`) = `r apa(summary(model5rhh)$tTable[6,4],2)`, *p* < .001, and speed was not a significant predictor, *b* = `r apa(summary(model5rhh)$tTable[3,1],3)`, *t*(`r summary(model5rhh)$tTable[3,3]`) = `r apa(summary(model5rhh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhh)$tTable[3,5],3,F)`. Therefore, at an elevated number of finger switches, we found that RSA and speed were positive predictors at low hand switches. As hand switching and finger switching increases, the effects of expertise and RSA decreased. This result implies that the coordination of controlling for finger and hand switching decreased the positive valence effects of RSA and expertise. All interaction statistics are included online in an Excel sheet at our OSF page. 
+At a high number of finger switches, we found both speed and RSA interactions with hand switching. When there were low numbers of hand switches for these words, RSA was a positive significant predictor, *b* = `r apa(summary(model5rhl)$tTable[6,1],3)`, *t*(`r summary(model5rhl)$tTable[6,3]`) = `r apa(summary(model5rhl)$tTable[6,4],2)`, *p* < .001, along with speed, *b* = `r apa(summary(model5rhl)$tTable[3,1],3)`, *t*(`r summary(model5rhl)$tTable[3,3]`) = `r apa(summary(model5rhl)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhl)$tTable[3,5],3,F)`. As hand switches increase, the effects of RSA and speed decrease. For high finger switches and average hand switches, RSA was significant, *b* = `r apa(summary(model5rh)$tTable[6,1],3)`, *t*(`r summary(model5rh)$tTable[6,3]`) = `r apa(summary(model5rh)$tTable[6,4],2)`, *p* < .001, while speed was not *b* = `r apa(summary(model5rh)$tTable[3,1],3)`, *t*(`r summary(model5rh)$tTable[3,3]`) = `r apa(summary(model5rh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rh)$tTable[3,5],3,F)`. With high finger and hand switches, RSA was significant but smaller than low and average, *b* = `r apa(summary(model5rhh)$tTable[6,1],3)`, *t*(`r summary(model5rhh)$tTable[6,3]`) = `r apa(summary(model5rhh)$tTable[6,4],2)`, *p* < .001, and speed was not a significant predictor, *b* = `r apa(summary(model5rhh)$tTable[3,1],3)`, *t*(`r summary(model5rhh)$tTable[3,3]`) = `r apa(summary(model5rhh)$tTable[3,4],2)`, *p* = `r apa(summary(model5rhh)$tTable[3,5],3,F)`. Therefore, at an elevated number of finger switches, and a low number of hand switches, we found that RSA and speed were positive predictors of valence ratings. As hand switching and finger switching increases, the effects of expertise and RSA decreased. This result implies that the coordination of controlling for finger and hand switching decreased the positive valence effects of both RSA and expertise. All interaction statistics are included online in an Excel sheet at our OSF page. 
 
-```{r graphs, echo=FALSE, eval=FALSE, fig.cap = "PUT A FIGURE CAPTION", fig.height=6, fig.width=6}
+```{r graphs, echo=FALSE,  fig.cap = "Simple Slopes for Pseudowords", fig.height=6, fig.width=6}
 
 ##take out eval = false after fixing this
 
@@ -500,8 +524,8 @@ plot1 = ggplot(fake, aes(x = speed, y = rating)) +
   labs(x = "Typing Speed", y = "Valence") +
   scale_size_continuous(guide = FALSE) +
   geom_abline(aes(intercept = 4.115, slope = 0.005, linetype = "-1SD RSA")) + #done
-  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average RSA")) +
-  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD RSA")) +
+  geom_abline(aes(intercept = 4.227, slope = 0.003, linetype = "Average RSA")) +
+  geom_abline(aes(intercept = 4.340, slope = 0.001, linetype = "+1SD RSA")) +
   scale_linetype_manual(values = c("dotted", "dashed", "solid"),
                         breaks = c("-1SD RSA", "Average RSA", "+1SD RSA"),
                         name = "Simple Slope") +
@@ -509,37 +533,91 @@ plot1 = ggplot(fake, aes(x = speed, y = rating)) +
   geom_vline(xintercept = -.30) +
   geom_hline(yintercept = 0) +
   cleanup + 
-  labs(title="Plot1Fake") 
-#just need numbers now
+  labs(title="Speed") 
+
 ##make pseudoword  plot for finger switching (fingerswitch) X, valence Y, simple slopes is RSA
-
-##plot these together
-##make real words low hand switches, RSA X, valence Y, simple slopes are handswitches
-##make real words high hand switches, RSA X, valence Y, simple slopes are handswitches
-##make real words high hand switches, speed X, valence Y, simple slopes are handswitches
-
-##MAKE ALL THE PLOTS
-plot3 = ggplot(dat, aes(x = ZCOS_low, y = Judged.Value2)) +
-  labs(x = "ZFSG", y = "Judgments") +
+plot2 = ggplot(fake, aes(x = fingerswitch, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
   scale_size_continuous(guide = FALSE) +
-  geom_abline(aes(intercept = .564, slope = .099, linetype = "-1SD ZLSA")) +
-  geom_abline(aes(intercept = .575, slope = .167, linetype = "Average ZLSA")) +
-  geom_abline(aes(intercept = .586, slope = .236, linetype = "+1SD ZLSA")) +
+  geom_abline(aes(intercept = 4.115, slope = -0.095, linetype = "-1SD RSA")) + #done
+  geom_abline(aes(intercept = 4.227, slope = -0.062, linetype = "Average RSA")) +
+  geom_abline(aes(intercept = 4.340, slope = -0.029, linetype = "+1SD RSA")) +
   scale_linetype_manual(values = c("dotted", "dashed", "solid"),
-                        breaks = c("-1SD ZLSA", "Average ZLSA", "+1SD ZLSA"),
+                        breaks = c("-1SD RSA", "Average RSA", "+1SD RSA"),
                         name = "Simple Slope") +
   coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
   geom_vline(xintercept = -.30) +
   geom_hline(yintercept = 0) +
   cleanup + 
-  labs(title="High ZCOS") 
+  labs(title="Finger Switch") 
 
 # arrange plots together
-legend = get_legend(plot1)
+legend1 = get_legend(plot1)
 plot_grid( plot1 + theme(legend.position="none"),
            plot2 + theme(legend.position="none"),
-           plot3 + theme(legend.position="none"),
-           legend,
+           legend1,
+           hjust = -1,
+           nrow = 1)
+
+
+```
+
+```{r graphs2, echo=FALSE,  fig.cap = "Simple Slopes for Real Word Interactions", fig.height=6, fig.width=6}
+
+##plot these together
+##make real words low finger switches, RSA X, valence Y, simple slopes are handswitches
+plot3 = ggplot(real, aes(x = rha, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = 4.820, slope = 0.035, linetype = "-1SD Hand Switches")) + #done
+  geom_abline(aes(intercept = 4.863, slope = 0.055, linetype = "Average Hand Switches")) +
+  geom_abline(aes(intercept = 4.906, slope = 0.074, linetype = "+1SD Hand Switches")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD Hand Switches", "Average Hand Switches", "+1SD Hand Switches"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="Hand Switches for Low Finger Switches") 
+
+##make real words high hand switches, RSA X, valence Y, simple slopes are handswitches
+plot4 = ggplot(real, aes(x = rha, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = 4.476, slope = 0.101, linetype = "-1SD Hand Switches")) + #done
+  geom_abline(aes(intercept = 4.553, slope = 0.074, linetype = "Average Hand Switches")) +
+  geom_abline(aes(intercept = 4.629, slope = 0.048, linetype = "+1SD Hand Switches")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD Hand Switches", "Average Hand Switches", "+1SD Hand Switches"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="Hand Switches for High Finger Switches") 
+##make real words high hand switches, speed X, valence Y, simple slopes are handswitches
+plot5 = ggplot(real, aes(x = speed, y = rating)) +
+  labs(x = "Typing Speed", y = "Valence") +
+  scale_size_continuous(guide = FALSE) +
+  geom_abline(aes(intercept = 4.476, slope = 0.010, linetype = "-1SD Hand Switches")) + #done
+  geom_abline(aes(intercept = 4.553, slope = 0.006, linetype = "Average Hand Switches")) +
+  geom_abline(aes(intercept = 4.629, slope = 0.002, linetype = "+1SD Hand Switches")) +
+  scale_linetype_manual(values = c("dotted", "dashed", "solid"),
+                        breaks = c("-1SD Hand Switches", "Average Hand Switches", "+1SD Hand Switches"),
+                        name = "Simple Slope") +
+  coord_cartesian(xlim = c(-.20, .60), ylim = c(.1, 1)) +
+  geom_vline(xintercept = -.30) +
+  geom_hline(yintercept = 0) +
+  cleanup + 
+  labs(title="Hand Switches for High Finger Switches") 
+
+# arrange plots together
+legend2 = get_legend(plot3)
+plot_grid( plot3 + theme(legend.position="none"),
+           plot4 + theme(legend.position="none"),
+           plot5 + theme(legend.position="none"),
+           legend2,
            hjust = -1,
            nrow = 2)
 
@@ -547,9 +625,14 @@ plot_grid( plot1 + theme(legend.position="none"),
 
 # Discussion
 
+<<<<<<< HEAD
 These results imply that the QWERTY keyboard has influenced our perceptions of words, in a more complex way than a simple body specificity hypothesis. In the overall normed database analyses, the original QWERTY effect was replicable across a large body of various types of stimuli (verbs, Twitter, category norms), with much the same size of effect as @Jasmin2012 published. Word length was often negatively related to valence ratings, which indicated that we like shorter words to type. Average letter frequency was usually a positive predictor of valence ratings wherein ratings are higher for words with more frequent letters; however, these effects were inconsistent. Our measure of fluency (switches) varied across stimulus sets but it appears, by analyzing multiple sources of ratings for words at the same time, that there might have been an interaction between RSA and number of switches. This interaction portrayed that we find words that switch off of left-handed key presses as more pleasant, while right-handed key presses are preferable by switching hands less often.
+=======
+These results suggest that the QWERTY keyboard has influenced our perceptions of words nuanced fasion that can be seen as more complex than the previously proffered body specificity hypothesis @Jasmin2012). This influence was examined in our study which incorporated the work of @Beilock2007 by including typing speed as a measure of expertise. Ratings of word valence appeared quite complex with pseudo words showing TALK ABOUT STUFFY STUFF HERE. Further, real words showed a different pattern of associations such that PUT MORE STUFF HERE BUT ABOUT REAL WORDS. 
 
-These effects were examined in more detail in Experiment 2, which incorporated @Beilock2007 study by including typing speed as a measure of expertise. Word ratings turned out to be quite complex with a four-way interaction between real/pseudowords, switches, RSA, and typing speed. All analyses showed a positive effect of right-side words, as well as if they were shorter and used more frequent letters. However, for pseudowords, no other effects were significant. Both @Beilock2007 and @VandenBergh1990 showed expert preferences for two and three letter combinations that were typed with different fingers. Our results could imply that our embodied actions influence preferences for procedures that are more likely in our environment. While our pseudowords were legal English phoneme combinations, they are extremely unlikely to have been previously practiced or encountered in our daily tasks. Therefore, switching preference will not extend to pseudowords (unpracticed actions) because they are not fluent [@Oppenheimer2008]. 
+>>>>>>> 1d294891ed96b1e75e0583c4619c54be05020eec
+
+THIS IS WHERE I STOPPED (KV) All analyses showed a positive effect of right-side words, as well as if they were shorter and used more frequent letters. However, for pseudowords, no other effects were significant. Both @Beilock2007 and @VandenBergh1990 showed expert preferences for two and three letter combinations that were typed with different fingers. Our results could imply that our embodied actions influence preferences for procedures that are more likely in our environment. While our pseudowords were legal English phoneme combinations, they are extremely unlikely to have been previously practiced or encountered in our daily tasks. Therefore, switching preference will not extend to pseudowords (unpracticed actions) because they are not fluent [@Oppenheimer2008]. 
 
 The effect of expertise was shown on real words, where the three-way interaction between RSA, switches, and typing speed was examined by separating out right, equal, and left-handed words. For right-handed words, typing speed (or the interaction) was not a significant predictor of valence, and while not significant, number of switches was negatively related to valence ratings. For equally right-left and left-handed words, pleasantness ratings increase by switching back and forth to the right hand. Further, left-handed words showed an interaction between our two embodied cognition variables, where the number of switches increases valence ratings as the typing speed of the participant decreases. Therefore, it appears that as participants gain fluency through increased typing speed, the number of switches back and forth for left-handed words matters less for pleasantness ratings. Many of the most frequent letters on the QWERTY keyboard are on the left side, which may frustrate a slow typist because of the need to coordinate finger press schemata that involve same finger muscle movements [@Rumelhart1982]. Consequently, the number of switches becomes increasingly important to help decrease interference from the need to continue to use the same hand. The ease of action by switching back and forth is then translated as positive feelings for those fluent actions [@Oppenheimer2008].
 

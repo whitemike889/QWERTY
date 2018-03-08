@@ -1,0 +1,14 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{QWERTY_files/figure-latex/graphs-1.pdf}
+\caption{\label{fig:graphs}Simple slopes for pseudowords interaction
+effects. The left plot indicates the speed interaction across simple
+slopes of RSA, while the right plot indicates the interaction of finger
+switches and RSA. Speed has positive effects when RSA is low (left
+handed words), while finger switches have negative effects when RSA is
+low.}
+\end{figure*}
+\efloatseparator
+ 

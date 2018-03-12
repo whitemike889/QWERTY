@@ -12,3 +12,20 @@ low.}
 \end{figure*}
 \efloatseparator
  
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{QWERTY_files/figure-latex/graphs2-1.pdf}
+\caption{\label{fig:graphs2}Simple Slopes for real word interactions of
+finger switchings by RSA by hand switches and finger switches by speed
+by hand switches. The top left figure indicates the interaction for RSA
+and hand switches at low finger switches. The average level of finger
+switches did not show an interaction. The top right panel portrays the
+interaction of RSA and hand switches at high simple slopes for finger
+switches. The bottom left figure shows the interaction of typing speed
+and hand switches at high finger switches. Low and average finger
+switches did not show this interaciton.}
+\end{figure*}
+\efloatseparator
+ 

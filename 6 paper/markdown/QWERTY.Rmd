@@ -21,11 +21,12 @@ author_note: |
   Erin M. Buchanan is an Associate Professor of Quantitative Psychology at Missouri State University. K. D. Valentine is a Ph.D. candidate at the University of Missouri. 
   
 abstract: |
-  Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. One such influence, deemed the QWERTY effect, is an increase in valence ratings for words typed more with the right hand on a traditional keyboard [@Jasmin2012]. Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework [@Barsalou1999] and found that the right side advantage is replicable to new valence stimuli, as well as experimental manipulation. Further, when examining expertise, right side advantage interacted with typing speed and typability (i.e., alternating hand keypresses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
+  Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. One such influence, deemed the QWERTY effect, is an increase in valence ratings for words typed more with the right hand on a traditional keyboard [@Jasmin2012]. Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework [@Barsalou1999] and found that the right side advantage is replicable to new valence stimuli, along with findings supporting embodied cognition. Further, when examining expertise, right side advantage interacted with typing speed and typability (i.e., alternating hand key presses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
   
-keywords          : "keyboard, valence, QWERTY, word norms"
+keywords          : "expertise, embodied cognition, valence, QWERTY"
 
 bibliography      : ["q_bib.bib"]
+wordcount         : 4419
 
 figsintext        : no
 figurelist        : no

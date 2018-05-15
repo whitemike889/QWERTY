@@ -35,8 +35,9 @@
   \usepackage{polyglossia}
   \setmainlanguage[]{}
 \fi
-\usepackage{natbib}
-\bibliographystyle{plainnat}
+\usepackage{biblatex}
+
+\addbibresource{q\_bib.bib}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -149,32 +150,32 @@ Correspondence concerning this article should be addressed to Erin M. Buchanan, 
 From its creation in 1868, to its appearance in our homes today, the
 QWERTY keyboard has held the interest of psychologists. The process of
 typing on a keyboard requires many procedures to function in tandem,
-which creates a wealth of actions to research \citep{Inhoff1997}.
-\citet{Rumelhart1982}'s computer model of skilled typing is still highly
-influential. They hypothesize that typing results from the activation of
-three levels of cognition: the word level, the key press level, and the
-response level. They believe that after word perception, the word level
-is activated, causing the key press level to initiate a schema of the
-letters involved in typing the word. This schema includes the optimal
-position on the keyboard for that specific hand-finger combination to
-move to at the appropriate time for individual keystrokes. Concurrently,
-the response system sends feedback information to initiate a key press
-motion when the finger is in the appropriate space. Their theory
-proposes that schemata and motion activations occur simultaneously,
-constantly pulling or pushing the hands and fingers in the right
-direction.
+which creates a wealth of actions to research \autocite{Inhoff1997}.
+\textcite{Rumelhart1982}'s computer model of skilled typing is still
+highly influential. They hypothesize that typing results from the
+activation of three levels of cognition: the word level, the key press
+level, and the response level. They believe that after word perception,
+the word level is activated, causing the key press level to initiate a
+schema of the letters involved in typing the word. This schema includes
+the optimal position on the keyboard for that specific hand-finger
+combination to move to at the appropriate time for individual
+keystrokes. Concurrently, the response system sends feedback information
+to initiate a key press motion when the finger is in the appropriate
+space. Their theory proposes that schemata and motion activations occur
+simultaneously, constantly pulling or pushing the hands and fingers in
+the right direction.
 
 While many studies have focused on errors in typing to investigate
-response system feedback \citep{Logan1999}, \citet{Logan2003} argued for
-parallel activation of key presses. He examined the Simon effect to show
-more than one letter is activated at the same time, and consequently,
-the second key press motion is begun before the first key press is done.
-The Simon effect occurs when congruent stimuli create faster responses
-than incongruent stimuli, much like the Stroop task
-\citep{Simon1990, Simon1969}. For example, if we are asked to type the
-letter \emph{f} (a left handed letter), we type it faster if the
+response system feedback \autocite{Logan1999}, \textcite{Logan2003}
+argued for parallel activation of key presses. He examined the Simon
+effect to show more than one letter is activated at the same time, and
+consequently, the second key press motion is begun before the first key
+press is done. The Simon effect occurs when congruent stimuli create
+faster responses than incongruent stimuli, much like the Stroop task
+\autocites{Simon1990}{Simon1969}. For example, if we are asked to type
+the letter \emph{f} (a left handed letter), we type it faster if the
 \emph{f} is presented on the left side of the screen. Similarly,
-\citet{Rieger2004} reported finger-congruency effects by altering a
+\textcite{Rieger2004} reported finger-congruency effects by altering a
 Stroop task: participants were required to respond to centrally
 presented letters based on color-key combinations. When the letter and
 color were congruent (i.e., a right-handed letter was presented in the
@@ -185,43 +186,44 @@ the responding device, suggesting the effect was expertise-based rather
 than experiment-response based. These results imply that automatic
 actions stimulate motor and imagery representations concurrently and may
 be linked together in the brain
-\citep{Hommel2001, Logan1998, Rieger2004}. This dual activation of motor
-and imagined items is the basis for embodied cognition, a rapidly
-expanding field in psychology \citep{Barsalou1999, Salthouse1986}.
+\autocites{Hommel2001}{Logan1998}{Rieger2004}. This dual activation of
+motor and imagined items is the basis for embodied cognition, a rapidly
+expanding field in psychology \autocites{Barsalou1999}{Salthouse1986}.
 
 \subsection{Embodied Cognition}\label{embodied-cognition}
 
 While the mind was traditionally considered an abstract symbol processor
-\citep{Newell1976}, newer cognitive psychology theories focus on the
+\autocite{Newell1976}, newer cognitive psychology theories focus on the
 interaction between the brain's sensorimotor systems and mental
-representations of events and objects \citep{Barsalou1999, Zwaan1999}.
-The interplay between these systems has been found in both neurological
-\citep{Hauk2004, Lyons2010, Tettamanti2005} and behavioral research
-\citep{Cartmill2012, Holt2006, Zwaan2006}. Motor representations of
+representations of events and objects
+\autocites{Barsalou1999}{Zwaan1999}. The interplay between these systems
+has been found in both neurological
+\autocites{Hauk2004}{Lyons2010}{Tettamanti2005} and behavioral research
+\autocites{Cartmill2012}{Holt2006}{Zwaan2006}. Motor representations of
 tasks are activated even when not specifically asked to perform the
 task, and if the action is well-learned, the task is perceived as
-pleasant \citep{Beilock2007, Ping2009, Yang2009}. For example,
-\citet{Beilock2007} asked novice and expert typists to pick which one of
-two letter dyads they preferred, which were either different hand
+pleasant \autocites{Beilock2007}{Ping2009}{Yang2009}. For example,
+\textcite{Beilock2007} asked novice and expert typists to pick which one
+of two letter dyads they preferred, which were either different hand
 combinations (\emph{CJ}) or same finger combinations (\emph{FV}). They
 found that novices have no preference in selection, while expert typists
 more reliably picked the combinations that were easier to type. To show
 that this effect was due to covert motor representation activation, and
-thus, expanding on findings from \citet{VandenBergh1990}, participants
-also made preference selections while repeating a key press combination.
-When expert motor planning was distracted by remembering the pattern
-presented, no preference for letter dyads was found, indicating that the
-simultaneous activation of the motor representation was necessary to
-influence their likability ratings. Similar embodied findings have also
-been portrayed with emotionally charged sentences and facial movements
-\citep{Havas2007}, positive-negative actions, such as head nodding or
-arm movements \citep{Glenberg2009, Ping2009}, and perceptuomotor fluency
-\citep{Oppenheimer2008, Yang2009}.
+thus, expanding on findings from \textcite{VandenBergh1990},
+participants also made preference selections while repeating a key press
+combination. When expert motor planning was distracted by remembering
+the pattern presented, no preference for letter dyads was found,
+indicating that the simultaneous activation of the motor representation
+was necessary to influence their likability ratings. Similar embodied
+findings have also been portrayed with emotionally charged sentences and
+facial movements \autocite{Havas2007}, positive-negative actions, such
+as head nodding or arm movements \autocites{Glenberg2009}{Ping2009}, and
+perceptuomotor fluency \autocites{Oppenheimer2008}{Yang2009}.
 
 \subsection{Body Specificity
 Hypothesis}\label{body-specificity-hypothesis}
 
-Using an embodied framework, \citet{Casasanto2009} has proposed that
+Using an embodied framework, \textcite{Casasanto2009} has proposed that
 handedness dictates preference because our representations of actions
 are grounded in our physical interactions with the environment. In
 several studies, he portrayed that handedness influenced preference for
@@ -232,11 +234,11 @@ happiness and intelligence and our decision making in hiring job
 candidates and shopping. In all these studies, participants reliably
 selected the hand-dominant side more often, which does not match
 cultural or neurolinguistic representations of positive-is-right and
-negative-is-left \citep{Davidson1992}. These findings imply that our
+negative-is-left \autocite{Davidson1992}. These findings imply that our
 handedness is a motor expertise that causes ease of action on the
 dominant side to positively influence our perceptions of items presented
-on that side. Further, \citet{Casasanto2011} compiled a review of body
-specific actions and their representation in the brain using fMRIs.
+on that side. Further, \textcite{Casasanto2011} compiled a review of
+body specific actions and their representation in the brain using fMRIs.
 Handedness interacted with imagining actions, reading action, and
 perceiving the meanings of action verbs, such that fMRI patterns were
 mirrored for left and right handed participants matching their dominant
@@ -244,20 +246,20 @@ side.
 
 \subsection{The QWERTY Effect}\label{the-qwerty-effect}
 
-These effects lead \citet{Jasmin2012} to propose the idea that typing,
-an action that often replaces speaking, has the ability to create
-semantic changes in how we perceive words. The asymmetrical arrangement
-of letters on the QWERTY keyboard increases fluency of typing letters on
-the right side because there are fewer keys, and thus, less competition
-for fingers. That arrangement should then cause us to perceive the
-letters on the right side as more positive and letters on the left side
-as more negative. Consequently, words that are composed of more letters
-from the right side (the right side advantage; RSA) should be rated as
-more positive than those with more letters on the left. They found this
-preference for RSA over three languages (English, Spanish, and Dutch),
-and the effect was even stronger on words created after the invention of
-the QWERTY keyboard (i.e., \emph{lol}), as well as evident in
-pseudowords such as \emph{plook.} However, in contrast to the body
+These effects lead \textcite{Jasmin2012} to propose the idea that
+typing, an action that often replaces speaking, has the ability to
+create semantic changes in how we perceive words. The asymmetrical
+arrangement of letters on the QWERTY keyboard increases fluency of
+typing letters on the right side because there are fewer keys, and thus,
+less competition for fingers. That arrangement should then cause us to
+perceive the letters on the right side as more positive and letters on
+the left side as more negative. Consequently, words that are composed of
+more letters from the right side (the right side advantage; RSA) should
+be rated as more positive than those with more letters on the left. They
+found this preference for RSA over three languages (English, Spanish,
+and Dutch), and the effect was even stronger on words created after the
+invention of the QWERTY keyboard (i.e., \emph{lol}), as well as evident
+in pseudowords such as \emph{plook.} However, in contrast to the body
 specificity hypothesis, left and right handed participants showed the
 same trend in effects for positive-is-right words.
 
@@ -275,11 +277,11 @@ and a more general embodied hypothesis by testing the following:
   Expertise was measured through participant typing speed, and fluency
   or typeability was measured through finger and hand switches that
   would occur if the word was typed on a QWERTY keyboard (akin to
-  \citet{Beilock2007}'s different hand preferences). Given that typing
-  involves the procedural action system, we would expect to find that
-  increased hand and finger switches are positively related to ratings
-  of valence because words that are typed on alternating fingers and
-  hands are easier to type; thus, supporting embodied cognition
+  \textcite{Beilock2007}'s different hand preferences). Given that
+  typing involves the procedural action system, we would expect to find
+  that increased hand and finger switches are positively related to
+  ratings of valence because words that are typed on alternating fingers
+  and hands are easier to type; thus, supporting embodied cognition
   theories. It was unclear if expertise would directly influence overall
   ratings, as we expected an interaction of the variables (described
   below). The RSA may still be present when accounting for these
@@ -308,7 +310,7 @@ participant error (i.e., missed key press).
 
 Rating data were screened for multivariate outliers, and two
 participant's ratings were found to have extreme Mahalanobis distance
-scores \citep{Tabachnick2012} but were kept in the data set. 11.2
+scores \autocite{Tabachnick2012} but were kept in the data set. 11.2
 percent of the sample was left-handed, 0.2 percent marked ambidextrous,
 and 0.3 percent was missing handedness information. The average typing
 speed was 47.89 words per minute (\emph{SD} = 13.31), and the average
@@ -316,8 +318,8 @@ percent accuracy rate for the typing test was 92.69 (\emph{SD} = 8.36).
 
 \subsection{Materials}\label{materials}
 
-The English ANEW \citep{Bradley1999} norms were used to create the
-stimuli for this study, in an effort to replicate \citet{Jasmin2012}
+The English ANEW \autocite{Bradley1999} norms were used to create the
+stimuli for this study, in an effort to replicate \textcite{Jasmin2012}
 experiments, and 2743 words were selected for this experiment.
 Pseudowords were selected from Appendix E of the supplementary materials
 presented from the QWERTY publication. These words were coded as
@@ -332,7 +334,7 @@ created this manuscript are available at our Open Science Foundation
 Each of the words used in this study were coded for control and
 experimental variables. Control variables included word length and
 average letter frequency. Average letter frequency was created by
-averaging the English letter frequency \citep{Lewand2000} for each
+averaging the English letter frequency \autocite{Lewand2000} for each
 letter in a word. Words with high average letter frequencies contain
 more commonly used letters (\emph{e, t, a, o}); while words with lower
 frequencies use more of the less common letters (\emph{z, q, x, j}).
@@ -352,7 +354,7 @@ variable due to focus on typing skill in our hypotheses.
 \subsection{Procedure}\label{procedure}
 
 Upon consent to participate in the experiment, participants were given a
-typing test by using a free typing test website \citep{Inc2013}. Each
+typing test by using a free typing test website \autocite{Inc2013}. Each
 participant typed Aesop's Fables for one minute before the website would
 reveal their typing speed and accuracy rate, which was recorded by the
 experimenter. After this test, participants indicated their dominant
@@ -363,7 +365,7 @@ These stimuli were counterbalanced across participants, and the order of
 the stimuli was randomized. Participants were told to rate each word for
 how pleasant it seemed using a 9 point Likert type scale (1 - \emph{very
 unpleasant}, 4 - \emph{neutral}, 9 - \emph{very pleasant}). The same
-self-assessment manikin from \citet{Jasmin2012} was shown to
+self-assessment manikin from \textcite{Jasmin2012} was shown to
 participants at the top of the computer screen to indicate the points on
 the Likert scale. The words appeared in the middle of the screen in 18
 point Arial font. Participants then typed the number of their rating on
@@ -376,7 +378,7 @@ debriefed and allowed to leave.
 
 Because each participant constituted multiple data points within the
 dataset, a multilevel model was used to control for correlated error
-\citep{Gelman2006}. \citet{Pinheiro2017}'s \emph{nlme} package in
+\autocite{Gelman2006}. \textcite{Pinheiro2017}'s \emph{nlme} package in
 \emph{R} was used to calculate these analyses. A maximum likelihood
 multilevel model was used to examine hypotheses of interactions between
 typing speed, hand/finger switching, and RSA while adjusting for letter
@@ -588,7 +590,7 @@ influenced our perceptions of positivity, as hypothesized by the body
 specificity hypothesis, but the complexity of typing and action has
 additionally lead to changing valence ratings for words. This influence
 was examined in our study by incorporating the work of
-\citet{Beilock2007}, wherein we measured typing speed as a measure of
+\textcite{Beilock2007}, wherein we measured typing speed as a measure of
 expertise, as well as embodied fluency or action through coding the way
 words would be typed with finger and hand switches. For pseudowords, we
 replicated the RSA effect, and additionally, showed that finger and hand
@@ -612,19 +614,19 @@ switching was a negative predictor of valence. Hand switching
 coordination would be easier to manage than finger switches, especially
 as we consider the flexibility and movement range of the non-index
 fingers. Therefore, it appeared that we found words on different hands
-as more positive, replicating \citet{Beilock2007}, but when forced to
+as more positive, replicating \textcite{Beilock2007}, but when forced to
 coordinate switching finger movements, we liked these words less. Many
 of the most frequent letters on the QWERTY keyboard are on the left
 side, which may frustrate a typist because of the need to coordinate
 finger press schemata that involve same finger muscle movements
-\citep{Rumelhart1982}. Consequently, the number of switches becomes
+\autocite{Rumelhart1982}. Consequently, the number of switches becomes
 increasingly important to help decrease interference from the need to
 continue to use the same hand. The ease of action by switching back and
 forth is then translated as positive feelings for those fluent actions
-\citep{Oppenheimer2008}. The complexity of this coordination's effect on
-valence was found in the multiway interactions unearthed in this study.
-Globally, typing speed was not a significant predictor for pseudo or
-real words. Viewing expertise through an embodied framework, it was
+\autocite{Oppenheimer2008}. The complexity of this coordination's effect
+on valence was found in the multiway interactions unearthed in this
+study. Globally, typing speed was not a significant predictor for pseudo
+or real words. Viewing expertise through an embodied framework, it was
 unclear if speed would directly affect valence, as speed was more likely
 to affect our interpretations of typing, rather than positivity.
 Therefore, we examined the interaction of typeability and speed to
@@ -640,8 +642,8 @@ negatively predicted valence. For words typed completely on the right
 hand (high RSA), neither variable influence valence. Therefore, it
 appears when we are required to use the left hand, and thus, lessened
 the influence of RSA, typeability and expertise play a role in the
-valence ratings of words. Both \citet{Beilock2007} and
-\citet{VandenBergh1990} showed expert preferences for two and three
+valence ratings of words. Both \textcite{Beilock2007} and
+\textcite{VandenBergh1990} showed expert preferences for two and three
 letter combinations that were typed with different fingers. Our results
 could imply that our embodied actions influence preferences for
 procedures that are more likely in our environment. While our
@@ -649,7 +651,7 @@ pseudowords were legal English phoneme combinations, they are extremely
 unlikely to have been previously practiced or encountered in our daily
 tasks. Therefore, switching preference will not extend to pseudowords
 (unpracticed actions) because they are not fluent
-\citep{Oppenheimer2008}.
+\autocite{Oppenheimer2008}.
 
 Further, three-way interactions of finger switches by hand switches by
 RSA and finger switches by hand switches by speed were found for real
@@ -676,18 +678,18 @@ the effect of focusing on that coordination may dampen the effects of
 expertise on valence ratings.
 
 These embodied results mirror a clever set of studies by
-\citet{Holt2006} wherein they showed participants sentences that matched
-or did not match a set of pictures (i.e., the umbrella is in the air
-paired with a picture of an open umbrella). Given dual-coding theory
-\citep{Paivio1991}, it was not surprising that participants were faster
-to indicate picture-sentence matches than non-matches \citep[also
-see][]{Stanfield2001, Zwaan2002}. Further, they showed these results
-extended to an expertise match; hockey and football players were much
-faster for sentence-picture combinations that matched within their sport
-than non-matches, while novices showed no difference in speed for
-matches or non-matches on sports questions. Even more compelling are
-results that these effects extend to fans of a sport and are consistent
-neurologically \citep[i.e., motor cortex activation in
+\textcite{Holt2006} wherein they showed participants sentences that
+matched or did not match a set of pictures (i.e., the umbrella is in the
+air paired with a picture of an open umbrella). Given dual-coding theory
+\autocite{Paivio1991}, it was not surprising that participants were
+faster to indicate picture-sentence matches than non-matches
+\autocites[also see][]{Stanfield2001}{Zwaan2002}. Further, they showed
+these results extended to an expertise match; hockey and football
+players were much faster for sentence-picture combinations that matched
+within their sport than non-matches, while novices showed no difference
+in speed for matches or non-matches on sports questions. Even more
+compelling are results that these effects extend to fans of a sport and
+are consistent neurologically \autocite[i.e., motor cortex activation in
 experts;][]{Beilock2008}. These studies clearly reinforce the idea that
 expertise and fluency unconsciously affect our choices, even when it
 comes to perceived pleasantness of words.
@@ -705,7 +707,7 @@ QWERTY layout also poses interesting problems, as many typists admit to
 not even knowing which finger should actually type the \emph{b} key.
 Further work could also investigate these effects on other keyboard
 layouts, such as Dvorak, which was designed to predominately type by
-alternating hands to increase speed and efficiency \citep{Noyes1983}.
+alternating hands to increase speed and efficiency \autocite{Noyes1983}.
 
 \newpage
 
@@ -713,7 +715,7 @@ alternating hands to increase speed and efficiency \citep{Noyes1983}.
 
 \setlength{\parindent}{-0.5in} \setlength{\leftskip}{0.5in}
 
-\bibliography{q\_bib.bib}
+\printbibliography
 
 
 \end{document}

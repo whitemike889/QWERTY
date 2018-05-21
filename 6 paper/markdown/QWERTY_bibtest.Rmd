@@ -25,21 +25,21 @@ abstract: |
   
 keywords          : "expertise, embodied cognition, valence, QWERTY"
 
-bibliography      : ["q_bib.bib"]
+bibliography      : ["qbib.bib"]
 
-figsintext        : no
+floatsintext      : no
 figurelist        : no
 tablelist         : no
 footnotelist      : no
 lineno            : yes
+mask              : yes
+draft             : no
 
-lang              : "english"
-class             : "man, mask"
+documentclass     : "apa6"
+classoption       : "man"
 output:
   papaja::apa6_pdf:
     citation_package: biblatex
-#csl               : apa6.csl
-#replace_ampersands: yes
 ---
 
 ```{r load_packages, include = FALSE}

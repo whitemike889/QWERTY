@@ -1,4 +1,4 @@
-\documentclass[,man]{apa6}
+\documentclass[man,mask]{apa6}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -29,15 +29,9 @@
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
-  \usepackage[shorthands=off,main=]{babel}
-\else
-  \usepackage{polyglossia}
-  \setmainlanguage[]{}
-\fi
 \usepackage{biblatex}
 
-\addbibresource{q\_bib.bib}
+\addbibresource{qbib.bib}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -71,28 +65,13 @@
 \let\rmarkdownfootnote\footnote%
 \def\footnote{\protect\rmarkdownfootnote}
 
-%%% Change title format to be more compact
-\usepackage{titling}
 
-% Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
-  \posttitle{
-    \begin{center}\large#1\end{center}
-    }
-}
-
-\setlength{\droptitle}{-2em}
   \title{An Extension of the QWERTY Effect: Not Just the Right Hand, Expertise
 and Typeability Predict Valence Ratings of Words}
-  \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-  \author{Erin M. Buchanan\textsuperscript{1}~\& Kathrene D.
+    \author{Erin M. Buchanan\textsuperscript{1}~\& Kathrene D.
 Valentine\textsuperscript{2}}
-  \preauthor{\centering\large\emph}
-  \postauthor{\par}
-  \date{}
-  \predate{}\postdate{}
-
+    \date{}
+  
 \usepackage{longtable}
 \usepackage{lscape}
 \usepackage{multirow}

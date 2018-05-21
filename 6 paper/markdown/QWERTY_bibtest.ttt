@@ -1,0 +1,31 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+[tbp]
+\begin{center}
+\begin{threeparttable}
+\caption{\label{tab:model-table1}Area under curve model statistics}
+\begin{tabular}{lccccccc}
+\toprule
+Word Type & Model & $df$ & AIC & BIC & $\chi^2$ & $\Delta\chi^2$ & $p$\\
+\midrule
+Pseudo & Intercept Only & 2 & 144345.73 & 144362.72 & -72170.87 & NA & NA\\
+Pseudo & Random Intercept & 3 & 134813.09 & 134838.57 & -67403.54 & 9534.65 & < .001\\
+Pseudo & Adjustor Variable & 4 & 134814.22 & 134848.20 & -67403.11 & 0.87 & .351\\
+Pseudo & Main Effects & 8 & 134577.92 & 134645.89 & -67280.96 & 244.29 & < .001\\
+Pseudo & Interactions & 19 & 134577.46 & 134738.87 & -67269.73 & 22.47 & .021\\
+Real & Intercept Only & 2 & 168169.14 & 168186.14 & -84082.57 & NA & NA\\
+Real & Random Intercept & 3 & 166459.55 & 166485.05 & -83226.78 & 1711.59 & < .001\\
+Real & Adjustor Variable & 4 & 166424.46 & 166458.46 & -83208.23 & 37.09 & < .001\\
+Real & Main Effects & 8 & 166281.81 & 166349.81 & -83132.91 & 150.65 & < .001\\
+Real & Interactions & 19 & 166253.65 & 166415.14 & -83107.82 & 50.16 & < .001\\
+\bottomrule
+\addlinespace
+\end{tabular}
+\begin{tablenotes}[para]
+\textit{Note.} AIC: Aikaike Information Criterion, BIC: Bayesian Information Criterion
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table*}
+\efloatseparator
+ 

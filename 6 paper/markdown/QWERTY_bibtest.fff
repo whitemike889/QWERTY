@@ -1,0 +1,31 @@
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{QWERTY_bibtest_files/figure-latex/graphs-1.pdf}
+\caption{\label{fig:graphs}Simple slopes for pseudowords interaction
+effects. The left plot indicates the speed interaction across simple
+slopes of RSA, while the right plot indicates the interaction of finger
+switches and RSA. Speed has positive effects when RSA is low (left
+handed words), while finger switches have negative effects when RSA is
+low.}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+\centering
+\includegraphics{QWERTY_bibtest_files/figure-latex/graphs2-1.pdf}
+\caption{\label{fig:graphs2}Simple Slopes for real word interactions of
+finger switchings by RSA by hand switches and finger switches by speed
+by hand switches. The top left figure indicates the interaction for RSA
+and hand switches at low finger switches. The average level of finger
+switches did not show an interaction. The top right panel portrays the
+interaction of RSA and hand switches at high simple slopes for finger
+switches. The bottom left figure shows the interaction of typing speed
+and hand switches at high finger switches. Low and average finger
+switches did not show this interaciton.}
+\end{figure*}
+\efloatseparator
+ 

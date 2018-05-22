@@ -3,7 +3,7 @@
 [tbp]
 \begin{center}
 \begin{threeparttable}
-\caption{\label{tab:model-table1}Area under curve model statistics}
+\caption{\label{tab:model-table1}Multilevel model statistic information for pseudo and real words}
 \begin{tabular}{lccccccc}
 \toprule
 Word Type & Model & $df$ & AIC & BIC & $\chi^2$ & $\Delta\chi^2$ & $p$\\

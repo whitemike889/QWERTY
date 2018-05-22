@@ -1,4 +1,4 @@
-\documentclass[english,man, mask]{apa6}
+\documentclass[english,man]{apa6}
 
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -40,7 +40,7 @@
   {\end{ThreePartTable}\end{center}\end{landscape}}
 
   \usepackage{ifthen} % Only add declarations when endfloat package is loaded
-  \ifthenelse{\equal{\string man, mask}{\string man}}{%
+  \ifthenelse{\equal{\string man}{\string man}}{%
    \DeclareDelayedFloatFlavor{ThreePartTable}{table} % Make endfloat play with longtable
    % \DeclareDelayedFloatFlavor{ltable}{table} % Make endfloat play with lscape
    \DeclareDelayedFloatFlavor{lltable}{table} % Make endfloat play with lscape & longtable
@@ -474,7 +474,7 @@ nuanced view of typing's effect on valence ratings.
 \begin{table}[tbp]
 \begin{center}
 \begin{threeparttable}
-\caption{\label{tab:model-table1}Area under curve model statistics}
+\caption{\label{tab:model-table1}Multilevel model statistic information for pseudo and real words}
 \begin{tabular}{lccccccc}
 \toprule
 Word Type & Model & $df$ & AIC & BIC & $\chi^2$ & $\Delta\chi^2$ & $p$\\

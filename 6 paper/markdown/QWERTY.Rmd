@@ -34,7 +34,7 @@ footnotelist      : no
 lineno            : yes
 
 lang              : "english"
-class             : "man, mask"
+class             : "man"
 output            : papaja::apa6_pdf
 csl               : apa6.csl
 replace_ampersands: yes
@@ -330,7 +330,7 @@ tableprint[, 8] = printnum(c(faketable$p, realtable$p), gt1 = FALSE, zero = FALS
 
 apa_table.latex(as.data.frame(tableprint), 
           align = c("l", rep("c", 7)), 
-          caption = "Area under curve model statistics",
+          caption = "Multilevel model statistic information for pseudo and real words",
           note = "AIC: Aikaike Information Criterion, BIC: Bayesian Information Criterion", 
           escape = FALSE,
           col.names = c("Word Type", "Model", "$df$", "AIC", "BIC", "$\\chi^2$", "$\\Delta\\chi^2$", "$p$"))

@@ -20,9 +20,7 @@ affiliation:
 author_note: |
   Erin M. Buchanan is an Associate Professor of Quantitative Psychology at Missouri State University. K. D. Valentine is a Ph.D. candidate at the University of Missouri. 
   
-abstract: |
-  Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. One such influence, deemed the QWERTY effect, is an increase in valence ratings for words typed more with the right hand on a traditional keyboard [@Jasmin2012]. Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework [@Barsalou1999] and found that the right side advantage is replicable to new valence stimuli, along with findings supporting embodied cognition. Further, when examining expertise, right side advantage interacted with typing speed and typeability (i.e., alternating hand key presses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
-  
+abstract          : (ref:abstract)
 keywords          : "expertise, embodied cognition, valence, QWERTY"
 
 bibliography      : ["qbib.bib"]
@@ -34,6 +32,12 @@ footnotelist      : no
 lineno            : yes
 mask              : yes
 draft             : no
+
+biblio-style      : "apa"
+lang              : "en-EN" # Optional, added for clarity
+header-includes:
+  - \DeclareLanguageMapping{english}{english-apa}
+biblatexoptions   : "uniquename=false"
 
 documentclass     : "apa6"
 classoption       : "man"
@@ -57,6 +61,8 @@ cleanup = theme(panel.grid.major = element_blank(),
                 text = element_text(size = 15))
 library(cowplot)
 ```
+(ref:abstract)
+Typing is a ubiquitous daily action for many individuals; yet, research on how these actions have changed our perception of language is limited. One such influence, deemed the QWERTY effect, is an increase in valence ratings for words typed more with the right hand on a traditional keyboard [@Jasmin2012]. Although this finding is intuitively appealing given both right handed dominance and the smaller number of letters typed with the right hand, extension and replication of the right side advantage is warranted. The present paper reexamined the QWERTY effect within the embodied cognition framework [@Barsalou1999] and found that the right side advantage is replicable to new valence stimuli, along with findings supporting embodied cognition. Further, when examining expertise, right side advantage interacted with typing speed and typeability (i.e., alternating hand key presses or finger switches) portraying that both skill and our procedural actions play a role in judgment of valence on words.
 
 From its creation in 1868, to its appearance in our homes today, the QWERTY keyboard has held the interest of psychologists. The process of typing on a keyboard requires many procedures to function in tandem, which creates a wealth of actions to research [@Inhoff1997]. @Rumelhart1982's computer model of skilled typing is still highly influential. They hypothesize that typing results from the activation of three levels of cognition: the word level, the key press level, and the response level. They believe that after word perception, the word level is activated, causing the key press level to initiate a schema of the letters involved in typing the word. This schema includes the optimal position on the keyboard for that specific hand-finger combination to move to at the appropriate time for individual keystrokes. Concurrently, the response system sends feedback information to initiate a key press motion when the finger is in the appropriate space. Their theory proposes that schemata and motion activations occur simultaneously, constantly pulling or pushing the hands and fingers in the right direction.
 
@@ -332,7 +338,7 @@ tableprint[, 8] = printnum(c(faketable$p, realtable$p), gt1 = FALSE, zero = FALS
 
 apa_table.latex(as.data.frame(tableprint), 
           align = c("l", rep("c", 7)), 
-          caption = "Area under curve model statistics",
+          caption = "Multilevel model statistic information for pseudo and real words",
           note = "AIC: Aikaike Information Criterion, BIC: Bayesian Information Criterion", 
           escape = FALSE,
           col.names = c("Word Type", "Model", "$df$", "AIC", "BIC", "$\\chi^2$", "$\\Delta\\chi^2$", "$p$"))
@@ -612,11 +618,6 @@ Further, three-way interactions of finger switches by hand switches by RSA and f
 These embodied results mirror a clever set of studies by @Holt2006 wherein they showed participants sentences that matched or did not match a set of pictures (i.e., the umbrella is in the air paired with a picture of an open umbrella). Given dual-coding theory [@Paivio1991], it was not surprising that participants were faster to indicate picture-sentence matches than non-matches [also see @Stanfield2001; @Zwaan2002]. Further, they showed these results extended to an expertise match; hockey and football players were much faster for sentence-picture combinations that matched within their sport than non-matches, while novices showed no difference in speed for matches or non-matches on sports questions. Even more compelling are results that these effects extend to fans of a sport and are consistent neurologically [i.e., motor cortex activation in experts; @Beilock2008]. These studies clearly reinforce the idea that expertise and fluency unconsciously affect our choices, even when it comes to perceived pleasantness of words. 
 
 This extension of the QWERTY effect illuminates the need to examine how skill and action can influence cognitive processes. Additionally, typing style, while not recorded directly in this experiment, could potentially illuminate differences in ratings across left-handed and right-handed words. Hunt-and-peck typists are often slower than the strict typing manual typists, which may eliminate or change the effects of RSA and switches since typists may not follow left or right hand rules and just switch hands back and forth regardless of key position. The middle of a QWERTY layout also poses interesting problems, as many typists admit to "cheating" the middle letters, such as *t*, and *y* or not even knowing which finger should actually type the *b* key. Further work could also investigate these effects on other keyboard layouts, such as Dvorak, which was designed to predominately type by alternating hands to increase speed and efficiency [@Noyes1983]. 
-
-\newpage
-
-# References
-
 
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}

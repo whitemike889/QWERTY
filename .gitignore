@@ -1,5 +1,6 @@
 ##ignore PDFs
 5 articles/
+.DS_Store
 
 # History files
 .Rhistory
